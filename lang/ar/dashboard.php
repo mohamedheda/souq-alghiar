@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'Elryad' => 'الرياض',
+    'souq-alghiar' => 'سوق الغيار',
     'Dashboard' => 'لوحة التحكم',
     'Login' => 'تسجيل الدخول',
     'Logout' => 'تسجيل الخروج',
@@ -275,5 +275,5 @@ return [
     'inquiry' => 'استفسار',
     'unapproved_purchase_order_offers' => 'عروض أسعار تحت المراجعة',
     'suppliers' => 'الموردين',
-
+    'merchant'=> 'تاجر',
 ];

@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Api\V1\Auth;
 
+use App\Http\Enums\UserType;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
@@ -23,10 +24,10 @@ class SignUpRequest extends FormRequest
      */
     public function rules(): array
     {
+        $userType = request()->type ?? UserType::User->value;
         return [
-            'name' => ['required', 'string'],
-            'email' => ['required', 'email:rfc,dns',Rule::unique('users','email')],
-            'password' => ['required',Password::min(8)->letters()->numbers()->symbols()]
+            'type' => ['required', Rule::in(UserType::values())],
+            ...UserType::from($userType)->validationRules(),
         ];
     }
 }

@@ -22,7 +22,15 @@ class User extends Authenticatable implements JWTSubject
         'name',
         'email',
         'password',
+        'type',
+        'user_name',
+        'city_id',
+        'address',
+        'image',
+        'cover',
         'phone',
+        'wallet',
+        'is_blocked',
         'otp_verified',
         'is_active',
     ];
@@ -61,10 +69,13 @@ class User extends Authenticatable implements JWTSubject
     }
 
 
-    public function otp(){
+    public function otp()
+    {
         return $this->hasOne(Otp::class);
     }
-    public function otps(){
+
+    public function otps()
+    {
         return $this->hasMany(Otp::class);
     }
 }

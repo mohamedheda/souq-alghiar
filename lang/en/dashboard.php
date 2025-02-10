@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'Elryad' => 'Elryad',
+    'souq-alghiar' => 'souq-alghiar',
     'Dashboard' => 'Dashboard',
     'Login' => 'Login',
     'Logout' => 'Logout',
@@ -274,4 +274,5 @@ return [
     'inquiry' => 'Inquiry',
     'unapproved_purchase_order_offers' => 'Unapproved purchase orders offers',
     'suppliers' => 'Suppliers' ,
+    'merchant'=> 'merchant',
 ];

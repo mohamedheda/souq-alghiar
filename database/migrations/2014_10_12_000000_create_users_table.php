@@ -1,11 +1,11 @@
 <?php
 
+use App\Http\Enums\UserType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -13,11 +13,18 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
+            $table->enum('type', UserType::values());
+            $table->string('user_name')->unique()->nullable();
             $table->string('email')->unique();
             $table->string('phone')->nullable();
-            $table->string('password');
+            $table->text('address')->nullable();
+            $table->string('image')->nullable();
+            $table->string('cover')->nullable();
+            $table->string('password')->nullable();
+            $table->bigInteger('wallet')->default(0);
             $table->boolean('is_active')->default(1);
+            $table->boolean('is_blocked')->default(0);
             $table->boolean('otp_verified')->default(0);
             $table->timestamps();
         });

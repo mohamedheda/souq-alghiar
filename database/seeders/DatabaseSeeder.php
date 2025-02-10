@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
             LaratrustSeeder::class,
             ManagerSeeder::class,
             UserSeeder::class,
+            CitySeeder::class,
+            InfoSeeder::class,
         ]);
     }
 }

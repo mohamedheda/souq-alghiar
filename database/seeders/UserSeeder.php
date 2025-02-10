@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     {
         User::query()->create([
             'name' => 'User',
-            'email' => 'user@elryad.com',
-            'password' => 'elryad1256!#',
+            'email' => 'user@souq-alghiar.com',
+            'password' => 'souq-alghiar1256!#',
         ]);
     }
 }

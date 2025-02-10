@@ -1,5 +1,5 @@
 
-# Elryad's Backend Initial Project
+# souq-alghiar's Backend Initial Project
 This project serves as the foundation for future robust backend projects developed using the Laravel PHP framework. It incorporates essential features and components to provide a solid starting point.
 ## Requirements
 
@@ -12,7 +12,7 @@ This project serves as the foundation for future robust backend projects develop
 - Clone the project:
 
 ```bash
-  git clone https://github.com/elryad-web/initial-backend-project.git
+  git clone https://github.com/souq-alghiar-web/initial-backend-project.git
 ```
 
 - Install composer packages:
