@@ -27,6 +27,14 @@ abstract class Repository implements RepositoryInterface
         return $this->model->with($relations)->get($columns);
     }
 
+    public function updateOrCreate(
+        array $unique = [],
+        array $fields = [],
+    ): ?Model
+    {
+        return $this->model::updateOrCreate($unique, $fields);
+    }
+
     public function getActive(array $columns = ['*'], array $relations = []): Collection
     {
         return $this->model->with($relations)->where('is_active', true)->get($columns);
@@ -37,7 +45,8 @@ abstract class Repository implements RepositoryInterface
         array $columns = ['*'],
         array $relations = [],
         array $appends = []
-    ): ?Model {
+    ): ?Model
+    {
         return $this->model->select($columns)->with($relations)->findOrFail($modelId)->append($appends);
     }
 
@@ -46,7 +55,8 @@ abstract class Repository implements RepositoryInterface
         $value,
         array $columns = ['*'],
         array $relations = [],
-    ): array|Collection {
+    ): array|Collection
+    {
         return $this->model::query()->select($columns)->with($relations)->where($byColumn, $value)->get();
     }
 
@@ -55,7 +65,8 @@ abstract class Repository implements RepositoryInterface
         $value,
         array $columns = ['*'],
         array $relations = [],
-    ): Builder|Model|null {
+    ): Builder|Model|null
+    {
         return $this->model::query()->select($columns)->with($relations)->where($byColumn, $value)->first();
     }
 
@@ -86,7 +97,7 @@ abstract class Repository implements RepositoryInterface
             }
             return true;
         } catch (Exception $e) {
-            Log::error('CATCH: '. $e);
+            Log::error('CATCH: ' . $e);
             return false;
         }
     }
@@ -131,8 +142,9 @@ abstract class Repository implements RepositoryInterface
         array $relations = [],
         $orderBy = 'ASC',
         $columns = ['*'],
-    ) {
-        return  $this->model::query()->select($columns)->where($query)->with($relations)->orderBy('id', $orderBy)->paginate($perPage);
+    )
+    {
+        return $this->model::query()->select($columns)->where($query)->with($relations)->orderBy('id', $orderBy)->paginate($perPage);
     }
 
 

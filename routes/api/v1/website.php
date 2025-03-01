@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\V1\Auth\AuthController;
 use App\Http\Controllers\Api\V1\Auth\Email\ChangeEmailController;
 use App\Http\Controllers\Api\V1\Auth\Otp\OtpController;
 use App\Http\Controllers\Api\V1\Auth\Password\PasswordController;
+use App\Http\Controllers\Api\V1\City\CityController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'auth', 'controller' => AuthController::class], function () {
@@ -11,6 +12,7 @@ Route::group(['prefix' => 'auth', 'controller' => AuthController::class], functi
         Route::post('in', 'signIn');
         Route::post('up', 'signUp');
         Route::post('out', 'signOut')->middleware('auth:api');
+        Route::post('social','socialSign');
     });
     Route::get('what-is-my-platform', 'whatIsMyPlatform'); // returns 'platform: website!'
 });
@@ -28,3 +30,4 @@ Route::group(['prefix' => 'password'], function () {
     Route::post('/reset', [PasswordController::class, 'reset']);
     Route::post('/update', [PasswordController::class, 'updatePassword']);
 });
+Route::get('cities',[CityController::class,'index']);

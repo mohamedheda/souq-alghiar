@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repository\CityRepositoryInterface;
+use App\Repository\Eloquent\CityRepository;
 use App\Repository\Eloquent\InfoRepository;
 use App\Repository\Eloquent\ManagerRepository;
 use App\Repository\Eloquent\OtpRepository;
@@ -37,6 +39,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(ManagerRepositoryInterface::class, ManagerRepository::class);
         $this->app->singleton(OtpRepositoryInterface::class, OtpRepository::class);
         $this->app->singleton(InfoRepositoryInterface::class, InfoRepository::class);
+        $this->app->singleton(CityRepositoryInterface::class, CityRepository::class);
 
     }
 

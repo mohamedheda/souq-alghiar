@@ -30,6 +30,8 @@ class User extends Authenticatable implements JWTSubject
         'cover',
         'phone',
         'wallet',
+        'provider_id',
+        'provider',
         'is_blocked',
         'otp_verified',
         'is_active',

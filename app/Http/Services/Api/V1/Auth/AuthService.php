@@ -2,20 +2,27 @@
 
 namespace App\Http\Services\Api\V1\Auth;
 
+use App\Http\Enums\UserType;
 use App\Http\Requests\Api\V1\Auth\SignInRequest;
 use App\Http\Requests\Api\V1\Auth\SignUpRequest;
+use App\Http\Requests\Api\V1\Auth\SocialSignRequest;
 use App\Http\Resources\V1\User\UserResource;
 use App\Http\Services\Api\V1\Auth\Otp\OtpService;
 use App\Http\Services\Mutual\FileManagerService;
 use App\Http\Services\PlatformService;
 use App\Http\Traits\Responser;
+use App\Models\User;
 use App\Repository\InfoRepositoryInterface;
 use App\Repository\UserRepositoryInterface;
 use Exception;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Laravel\Socialite\Facades\Socialite;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 abstract class AuthService extends PlatformService
 {
+    const VERIFIED = 1;
     use Responser;
 
     public function __construct(
@@ -24,6 +31,37 @@ abstract class AuthService extends PlatformService
         private readonly FileManagerService      $fileManagerService,
     )
     {
+    }
+
+    public function socialSign(SocialSignRequest $request)
+    {
+        DB::beginTransaction();
+        try {
+            $data = $request->validated();
+
+            $socialUser = Socialite::driver($data['provider'])->stateless()->userFromToken($data['token']);
+            if (!$socialUser)
+                return $this->responseFail(message: 'User not found. Please register first.');
+
+            $user = $this->userRepository->updateOrCreate([
+                'email' => $socialUser->getEmail(),
+                'provider' => $data['provider'],
+                'provider_id' => $socialUser->getId()
+            ], [
+                'name' => $socialUser->getName() ?? 'user',
+                'image' => $socialUser->getAvatar(),
+                'otp_verified' => self::VERIFIED,
+                'type' => UserType::User->value,
+                'password' => Hash::make(str()->random(16)),
+            ]);
+            $user->token = JWTAuth::fromUser($user);
+            DB::commit();
+            return $this->responseSuccess(message: __('messages.created successfully'), data: new UserResource($user, true));
+        } catch (Exception $e) {
+            DB::rollBack();
+            return $e;
+            return $this->responseFail(message: __('messages.Something went wrong'));
+        }
     }
 
     public function signUp(SignUpRequest $request)

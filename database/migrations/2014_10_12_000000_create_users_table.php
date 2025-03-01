@@ -16,7 +16,9 @@ return new class extends Migration {
             $table->string('name')->nullable();
             $table->enum('type', UserType::values());
             $table->string('user_name')->unique()->nullable();
-            $table->string('email')->unique();
+            $table->string('email')->nullable()->unique();
+            $table->string('provider')->nullable();
+            $table->string('provider_id')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
             $table->string('image')->nullable();

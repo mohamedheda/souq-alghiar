@@ -19,6 +19,10 @@ interface RepositoryInterface
         array $relations = [],
         array $appends = []
     ): ?Model;
+    public function updateOrCreate(
+        array $unique = [],
+        array $fields = [],
+    ): ?Model;
 
     public function get(
         $byColumn,
