@@ -1,0 +1,6465 @@
+[
+    {
+        "name_en": "Acura",
+        "name_ar": "أكيورا",
+        "logo": "img\/cars\/acura-logo.png",
+        "models": [
+            {
+                "name_en": "CL",
+                "name_ar": "CL"
+            },
+            {
+                "name_en": "ILX",
+                "name_ar": "ILX"
+            },
+            {
+                "name_en": "Integra",
+                "name_ar": "إنتيجرا"
+            },
+            {
+                "name_en": "Legend",
+                "name_ar": "ليجند"
+            },
+            {
+                "name_en": "MDX",
+                "name_ar": "MDX"
+            },
+            {
+                "name_en": "NSX",
+                "name_ar": "NSX"
+            },
+            {
+                "name_en": "RDX",
+                "name_ar": "RDX"
+            },
+            {
+                "name_en": "RL",
+                "name_ar": "RL"
+            },
+            {
+                "name_en": "RLX",
+                "name_ar": "RLX"
+            },
+            {
+                "name_en": "RSX",
+                "name_ar": "RSX"
+            },
+            {
+                "name_en": "SLX",
+                "name_ar": "SLX"
+            },
+            {
+                "name_en": "TL",
+                "name_ar": "TL"
+            },
+            {
+                "name_en": "TLX",
+                "name_ar": "TLX"
+            },
+            {
+                "name_en": "TSX",
+                "name_ar": "TSX"
+            },
+            {
+                "name_en": "TSX Sport Wagon",
+                "name_ar": "TSX سبورت واجن"
+            },
+            {
+                "name_en": "Vigor",
+                "name_ar": "فيغور"
+            },
+            {
+                "name_en": "ZDX",
+                "name_ar": "ZDX"
+            }
+        ]
+    },
+    {
+        "name_en": "Alfa Romeo",
+        "name_ar": "ألفا روميو",
+        "logo": "img\/cars\/alfa-romeo-logo.png",
+        "models": [
+            {
+                "name_en": "164",
+                "name_ar": "164"
+            },
+            {
+                "name_en": "4C",
+                "name_ar": "4C"
+            },
+            {
+                "name_en": "8C Competizione",
+                "name_ar": "8C كومبيتيزيوني"
+            },
+            {
+                "name_en": "Giulia",
+                "name_ar": "جوليا"
+            },
+            {
+                "name_en": "GTV6",
+                "name_ar": "GTV6"
+            },
+            {
+                "name_en": "Milano",
+                "name_ar": "ميلانو"
+            },
+            {
+                "name_en": "Spider",
+                "name_ar": "سبايدر"
+            },
+            {
+                "name_en": "Stelvio",
+                "name_ar": "ستيلفيو"
+            },
+            {
+                "name_en": "Tonale",
+                "name_ar": "تونالي"
+            }
+        ]
+    },
+    {
+        "name_en": "AM General",
+        "name_ar": "إيه إم جنرال",
+        "logo": "img\/cars\/am-general-logo.png",
+        "models": [
+            {
+                "name_en": "Hummer",
+                "name_ar": "همر"
+            }
+        ]
+    },
+    {
+        "name_en": "Aston Martin",
+        "name_ar": "أستون مارتن",
+        "logo": "img\/cars\/aston-martin-logo.png",
+        "models": [
+            {
+                "name_en": "DB11",
+                "name_ar": "DB11"
+            },
+            {
+                "name_en": "DB12",
+                "name_ar": "DB12"
+            },
+            {
+                "name_en": "DB7",
+                "name_ar": "DB7"
+            },
+            {
+                "name_en": "DB9",
+                "name_ar": "DB9"
+            },
+            {
+                "name_en": "DBS",
+                "name_ar": "DBS"
+            },
+            {
+                "name_en": "DBX",
+                "name_ar": "DBX"
+            },
+            {
+                "name_en": "Rapide",
+                "name_ar": "رابيد"
+            },
+            {
+                "name_en": "Rapide AMR",
+                "name_ar": "رابيد AMR"
+            },
+            {
+                "name_en": "Rapide S",
+                "name_ar": "رابيد S"
+            },
+            {
+                "name_en": "V12 Vanquish",
+                "name_ar": "V12 فانكويش"
+            },
+            {
+                "name_en": "V12 Vantage",
+                "name_ar": "V12 فانتاج"
+            },
+            {
+                "name_en": "V12 Vantage S",
+                "name_ar": "V12 فانتاج S"
+            },
+            {
+                "name_en": "V8 Vantage",
+                "name_ar": "V8 فانتاج"
+            },
+            {
+                "name_en": "Vanquish",
+                "name_ar": "فانكويش"
+            },
+            {
+                "name_en": "Vanquish S",
+                "name_ar": "فانكويش S"
+            },
+            {
+                "name_en": "Vantage",
+                "name_ar": "فانتاج"
+            },
+            {
+                "name_en": "Virage",
+                "name_ar": "فيراج"
+            }
+        ]
+    },
+    {
+        "name_en": "Audi",
+        "name_ar": "أودي",
+        "logo": "img\/cars\/audi-logo.png",
+        "models": [
+            {
+                "name_en": "100",
+                "name_ar": "100"
+            },
+            {
+                "name_en": "200",
+                "name_ar": "200"
+            },
+            {
+                "name_en": "4000",
+                "name_ar": "4000"
+            },
+            {
+                "name_en": "5000",
+                "name_ar": "5000"
+            },
+            {
+                "name_en": "80",
+                "name_ar": "80"
+            },
+            {
+                "name_en": "90",
+                "name_ar": "90"
+            },
+            {
+                "name_en": "A3",
+                "name_ar": "A3"
+            },
+            {
+                "name_en": "A3 Sportback e-tron",
+                "name_ar": "A3 سبورت باك e-tron"
+            },
+            {
+                "name_en": "A4",
+                "name_ar": "A4"
+            },
+            {
+                "name_en": "A4 allroad",
+                "name_ar": "A4 أولرود"
+            },
+            {
+                "name_en": "A5",
+                "name_ar": "A5"
+            },
+            {
+                "name_en": "A5 Sportback",
+                "name_ar": "A5 سبورت باك"
+            },
+            {
+                "name_en": "A6",
+                "name_ar": "A6"
+            },
+            {
+                "name_en": "A6 allroad",
+                "name_ar": "A6 أولرود"
+            },
+            {
+                "name_en": "A7",
+                "name_ar": "A7"
+            },
+            {
+                "name_en": "A8",
+                "name_ar": "A8"
+            },
+            {
+                "name_en": "A8 L",
+                "name_ar": "A8 L"
+            },
+            {
+                "name_en": "allroad quattro",
+                "name_ar": "أولرود كواترو"
+            },
+            {
+                "name_en": "Cabriolet",
+                "name_ar": "كابريوليه"
+            },
+            {
+                "name_en": "Coupe",
+                "name_ar": "كوبيه"
+            },
+            {
+                "name_en": "e-tron",
+                "name_ar": "e-tron"
+            },
+            {
+                "name_en": "e-tron GT",
+                "name_ar": "e-tron GT"
+            },
+            {
+                "name_en": "e-tron S",
+                "name_ar": "e-tron S"
+            },
+            {
+                "name_en": "e-tron S Sportback",
+                "name_ar": "e-tron S سبورت باك"
+            },
+            {
+                "name_en": "e-tron Sportback",
+                "name_ar": "e-tron سبورت باك"
+            },
+            {
+                "name_en": "Q3",
+                "name_ar": "Q3"
+            },
+            {
+                "name_en": "Q4 e-tron",
+                "name_ar": "Q4 e-tron"
+            },
+            {
+                "name_en": "Q4 e-tron Sportback",
+                "name_ar": "Q4 e-tron سبورت باك"
+            },
+            {
+                "name_en": "Q5",
+                "name_ar": "Q5"
+            },
+            {
+                "name_en": "Q5 Hybrid",
+                "name_ar": "Q5 هايبرد"
+            },
+            {
+                "name_en": "Q5 Sportback",
+                "name_ar": "Q5 سبورت باك"
+            },
+            {
+                "name_en": "Q7",
+                "name_ar": "Q7"
+            },
+            {
+                "name_en": "Q8",
+                "name_ar": "Q8"
+            },
+            {
+                "name_en": "Q8 e-tron",
+                "name_ar": "Q8 e-tron"
+            },
+            {
+                "name_en": "Q8 e-tron Sportback",
+                "name_ar": "Q8 e-tron سبورت باك"
+            },
+            {
+                "name_en": "R8",
+                "name_ar": "R8"
+            },
+            {
+                "name_en": "RS 3",
+                "name_ar": "RS 3"
+            },
+            {
+                "name_en": "RS 4",
+                "name_ar": "RS 4"
+            },
+            {
+                "name_en": "RS 5",
+                "name_ar": "RS 5"
+            },
+            {
+                "name_en": "RS 5 Sportback",
+                "name_ar": "RS 5 سبورت باك"
+            },
+            {
+                "name_en": "RS 6",
+                "name_ar": "RS 6"
+            },
+            {
+                "name_en": "RS 6 Avant",
+                "name_ar": "RS 6 أفانت"
+            },
+            {
+                "name_en": "RS 7",
+                "name_ar": "RS 7"
+            },
+            {
+                "name_en": "RS e-tron GT",
+                "name_ar": "RS e-tron GT"
+            },
+            {
+                "name_en": "RS Q8",
+                "name_ar": "RS Q8"
+            },
+            {
+                "name_en": "S3",
+                "name_ar": "S3"
+            },
+            {
+                "name_en": "S4",
+                "name_ar": "S4"
+            },
+            {
+                "name_en": "S5",
+                "name_ar": "S5"
+            },
+            {
+                "name_en": "S5 Sportback",
+                "name_ar": "S5 سبورت باك"
+            },
+            {
+                "name_en": "S6",
+                "name_ar": "S6"
+            },
+            {
+                "name_en": "S7",
+                "name_ar": "S7"
+            },
+            {
+                "name_en": "S8",
+                "name_ar": "S8"
+            },
+            {
+                "name_en": "S8 plus",
+                "name_ar": "S8 بلس"
+            },
+            {
+                "name_en": "SQ5",
+                "name_ar": "SQ5"
+            },
+            {
+                "name_en": "SQ5 Sportback",
+                "name_ar": "SQ5 سبورت باك"
+            },
+            {
+                "name_en": "SQ7",
+                "name_ar": "SQ7"
+            },
+            {
+                "name_en": "SQ8",
+                "name_ar": "SQ8"
+            },
+            {
+                "name_en": "SQ8 e-tron",
+                "name_ar": "SQ8 e-tron"
+            },
+            {
+                "name_en": "SQ8 e-tron Sportback",
+                "name_ar": "SQ8 e-tron سبورت باك"
+            },
+            {
+                "name_en": "TT",
+                "name_ar": "TT"
+            },
+            {
+                "name_en": "TT RS",
+                "name_ar": "TT RS"
+            },
+            {
+                "name_en": "TTS",
+                "name_ar": "TTS"
+            },
+            {
+                "name_en": "V8",
+                "name_ar": "V8"
+            }
+        ]
+    },
+    {
+        "name_en": "Bentley",
+        "name_ar": "بنتلي",
+        "logo": "img\/cars\/bentley-logo.png",
+        "models": [
+            {
+                "name_en": "Arnage",
+                "name_ar": "أرناغ"
+            },
+            {
+                "name_en": "Azure",
+                "name_ar": "أزور"
+            },
+            {
+                "name_en": "Azure T",
+                "name_ar": "أزور T"
+            },
+            {
+                "name_en": "Bentayga",
+                "name_ar": "بنتايجا"
+            },
+            {
+                "name_en": "Bentayga EWB",
+                "name_ar": "بنتايجا EWB"
+            },
+            {
+                "name_en": "Bentayga W12",
+                "name_ar": "بنتايجا W12"
+            },
+            {
+                "name_en": "Brooklands",
+                "name_ar": "بروكلاندز"
+            },
+            {
+                "name_en": "Continental",
+                "name_ar": "كونتيننتال"
+            },
+            {
+                "name_en": "Continental Flying Spur",
+                "name_ar": "كونتيننتال فلاينج سبير"
+            },
+            {
+                "name_en": "Continental Flying Spur Speed",
+                "name_ar": "كونتيننتال فلاينج سبير سبيد"
+            },
+            {
+                "name_en": "Continental GT",
+                "name_ar": "كونتيننتال GT"
+            },
+            {
+                "name_en": "Continental GT Speed",
+                "name_ar": "كونتيننتال GT سبيد"
+            },
+            {
+                "name_en": "Continental GT V8",
+                "name_ar": "كونتيننتال GT V8"
+            },
+            {
+                "name_en": "Continental GT V8 S",
+                "name_ar": "كونتيننتال GT V8 S"
+            },
+            {
+                "name_en": "Continental GT3-R",
+                "name_ar": "كونتيننتال GT3-R"
+            },
+            {
+                "name_en": "Continental GTC",
+                "name_ar": "كونتيننتال GTC"
+            },
+            {
+                "name_en": "Continental GTC Speed",
+                "name_ar": "كونتيننتال GTC سبيد"
+            },
+            {
+                "name_en": "Continental GTC V8",
+                "name_ar": "كونتيننتال GTC V8"
+            },
+            {
+                "name_en": "Continental GTC V8 S",
+                "name_ar": "كونتيننتال GTC V8 S"
+            },
+            {
+                "name_en": "Continental Supersports",
+                "name_ar": "كونتيننتال سوبر سبورت"
+            },
+            {
+                "name_en": "Flying Spur",
+                "name_ar": "فلاينج سبير"
+            },
+            {
+                "name_en": "Flying Spur V8",
+                "name_ar": "فلاينج سبير V8"
+            },
+            {
+                "name_en": "Flying Spur W12",
+                "name_ar": "فلاينج سبير W12"
+            },
+            {
+                "name_en": "Mulsanne",
+                "name_ar": "مولسان"
+            },
+            {
+                "name_en": "Mulsanne Speed",
+                "name_ar": "مولسان سبيد"
+            }
+        ]
+    },
+    {
+        "name_en": "BMW",
+        "name_ar": "بي إم دبليو",
+        "logo": "img\/cars\/bmw-logo.png",
+        "models": [
+            {
+                "name_en": "1 Series",
+                "name_ar": "الفئة 1"
+            },
+            {
+                "name_en": "2 Series",
+                "name_ar": "الفئة 2"
+            },
+            {
+                "name_en": "3 Series",
+                "name_ar": "الفئة 3"
+            },
+            {
+                "name_en": "4 Series",
+                "name_ar": "الفئة 4"
+            },
+            {
+                "name_en": "5 Series",
+                "name_ar": "الفئة 5"
+            },
+            {
+                "name_en": "6 Series",
+                "name_ar": "الفئة 6"
+            },
+            {
+                "name_en": "7 Series",
+                "name_ar": "الفئة 7"
+            },
+            {
+                "name_en": "8 Series",
+                "name_ar": "الفئة 8"
+            },
+            {
+                "name_en": "ActiveE",
+                "name_ar": "أكتيف E"
+            },
+            {
+                "name_en": "i3",
+                "name_ar": "i3"
+            },
+            {
+                "name_en": "i4",
+                "name_ar": "i4"
+            },
+            {
+                "name_en": "i5",
+                "name_ar": "i5"
+            },
+            {
+                "name_en": "i7",
+                "name_ar": "i7"
+            },
+            {
+                "name_en": "i8",
+                "name_ar": "i8"
+            },
+            {
+                "name_en": "iX",
+                "name_ar": "iX"
+            },
+            {
+                "name_en": "M2",
+                "name_ar": "M2"
+            },
+            {
+                "name_en": "M3",
+                "name_ar": "M3"
+            },
+            {
+                "name_en": "M4",
+                "name_ar": "M4"
+            },
+            {
+                "name_en": "M5",
+                "name_ar": "M5"
+            },
+            {
+                "name_en": "M6",
+                "name_ar": "M6"
+            },
+            {
+                "name_en": "M8",
+                "name_ar": "M8"
+            },
+            {
+                "name_en": "X1",
+                "name_ar": "X1"
+            },
+            {
+                "name_en": "X2",
+                "name_ar": "X2"
+            },
+            {
+                "name_en": "X3",
+                "name_ar": "X3"
+            },
+            {
+                "name_en": "X3 M",
+                "name_ar": "X3 M"
+            },
+            {
+                "name_en": "X4",
+                "name_ar": "X4"
+            },
+            {
+                "name_en": "X4 M",
+                "name_ar": "X4 M"
+            },
+            {
+                "name_en": "X5",
+                "name_ar": "X5"
+            },
+            {
+                "name_en": "X5 M",
+                "name_ar": "X5 M"
+            },
+            {
+                "name_en": "X6",
+                "name_ar": "X6"
+            },
+            {
+                "name_en": "X6 M",
+                "name_ar": "X6 M"
+            },
+            {
+                "name_en": "X7",
+                "name_ar": "X7"
+            },
+            {
+                "name_en": "XM",
+                "name_ar": "XM"
+            },
+            {
+                "name_en": "Z3",
+                "name_ar": "Z3"
+            },
+            {
+                "name_en": "Z3 M",
+                "name_ar": "Z3 M"
+            },
+            {
+                "name_en": "Z4",
+                "name_ar": "Z4"
+            },
+            {
+                "name_en": "Z4 M",
+                "name_ar": "Z4 M"
+            },
+            {
+                "name_en": "Z8",
+                "name_ar": "Z8"
+            }
+        ]
+    },
+    {
+        "name_en": "Bugatti",
+        "name_ar": "بوجاتي",
+        "logo": "img\/cars\/bugatti-logo.png",
+        "models": [
+            {
+                "name_en": "Veyron 16.4",
+                "name_ar": "فايرون 16.4"
+            }
+        ]
+    },
+    {
+        "name_en": "Buick",
+        "name_ar": "بويك",
+        "logo": "img\/cars\/buick-logo.png",
+        "models": [
+            {
+                "name_en": "Cascada",
+                "name_ar": "كاسكادا"
+            },
+            {
+                "name_en": "Century",
+                "name_ar": "سينتوري"
+            },
+            {
+                "name_en": "Electra",
+                "name_ar": "إلكترا"
+            },
+            {
+                "name_en": "Enclave",
+                "name_ar": "إنكلاف"
+            },
+            {
+                "name_en": "Encore",
+                "name_ar": "إنكور"
+            },
+            {
+                "name_en": "Encore GX",
+                "name_ar": "إنكور GX"
+            },
+            {
+                "name_en": "Envision",
+                "name_ar": "إنفيجن"
+            },
+            {
+                "name_en": "Envista",
+                "name_ar": "إنفيستا"
+            },
+            {
+                "name_en": "Estate Wagon",
+                "name_ar": "إستيت واجن"
+            },
+            {
+                "name_en": "LaCrosse",
+                "name_ar": "لاكروس"
+            },
+            {
+                "name_en": "LeSabre",
+                "name_ar": "لو سابر"
+            },
+            {
+                "name_en": "Lucerne",
+                "name_ar": "لوسيرن"
+            },
+            {
+                "name_en": "Park Avenue",
+                "name_ar": "بارك أفينيو"
+            },
+            {
+                "name_en": "Rainier",
+                "name_ar": "رينيير"
+            },
+            {
+                "name_en": "Reatta",
+                "name_ar": "رياتا"
+            },
+            {
+                "name_en": "Regal",
+                "name_ar": "ريغال"
+            },
+            {
+                "name_en": "Regal Sportback",
+                "name_ar": "ريغال سبورت باك"
+            },
+            {
+                "name_en": "Regal TourX",
+                "name_ar": "ريغال تور إكس"
+            },
+            {
+                "name_en": "Rendezvous",
+                "name_ar": "رانديفو"
+            },
+            {
+                "name_en": "Riviera",
+                "name_ar": "ريفييرا"
+            },
+            {
+                "name_en": "Roadmaster",
+                "name_ar": "رودماستر"
+            },
+            {
+                "name_en": "Skyhawk",
+                "name_ar": "سكاي هوك"
+            },
+            {
+                "name_en": "Skylark",
+                "name_ar": "سكاي لارك"
+            },
+            {
+                "name_en": "Somerset",
+                "name_ar": "سومرست"
+            },
+            {
+                "name_en": "Somerset Regal",
+                "name_ar": "سومرست ريغال"
+            },
+            {
+                "name_en": "Terraza",
+                "name_ar": "تيرازا"
+            },
+            {
+                "name_en": "Verano",
+                "name_ar": "فيرانو"
+            }
+        ]
+    },
+    {
+        "name_en": "Cadillac",
+        "name_ar": "كاديلاك",
+        "logo": "img\/cars\/cadillac-logo.png",
+        "models": [
+            {
+                "name_en": "Allante",
+                "name_ar": "ألانت"
+            },
+            {
+                "name_en": "ATS",
+                "name_ar": "ATS"
+            },
+            {
+                "name_en": "ATS-V",
+                "name_ar": "ATS-V"
+            },
+            {
+                "name_en": "Brougham",
+                "name_ar": "بروجهام"
+            },
+            {
+                "name_en": "Catera",
+                "name_ar": "كاتيرا"
+            },
+            {
+                "name_en": "Cimarron",
+                "name_ar": "سيمارون"
+            },
+            {
+                "name_en": "CT4",
+                "name_ar": "CT4"
+            },
+            {
+                "name_en": "CT4-V",
+                "name_ar": "CT4-V"
+            },
+            {
+                "name_en": "CT5",
+                "name_ar": "CT5"
+            },
+            {
+                "name_en": "CT5-V",
+                "name_ar": "CT5-V"
+            },
+            {
+                "name_en": "CT6",
+                "name_ar": "CT6"
+            },
+            {
+                "name_en": "CT6 Hybrid",
+                "name_ar": "CT6 هايبرد"
+            },
+            {
+                "name_en": "CT6-V",
+                "name_ar": "CT6-V"
+            },
+            {
+                "name_en": "CTS",
+                "name_ar": "CTS"
+            },
+            {
+                "name_en": "CTS-V",
+                "name_ar": "CTS-V"
+            },
+            {
+                "name_en": "DeVille",
+                "name_ar": "دي فيل"
+            },
+            {
+                "name_en": "DTS",
+                "name_ar": "DTS"
+            },
+            {
+                "name_en": "DTS Pro",
+                "name_ar": "DTS برو"
+            },
+            {
+                "name_en": "Eldorado",
+                "name_ar": "إلدورادو"
+            },
+            {
+                "name_en": "ELR",
+                "name_ar": "ELR"
+            },
+            {
+                "name_en": "Escalade",
+                "name_ar": "إسكاليد"
+            },
+            {
+                "name_en": "Escalade ESV",
+                "name_ar": "إسكاليد ESV"
+            },
+            {
+                "name_en": "Escalade EXT",
+                "name_ar": "إسكاليد EXT"
+            },
+            {
+                "name_en": "Escalade Hybrid",
+                "name_ar": "إسكاليد هايبرد"
+            },
+            {
+                "name_en": "Escalade-V",
+                "name_ar": "إسكاليد-V"
+            },
+            {
+                "name_en": "Escalade-V ESV",
+                "name_ar": "إسكاليد-V ESV"
+            },
+            {
+                "name_en": "Fleetwood",
+                "name_ar": "فليتوود"
+            },
+            {
+                "name_en": "Fleetwood Brougham",
+                "name_ar": "فليتوود بروجهام"
+            },
+            {
+                "name_en": "LYRIQ",
+                "name_ar": "LYRIQ"
+            },
+            {
+                "name_en": "Seville",
+                "name_ar": "سيفيل"
+            },
+            {
+                "name_en": "Sixty Special",
+                "name_ar": "سيكستي سبيشال"
+            },
+            {
+                "name_en": "SRX",
+                "name_ar": "SRX"
+            },
+            {
+                "name_en": "STS",
+                "name_ar": "STS"
+            },
+            {
+                "name_en": "STS-V",
+                "name_ar": "STS-V"
+            },
+            {
+                "name_en": "XLR",
+                "name_ar": "XLR"
+            },
+            {
+                "name_en": "XLR-V",
+                "name_ar": "XLR-V"
+            },
+            {
+                "name_en": "XT4",
+                "name_ar": "XT4"
+            },
+            {
+                "name_en": "XT5",
+                "name_ar": "XT5"
+            },
+            {
+                "name_en": "XT6",
+                "name_ar": "XT6"
+            },
+            {
+                "name_en": "XTS",
+                "name_ar": "XTS"
+            },
+            {
+                "name_en": "XTS Pro",
+                "name_ar": "XTS برو"
+            }
+        ]
+    },
+    {
+        "name_en": "Chevrolet",
+        "name_ar": "شيفروليه",
+        "logo": "img\/cars\/chevrolet-logo.png",
+        "models": [
+            {
+                "name_en": "Astro",
+                "name_ar": "أسترو"
+            },
+            {
+                "name_en": "Avalanche",
+                "name_ar": "أفالانش"
+            },
+            {
+                "name_en": "Aveo",
+                "name_ar": "أفيو"
+            },
+            {
+                "name_en": "Beretta",
+                "name_ar": "بريتا"
+            },
+            {
+                "name_en": "Blazer",
+                "name_ar": "بليزر"
+            },
+            {
+                "name_en": "Blazer EV",
+                "name_ar": "بليزر EV"
+            },
+            {
+                "name_en": "Bolt EUV",
+                "name_ar": "بولت EUV"
+            },
+            {
+                "name_en": "Bolt EV",
+                "name_ar": "بولت EV"
+            },
+            {
+                "name_en": "C\/K 10 Series",
+                "name_ar": "C\/K 10 سيريز"
+            },
+            {
+                "name_en": "C\/K 1500 Series",
+                "name_ar": "C\/K 1500 سيريز"
+            },
+            {
+                "name_en": "C\/K 20 Series",
+                "name_ar": "C\/K 20 سيريز"
+            },
+            {
+                "name_en": "C\/K 2500 Series",
+                "name_ar": "C\/K 2500 سيريز"
+            },
+            {
+                "name_en": "C\/K 30 Series",
+                "name_ar": "C\/K 30 سيريز"
+            },
+            {
+                "name_en": "C\/K 3500 Series",
+                "name_ar": "C\/K 3500 سيريز"
+            },
+            {
+                "name_en": "Camaro",
+                "name_ar": "كامارو"
+            },
+            {
+                "name_en": "Caprice",
+                "name_ar": "كابريس"
+            },
+            {
+                "name_en": "Captiva Sport",
+                "name_ar": "كابتيفا سبورت"
+            },
+            {
+                "name_en": "Captiva Sport Fleet",
+                "name_ar": "كابتيفا سبورت فليت"
+            },
+            {
+                "name_en": "Cavalier",
+                "name_ar": "كافالير"
+            },
+            {
+                "name_en": "Celebrity",
+                "name_ar": "سيليبريتي"
+            },
+            {
+                "name_en": "Chevelle",
+                "name_ar": "شيفيل"
+            },
+            {
+                "name_en": "Chevette",
+                "name_ar": "شيفيت"
+            },
+            {
+                "name_en": "Chevy Van",
+                "name_ar": "شيفي فان"
+            },
+            {
+                "name_en": "Chevy Van Classic",
+                "name_ar": "شيفي فان كلاسيك"
+            },
+            {
+                "name_en": "Citation",
+                "name_ar": "سيتيشن"
+            },
+            {
+                "name_en": "City Express",
+                "name_ar": "سيتي إكسبريس"
+            },
+            {
+                "name_en": "Classic",
+                "name_ar": "كلاسيك"
+            },
+            {
+                "name_en": "Cobalt",
+                "name_ar": "كوبالت"
+            },
+            {
+                "name_en": "Colorado",
+                "name_ar": "كولورادو"
+            },
+            {
+                "name_en": "Corsica",
+                "name_ar": "كورسكا"
+            },
+            {
+                "name_en": "Corvette",
+                "name_ar": "كورفيت"
+            },
+            {
+                "name_en": "Cruze",
+                "name_ar": "كروز"
+            },
+            {
+                "name_en": "Cruze Limited",
+                "name_ar": "كروز ليميتد"
+            },
+            {
+                "name_en": "El Camino",
+                "name_ar": "إل كامينو"
+            },
+            {
+                "name_en": "Equinox",
+                "name_ar": "إكينوكس"
+            },
+            {
+                "name_en": "Equinox EV",
+                "name_ar": "إكينوكس EV"
+            },
+            {
+                "name_en": "Express",
+                "name_ar": "إكسبريس"
+            },
+            {
+                "name_en": "HHR",
+                "name_ar": "HHR"
+            },
+            {
+                "name_en": "Impala",
+                "name_ar": "إمبالا"
+            },
+            {
+                "name_en": "Impala Limited",
+                "name_ar": "إمبالا ليميتد"
+            },
+            {
+                "name_en": "Impala Limited Police",
+                "name_ar": "إمبالا ليميتد بوليس"
+            },
+            {
+                "name_en": "Lumina",
+                "name_ar": "لومينا"
+            },
+            {
+                "name_en": "Lumina Minivan",
+                "name_ar": "لومينا ميني فان"
+            },
+            {
+                "name_en": "LUV",
+                "name_ar": "LUV"
+            },
+            {
+                "name_en": "Malibu",
+                "name_ar": "ماليبو"
+            },
+            {
+                "name_en": "Malibu Classic",
+                "name_ar": "ماليبو كلاسيك"
+            },
+            {
+                "name_en": "Malibu Hybrid",
+                "name_ar": "ماليبو هايبرد"
+            },
+            {
+                "name_en": "Malibu Limited",
+                "name_ar": "ماليبو ليميتد"
+            },
+            {
+                "name_en": "Malibu Maxx",
+                "name_ar": "ماليبو ماكس"
+            },
+            {
+                "name_en": "Metro",
+                "name_ar": "ميترو"
+            },
+            {
+                "name_en": "Monte Carlo",
+                "name_ar": "مونتي كارلو"
+            },
+            {
+                "name_en": "Nova",
+                "name_ar": "نوفا"
+            },
+            {
+                "name_en": "Prizm",
+                "name_ar": "بريزم"
+            },
+            {
+                "name_en": "R\/V 10 Series",
+                "name_ar": "R\/V 10 سيريز"
+            },
+            {
+                "name_en": "R\/V 20 Series",
+                "name_ar": "R\/V 20 سيريز"
+            },
+            {
+                "name_en": "R\/V 2500 Series",
+                "name_ar": "R\/V 2500 سيريز"
+            },
+            {
+                "name_en": "R\/V 30 Series",
+                "name_ar": "R\/V 30 سيريز"
+            },
+            {
+                "name_en": "R\/V 3500 Series",
+                "name_ar": "R\/V 3500 سيريز"
+            },
+            {
+                "name_en": "S-10",
+                "name_ar": "S-10"
+            },
+            {
+                "name_en": "S-10 Blazer",
+                "name_ar": "S-10 بليزر"
+            },
+            {
+                "name_en": "Silverado 1500",
+                "name_ar": "سيلفرادو 1500"
+            },
+            {
+                "name_en": "Silverado 1500 Classic",
+                "name_ar": "سيلفرادو 1500 كلاسيك"
+            },
+            {
+                "name_en": "Silverado 1500 Hybrid",
+                "name_ar": "سيلفرادو 1500 هايبرد"
+            },
+            {
+                "name_en": "Silverado 1500 LD",
+                "name_ar": "سيلفرادو 1500 LD"
+            },
+            {
+                "name_en": "Silverado 1500 Limited",
+                "name_ar": "سيلفرادو 1500 ليميتد"
+            },
+            {
+                "name_en": "Silverado 1500 SS",
+                "name_ar": "سيلفرادو 1500 SS"
+            },
+            {
+                "name_en": "Silverado 1500 SS Classic",
+                "name_ar": "سيلفرادو 1500 SS كلاسيك"
+            },
+            {
+                "name_en": "Silverado 1500HD",
+                "name_ar": "سيلفرادو 1500HD"
+            },
+            {
+                "name_en": "Silverado 1500HD Classic",
+                "name_ar": "سيلفرادو 1500HD كلاسيك"
+            },
+            {
+                "name_en": "Silverado 2500",
+                "name_ar": "سيلفرادو 2500"
+            },
+            {
+                "name_en": "Silverado 2500HD",
+                "name_ar": "سيلفرادو 2500HD"
+            },
+            {
+                "name_en": "Silverado 2500HD Classic",
+                "name_ar": "سيلفرادو 2500HD كلاسيك"
+            },
+            {
+                "name_en": "Silverado 3500",
+                "name_ar": "سيلفرادو 3500"
+            },
+            {
+                "name_en": "Silverado 3500 Classic",
+                "name_ar": "سيلفرادو 3500 كلاسيك"
+            },
+            {
+                "name_en": "Silverado 3500HD",
+                "name_ar": "سيلفرادو 3500HD"
+            },
+            {
+                "name_en": "Silverado 3500HD CC",
+                "name_ar": "سيلفرادو 3500HD CC"
+            },
+            {
+                "name_en": "Silverado EV",
+                "name_ar": "سيلفرادو EV"
+            },
+            {
+                "name_en": "Sonic",
+                "name_ar": "سونيك"
+            },
+            {
+                "name_en": "Spark",
+                "name_ar": "سبارك"
+            },
+            {
+                "name_en": "Spark EV",
+                "name_ar": "سبارك EV"
+            },
+            {
+                "name_en": "Spectrum",
+                "name_ar": "سبيكتروم"
+            },
+            {
+                "name_en": "Sportvan",
+                "name_ar": "سبورت فان"
+            },
+            {
+                "name_en": "Sprint",
+                "name_ar": "سبرينت"
+            },
+            {
+                "name_en": "SS",
+                "name_ar": "SS"
+            },
+            {
+                "name_en": "SSR",
+                "name_ar": "SSR"
+            },
+            {
+                "name_en": "Suburban",
+                "name_ar": "سوبربان"
+            },
+            {
+                "name_en": "Tahoe",
+                "name_ar": "تاهو"
+            },
+            {
+                "name_en": "Tahoe Hybrid",
+                "name_ar": "تاهو هايبرد"
+            },
+            {
+                "name_en": "Tracker",
+                "name_ar": "تراكر"
+            },
+            {
+                "name_en": "Trailblazer",
+                "name_ar": "تريل بليزر"
+            },
+            {
+                "name_en": "TrailBlazer EXT",
+                "name_ar": "تريل بليزر EXT"
+            },
+            {
+                "name_en": "Traverse",
+                "name_ar": "ترافيرس"
+            },
+            {
+                "name_en": "Trax",
+                "name_ar": "تراكس"
+            },
+            {
+                "name_en": "Uplander",
+                "name_ar": "أبلاندر"
+            },
+            {
+                "name_en": "Venture",
+                "name_ar": "فينتشر"
+            },
+            {
+                "name_en": "Volt",
+                "name_ar": "فولت"
+            }
+        ]
+    },
+    {
+        "name_en": "Chrysler",
+        "name_ar": "كرايسلر",
+        "logo": "img\/cars\/chrysler-logo.png",
+        "models": [
+            {
+                "name_en": "200",
+                "name_ar": "200"
+            },
+            {
+                "name_en": "300",
+                "name_ar": "300"
+            },
+            {
+                "name_en": "300M",
+                "name_ar": "300M"
+            },
+            {
+                "name_en": "Aspen",
+                "name_ar": "أسبن"
+            },
+            {
+                "name_en": "Aspen Hybrid",
+                "name_ar": "أسبن هايبرد"
+            },
+            {
+                "name_en": "Cirrus",
+                "name_ar": "سيريوس"
+            },
+            {
+                "name_en": "Concorde",
+                "name_ar": "كونكورد"
+            },
+            {
+                "name_en": "Conquest",
+                "name_ar": "كونكويست"
+            },
+            {
+                "name_en": "Cordoba",
+                "name_ar": "كوردوبا"
+            },
+            {
+                "name_en": "Crossfire",
+                "name_ar": "كروس فاير"
+            },
+            {
+                "name_en": "Crossfire SRT-6",
+                "name_ar": "كروس فاير SRT-6"
+            },
+            {
+                "name_en": "E Class",
+                "name_ar": "E كلاس"
+            },
+            {
+                "name_en": "Fifth Avenue",
+                "name_ar": "فيفث أفينيو"
+            },
+            {
+                "name_en": "Grand Voyager",
+                "name_ar": "جراند فوياجر"
+            },
+            {
+                "name_en": "Imperial",
+                "name_ar": "إمبيريال"
+            },
+            {
+                "name_en": "Laser",
+                "name_ar": "لايزر"
+            },
+            {
+                "name_en": "Le Baron",
+                "name_ar": "لي بارون"
+            },
+            {
+                "name_en": "LHS",
+                "name_ar": "LHS"
+            },
+            {
+                "name_en": "New Yorker",
+                "name_ar": "نيويوركر"
+            },
+            {
+                "name_en": "Newport",
+                "name_ar": "نيو بورت"
+            },
+            {
+                "name_en": "Pacifica",
+                "name_ar": "باسيفيكا"
+            },
+            {
+                "name_en": "Pacifica Hybrid",
+                "name_ar": "باسيفيكا هايبرد"
+            },
+            {
+                "name_en": "Prowler",
+                "name_ar": "بروولر"
+            },
+            {
+                "name_en": "PT Cruiser",
+                "name_ar": "PT كروزر"
+            },
+            {
+                "name_en": "Sebring",
+                "name_ar": "سيبرينج"
+            },
+            {
+                "name_en": "TC",
+                "name_ar": "TC"
+            },
+            {
+                "name_en": "Town and Country",
+                "name_ar": "تاون آند كانتري"
+            },
+            {
+                "name_en": "Voyager",
+                "name_ar": "فوياجر"
+            }
+        ]
+    },
+    {
+        "name_en": "Daewoo",
+        "name_ar": "دايو",
+        "logo": "img\/cars\/daewoo-logo.png",
+        "models": [
+            {
+                "name_en": "Lanos",
+                "name_ar": "لانوس"
+            },
+            {
+                "name_en": "Leganza",
+                "name_ar": "ليجانزا"
+            },
+            {
+                "name_en": "Nubira",
+                "name_ar": "نوبيرا"
+            }
+        ]
+    },
+    {
+        "name_en": "Datsun",
+        "name_ar": "داتسون",
+        "logo": "img\/cars\/datsun-logo.png",
+        "models": [
+            {
+                "name_en": "200SX",
+                "name_ar": "200 إس إكس"
+            },
+            {
+                "name_en": "210",
+                "name_ar": "210"
+            },
+            {
+                "name_en": "280ZX",
+                "name_ar": "280 زد إكس"
+            },
+            {
+                "name_en": "310",
+                "name_ar": "310"
+            },
+            {
+                "name_en": "510",
+                "name_ar": "510"
+            },
+            {
+                "name_en": "810",
+                "name_ar": "810"
+            },
+            {
+                "name_en": "Maxima",
+                "name_ar": "ماكسيما"
+            },
+            {
+                "name_en": "Pickup",
+                "name_ar": "بيك أب"
+            },
+            {
+                "name_en": "Pulsar",
+                "name_ar": "بولسار"
+            },
+            {
+                "name_en": "Sentra",
+                "name_ar": "سنترا"
+            },
+            {
+                "name_en": "Stanza",
+                "name_ar": "ستانزا"
+            }
+        ]
+    },
+    {
+        "name_en": "Dodge",
+        "name_ar": "دودج",
+        "logo": "img\/cars\/dodge-logo.png",
+        "models": [
+            {
+                "name_en": "400",
+                "name_ar": "400"
+            },
+            {
+                "name_en": "600",
+                "name_ar": "600"
+            },
+            {
+                "name_en": "Aries America",
+                "name_ar": "أريز أمريكا"
+            },
+            {
+                "name_en": "Aries K",
+                "name_ar": "أريز كيه"
+            },
+            {
+                "name_en": "Avenger",
+                "name_ar": "أفينجر"
+            },
+            {
+                "name_en": "Caliber",
+                "name_ar": "كاليبر"
+            },
+            {
+                "name_en": "Caravan",
+                "name_ar": "كارافان"
+            },
+            {
+                "name_en": "Challenger",
+                "name_ar": "تشالنجر"
+            },
+            {
+                "name_en": "Charger",
+                "name_ar": "تشارجر"
+            },
+            {
+                "name_en": "Colt",
+                "name_ar": "كولت"
+            },
+            {
+                "name_en": "Conquest",
+                "name_ar": "كونكويست"
+            },
+            {
+                "name_en": "Dakota",
+                "name_ar": "داكوتا"
+            },
+            {
+                "name_en": "Dart",
+                "name_ar": "دارت"
+            },
+            {
+                "name_en": "Daytona",
+                "name_ar": "دايتونا"
+            },
+            {
+                "name_en": "Diplomat",
+                "name_ar": "دبلوماسي"
+            },
+            {
+                "name_en": "Durango",
+                "name_ar": "دورانجو"
+            },
+            {
+                "name_en": "Dynasty",
+                "name_ar": "داينستي"
+            },
+            {
+                "name_en": "Grand Caravan",
+                "name_ar": "جراند كارافان"
+            },
+            {
+                "name_en": "Hornet",
+                "name_ar": "هورنت"
+            },
+            {
+                "name_en": "Intrepid",
+                "name_ar": "إنتربيد"
+            },
+            {
+                "name_en": "Journey",
+                "name_ar": "جورني"
+            },
+            {
+                "name_en": "Lancer",
+                "name_ar": "لانسر"
+            },
+            {
+                "name_en": "Magnum",
+                "name_ar": "ماغنوم"
+            },
+            {
+                "name_en": "Mini Ram Van",
+                "name_ar": "ميني رام فان"
+            },
+            {
+                "name_en": "Mirada",
+                "name_ar": "ميرادا"
+            },
+            {
+                "name_en": "Monaco",
+                "name_ar": "موناكو"
+            },
+            {
+                "name_en": "Neon",
+                "name_ar": "نيون"
+            },
+            {
+                "name_en": "Neon SRT-4",
+                "name_ar": "نيون SRT-4"
+            },
+            {
+                "name_en": "Nitro",
+                "name_ar": "نايترو"
+            },
+            {
+                "name_en": "Omni",
+                "name_ar": "أومني"
+            },
+            {
+                "name_en": "Omni 024",
+                "name_ar": "أومني 024"
+            },
+            {
+                "name_en": "Raider",
+                "name_ar": "رايدر"
+            },
+            {
+                "name_en": "RAM 100",
+                "name_ar": "رام 100"
+            },
+            {
+                "name_en": "RAM 150",
+                "name_ar": "رام 150"
+            },
+            {
+                "name_en": "Ram 1500",
+                "name_ar": "رام 1500"
+            },
+            {
+                "name_en": "RAM 250",
+                "name_ar": "رام 250"
+            },
+            {
+                "name_en": "RAM 350",
+                "name_ar": "رام 350"
+            },
+            {
+                "name_en": "Ram 3500",
+                "name_ar": "رام 3500"
+            },
+            {
+                "name_en": "Ram 50",
+                "name_ar": "رام 50"
+            },
+            {
+                "name_en": "Ram Pickup 1500 SRT-10",
+                "name_ar": "رام بيك أب 1500 SRT-10"
+            },
+            {
+                "name_en": "Ram Pickup 2500",
+                "name_ar": "رام بيك أب 2500"
+            },
+            {
+                "name_en": "Ram Pickup 3500",
+                "name_ar": "رام بيك أب 3500"
+            },
+            {
+                "name_en": "Ram Van",
+                "name_ar": "رام فان"
+            },
+            {
+                "name_en": "Ramcharger",
+                "name_ar": "رام تشارجر"
+            },
+            {
+                "name_en": "Rampage",
+                "name_ar": "رامباج"
+            },
+            {
+                "name_en": "Shadow",
+                "name_ar": "شادو"
+            },
+            {
+                "name_en": "Spirit",
+                "name_ar": "سبيريت"
+            },
+            {
+                "name_en": "Sprinter",
+                "name_ar": "سبرنتر"
+            },
+            {
+                "name_en": "St. Regis",
+                "name_ar": "سانت ريجيس"
+            },
+            {
+                "name_en": "Stealth",
+                "name_ar": "ستيلث"
+            },
+            {
+                "name_en": "Stratus",
+                "name_ar": "ستراتوس"
+            },
+            {
+                "name_en": "Viper",
+                "name_ar": "فايبر"
+            }
+        ]
+    },
+    {
+        "name_en": "Eagle",
+        "name_ar": "إيغل",
+        "logo": "img\/cars\/eagle-logo.png",
+        "models": [
+            {
+                "name_en": "Eagle 30",
+                "name_ar": "إيغل 30"
+            },
+            {
+                "name_en": "Medallion",
+                "name_ar": "ميداليون"
+            },
+            {
+                "name_en": "Premier",
+                "name_ar": "بريمير"
+            },
+            {
+                "name_en": "Summit",
+                "name_ar": "سميت"
+            },
+            {
+                "name_en": "Talon",
+                "name_ar": "تالون"
+            },
+            {
+                "name_en": "Vision",
+                "name_ar": "فيجن"
+            }
+        ]
+    },
+    {
+        "name_en": "Ferrari",
+        "name_ar": "فيراري",
+        "logo": "img\/cars\/ferrari-logo.png",
+        "models": [
+            {
+                "name_en": "296 GTB",
+                "name_ar": "296 جي تي بي"
+            },
+            {
+                "name_en": "296 GTS",
+                "name_ar": "296 جي تي إس"
+            },
+            {
+                "name_en": "360 Challenge Stradale",
+                "name_ar": "360 تشالنج سترادالي"
+            },
+            {
+                "name_en": "360 Modena",
+                "name_ar": "360 مودينا"
+            },
+            {
+                "name_en": "360 Spider",
+                "name_ar": "360 سبايدر"
+            },
+            {
+                "name_en": "430 Scuderia",
+                "name_ar": "430 سكوديريا"
+            },
+            {
+                "name_en": "430 Scuderia Spider",
+                "name_ar": "430 سكوديريا سبايدر"
+            },
+            {
+                "name_en": "456M",
+                "name_ar": "456M"
+            },
+            {
+                "name_en": "458 Italia",
+                "name_ar": "458 إيطاليا"
+            },
+            {
+                "name_en": "458 Speciale",
+                "name_ar": "458 سبيشيالي"
+            },
+            {
+                "name_en": "458 Speciale A",
+                "name_ar": "458 سبيشيالي A"
+            },
+            {
+                "name_en": "458 Spider",
+                "name_ar": "458 سبايدر"
+            },
+            {
+                "name_en": "488 GTB",
+                "name_ar": "488 جي تي بي"
+            },
+            {
+                "name_en": "488 Pista",
+                "name_ar": "488 بيستا"
+            },
+            {
+                "name_en": "488 Pista Spider",
+                "name_ar": "488 بيستا سبايدر"
+            },
+            {
+                "name_en": "488 Spider",
+                "name_ar": "488 سبايدر"
+            },
+            {
+                "name_en": "550",
+                "name_ar": "550"
+            },
+            {
+                "name_en": "575M",
+                "name_ar": "575M"
+            },
+            {
+                "name_en": "599",
+                "name_ar": "599"
+            },
+            {
+                "name_en": "599 GTB Fiorano",
+                "name_ar": "599 جي تي بي فيورانو"
+            },
+            {
+                "name_en": "599 GTO",
+                "name_ar": "599 جي تي أو"
+            },
+            {
+                "name_en": "612 Scaglietti",
+                "name_ar": "612 سكاجليتي"
+            },
+            {
+                "name_en": "812 Competizione",
+                "name_ar": "812 كومبيتيزيوني"
+            },
+            {
+                "name_en": "812 GTS",
+                "name_ar": "812 جي تي إس"
+            },
+            {
+                "name_en": "812 Superfast",
+                "name_ar": "812 سوبرفاست"
+            },
+            {
+                "name_en": "California",
+                "name_ar": "كاليفورنيا"
+            },
+            {
+                "name_en": "California T",
+                "name_ar": "كاليفورنيا T"
+            },
+            {
+                "name_en": "Daytona SP3",
+                "name_ar": "دايتونا SP3"
+            },
+            {
+                "name_en": "Enzo",
+                "name_ar": "إنزو"
+            },
+            {
+                "name_en": "F12berlinetta",
+                "name_ar": "F12 بيرلينيتا"
+            },
+            {
+                "name_en": "F12tdf",
+                "name_ar": "F12 تي دي إف"
+            },
+            {
+                "name_en": "F430",
+                "name_ar": "F430"
+            },
+            {
+                "name_en": "F430 Spider",
+                "name_ar": "F430 سبايدر"
+            },
+            {
+                "name_en": "F8 Spider",
+                "name_ar": "F8 سبايدر"
+            },
+            {
+                "name_en": "F8 Tributo",
+                "name_ar": "F8 تريبيوت"
+            },
+            {
+                "name_en": "FF",
+                "name_ar": "FF"
+            },
+            {
+                "name_en": "GTC4Lusso",
+                "name_ar": "GTC4 لوسو"
+            },
+            {
+                "name_en": "GTC4Lusso T",
+                "name_ar": "GTC4 لوسو T"
+            },
+            {
+                "name_en": "LaFerrari",
+                "name_ar": "لافيراري"
+            },
+            {
+                "name_en": "Portofino",
+                "name_ar": "بورتوفينو"
+            },
+            {
+                "name_en": "Portofino M",
+                "name_ar": "بورتوفينو M"
+            },
+            {
+                "name_en": "Purosangue",
+                "name_ar": "بوروسانجوي"
+            },
+            {
+                "name_en": "Roma",
+                "name_ar": "روما"
+            },
+            {
+                "name_en": "SF90 Spider",
+                "name_ar": "SF90 سبايدر"
+            },
+            {
+                "name_en": "SF90 Stradale",
+                "name_ar": "SF90 سترادالي"
+            },
+            {
+                "name_en": "Superamerica",
+                "name_ar": "سوبرأمريكا"
+            }
+        ]
+    },
+    {
+        "name_en": "FIAT",
+        "name_ar": "فيات",
+        "logo": "img\/cars\/fiat-logo.png",
+        "models": [
+            {
+                "name_en": "124 Spider",
+                "name_ar": "124 سبايدر"
+            },
+            {
+                "name_en": "500",
+                "name_ar": "500"
+            },
+            {
+                "name_en": "500c",
+                "name_ar": "500c"
+            },
+            {
+                "name_en": "500e",
+                "name_ar": "500e"
+            },
+            {
+                "name_en": "500L",
+                "name_ar": "500L"
+            },
+            {
+                "name_en": "500X",
+                "name_ar": "500X"
+            }
+        ]
+    },
+    {
+        "name_en": "Fisker",
+        "name_ar": "فيسكر",
+        "logo": "img\/cars\/fisker-logo.png",
+        "models": [
+            {
+                "name_en": "Karma",
+                "name_ar": "كارما"
+            },
+            {
+                "name_en": "Ocean",
+                "name_ar": "أوشن"
+            }
+        ]
+    },
+    {
+        "name_en": "Ford",
+        "name_ar": "فورد",
+        "logo": "img\/cars\/ford-logo.png",
+        "models": [
+            {
+                "name_en": "Aerostar",
+                "name_ar": "أيروستار"
+            },
+            {
+                "name_en": "Aspire",
+                "name_ar": "أسباير"
+            },
+            {
+                "name_en": "Bronco",
+                "name_ar": "برونكو"
+            },
+            {
+                "name_en": "Bronco II",
+                "name_ar": "برونكو II"
+            },
+            {
+                "name_en": "Bronco Sport",
+                "name_ar": "برونكو سبورت"
+            },
+            {
+                "name_en": "C-MAX Energi",
+                "name_ar": "C-MAX إنيرجي"
+            },
+            {
+                "name_en": "C-MAX Hybrid",
+                "name_ar": "C-MAX هايبرد"
+            },
+            {
+                "name_en": "Contour",
+                "name_ar": "كونتور"
+            },
+            {
+                "name_en": "Contour SVT",
+                "name_ar": "كونتور SVT"
+            },
+            {
+                "name_en": "Courier",
+                "name_ar": "كوريير"
+            },
+            {
+                "name_en": "Crown Victoria",
+                "name_ar": "كراون فيكتوريا"
+            },
+            {
+                "name_en": "E-100",
+                "name_ar": "E-100"
+            },
+            {
+                "name_en": "E-150",
+                "name_ar": "E-150"
+            },
+            {
+                "name_en": "E-250",
+                "name_ar": "E-250"
+            },
+            {
+                "name_en": "E-350",
+                "name_ar": "E-350"
+            },
+            {
+                "name_en": "E-Series",
+                "name_ar": "E-سيريز"
+            },
+            {
+                "name_en": "E-Transit",
+                "name_ar": "E-ترانزيت"
+            },
+            {
+                "name_en": "EcoSport",
+                "name_ar": "إيكوسبورت"
+            },
+            {
+                "name_en": "Edge",
+                "name_ar": "إيدج"
+            },
+            {
+                "name_en": "Escape",
+                "name_ar": "إسكيب"
+            },
+            {
+                "name_en": "Escape Hybrid",
+                "name_ar": "إسكيب هايبرد"
+            },
+            {
+                "name_en": "Escape Plug-In Hybrid",
+                "name_ar": "إسكيب بلج إن هايبرد"
+            },
+            {
+                "name_en": "Escort",
+                "name_ar": "إسكورت"
+            },
+            {
+                "name_en": "Excursion",
+                "name_ar": "إكسيكريشن"
+            },
+            {
+                "name_en": "EXP",
+                "name_ar": "EXP"
+            },
+            {
+                "name_en": "Expedition",
+                "name_ar": "إكسبيديشن"
+            },
+            {
+                "name_en": "Expedition EL",
+                "name_ar": "إكسبيديشن EL"
+            },
+            {
+                "name_en": "Expedition MAX",
+                "name_ar": "إكسبيديشن MAX"
+            },
+            {
+                "name_en": "Explorer",
+                "name_ar": "إكسبلورر"
+            },
+            {
+                "name_en": "Explorer Hybrid",
+                "name_ar": "إكسبلورر هايبرد"
+            },
+            {
+                "name_en": "Explorer Sport",
+                "name_ar": "إكسبلورر سبورت"
+            },
+            {
+                "name_en": "Explorer Sport Trac",
+                "name_ar": "إكسبلورر سبورت تراك"
+            },
+            {
+                "name_en": "F-100",
+                "name_ar": "F-100"
+            },
+            {
+                "name_en": "F-150",
+                "name_ar": "F-150"
+            },
+            {
+                "name_en": "F-150 Heritage",
+                "name_ar": "F-150 هيريتج"
+            },
+            {
+                "name_en": "F-150 Lightning",
+                "name_ar": "F-150 لايتنينج"
+            },
+            {
+                "name_en": "F-150 SVT Lightning",
+                "name_ar": "F-150 SVT لايتنينج"
+            },
+            {
+                "name_en": "F-250",
+                "name_ar": "F-250"
+            },
+            {
+                "name_en": "F-250 Super Duty",
+                "name_ar": "F-250 سوبر ديوتي"
+            },
+            {
+                "name_en": "F-350",
+                "name_ar": "F-350"
+            },
+            {
+                "name_en": "F-350 Super Duty",
+                "name_ar": "F-350 سوبر ديوتي"
+            },
+            {
+                "name_en": "F-450 Super Duty",
+                "name_ar": "F-450 سوبر ديوتي"
+            },
+            {
+                "name_en": "Fairmont",
+                "name_ar": "فيرمونت"
+            },
+            {
+                "name_en": "Festiva",
+                "name_ar": "فيستيڤا"
+            },
+            {
+                "name_en": "Fiesta",
+                "name_ar": "فييستا"
+            },
+            {
+                "name_en": "Five Hundred",
+                "name_ar": "فايف هندرد"
+            },
+            {
+                "name_en": "Flex",
+                "name_ar": "فليكس"
+            },
+            {
+                "name_en": "Focus",
+                "name_ar": "فوكاس"
+            },
+            {
+                "name_en": "Focus SVT",
+                "name_ar": "فوكاس SVT"
+            },
+            {
+                "name_en": "Freestar",
+                "name_ar": "فريستار"
+            },
+            {
+                "name_en": "Freestyle",
+                "name_ar": "فريستايل"
+            },
+            {
+                "name_en": "Fusion",
+                "name_ar": "فيوجن"
+            },
+            {
+                "name_en": "Fusion Energi",
+                "name_ar": "فيوجن إنيرجي"
+            },
+            {
+                "name_en": "Fusion Hybrid",
+                "name_ar": "فيوجن هايبرد"
+            },
+            {
+                "name_en": "Granada",
+                "name_ar": "جرانادا"
+            },
+            {
+                "name_en": "GT",
+                "name_ar": "جي تي"
+            },
+            {
+                "name_en": "LTD",
+                "name_ar": "LTD"
+            },
+            {
+                "name_en": "LTD Crown Victoria",
+                "name_ar": "LTD كراون فيكتوريا"
+            },
+            {
+                "name_en": "Maverick",
+                "name_ar": "ماڤريك"
+            },
+            {
+                "name_en": "Mustang",
+                "name_ar": "موستانج"
+            },
+            {
+                "name_en": "Mustang Mach-E",
+                "name_ar": "موستانج ماك إي"
+            },
+            {
+                "name_en": "Mustang SVT Cobra",
+                "name_ar": "موستانج SVT كوبرا"
+            },
+            {
+                "name_en": "Probe",
+                "name_ar": "بروب"
+            },
+            {
+                "name_en": "Ranger",
+                "name_ar": "رينجر"
+            },
+            {
+                "name_en": "Shelby GT500",
+                "name_ar": "شيلبي GT500"
+            },
+            {
+                "name_en": "Taurus",
+                "name_ar": "توروس"
+            },
+            {
+                "name_en": "Taurus X",
+                "name_ar": "توروس X"
+            },
+            {
+                "name_en": "Tempo",
+                "name_ar": "تمبو"
+            },
+            {
+                "name_en": "Thunderbird",
+                "name_ar": "ثندربيرد"
+            },
+            {
+                "name_en": "Transit",
+                "name_ar": "ترانزيت"
+            },
+            {
+                "name_en": "Transit Connect",
+                "name_ar": "ترانزيت كونكت"
+            },
+            {
+                "name_en": "Transit Connect Electric",
+                "name_ar": "ترانزيت كونكت إلكتريك"
+            },
+            {
+                "name_en": "Windstar",
+                "name_ar": "ويندستار"
+            }
+        ]
+    },
+    {
+        "name_en": "Genesis",
+        "name_ar": "جينيسيس",
+        "logo": "img\/cars\/genesis-logo.png",
+        "models": [
+            {
+                "name_en": "Electrified G80",
+                "name_ar": "G80 إلكتريفيد"
+            },
+            {
+                "name_en": "G70",
+                "name_ar": "G70"
+            },
+            {
+                "name_en": "G80",
+                "name_ar": "G80"
+            },
+            {
+                "name_en": "G90",
+                "name_ar": "G90"
+            },
+            {
+                "name_en": "GV60",
+                "name_ar": "GV60"
+            },
+            {
+                "name_en": "GV70",
+                "name_ar": "GV70"
+            },
+            {
+                "name_en": "GV80",
+                "name_ar": "GV80"
+            }
+        ]
+    },
+    {
+        "name_en": "Geo",
+        "name_ar": "جيو",
+        "logo": "img\/cars\/geo-logo.png",
+        "models": [
+            {
+                "name_en": "Metro",
+                "name_ar": "ميترو"
+            },
+            {
+                "name_en": "Prizm",
+                "name_ar": "بريزم"
+            },
+            {
+                "name_en": "Spectrum",
+                "name_ar": "سبكتروم"
+            },
+            {
+                "name_en": "Storm",
+                "name_ar": "ستورم"
+            },
+            {
+                "name_en": "Tracker",
+                "name_ar": "تراكر"
+            }
+        ]
+    },
+    {
+        "name_en": "GMC",
+        "name_ar": "جي إم سي",
+        "logo": "img\/cars\/gmc-logo.png",
+        "models": [
+            {
+                "name_en": "Acadia",
+                "name_ar": "أكاديا"
+            },
+            {
+                "name_en": "C\/K 1500 Series",
+                "name_ar": "C\/K 1500 سيريز"
+            },
+            {
+                "name_en": "C\/K 2500 Series",
+                "name_ar": "C\/K 2500 سيريز"
+            },
+            {
+                "name_en": "C\/K 3500 Series",
+                "name_ar": "C\/K 3500 سيريز"
+            },
+            {
+                "name_en": "Caballero",
+                "name_ar": "كاباليرو"
+            },
+            {
+                "name_en": "Canyon",
+                "name_ar": "كانين"
+            },
+            {
+                "name_en": "Envoy",
+                "name_ar": "إنڤوي"
+            },
+            {
+                "name_en": "Envoy XL",
+                "name_ar": "إنڤوي XL"
+            },
+            {
+                "name_en": "Envoy XUV",
+                "name_ar": "إنڤوي XUV"
+            },
+            {
+                "name_en": "HUMMER EV",
+                "name_ar": "هامر EV"
+            },
+            {
+                "name_en": "Jimmy",
+                "name_ar": "جيمي"
+            },
+            {
+                "name_en": "R\/V 1500 Series",
+                "name_ar": "R\/V 1500 سيريز"
+            },
+            {
+                "name_en": "R\/V 2500 Series",
+                "name_ar": "R\/V 2500 سيريز"
+            },
+            {
+                "name_en": "R\/V 3500 Series",
+                "name_ar": "R\/V 3500 سيريز"
+            },
+            {
+                "name_en": "Rally Wagon",
+                "name_ar": "رالي واجن"
+            },
+            {
+                "name_en": "S-15",
+                "name_ar": "S-15"
+            },
+            {
+                "name_en": "S-15 Jimmy",
+                "name_ar": "S-15 جيمي"
+            },
+            {
+                "name_en": "Safari",
+                "name_ar": "سافاري"
+            },
+            {
+                "name_en": "Savana",
+                "name_ar": "سافانا"
+            },
+            {
+                "name_en": "Sierra 1500",
+                "name_ar": "سييرا 1500"
+            },
+            {
+                "name_en": "Sierra 1500 Classic",
+                "name_ar": "سييرا 1500 كلاسيك"
+            },
+            {
+                "name_en": "Sierra 1500 Hybrid",
+                "name_ar": "سييرا 1500 هايبرد"
+            },
+            {
+                "name_en": "Sierra 1500 Limited",
+                "name_ar": "سييرا 1500 ليميتد"
+            },
+            {
+                "name_en": "Sierra 1500HD",
+                "name_ar": "سييرا 1500HD"
+            },
+            {
+                "name_en": "Sierra 1500HD Classic",
+                "name_ar": "سييرا 1500HD كلاسيك"
+            },
+            {
+                "name_en": "Sierra 2500",
+                "name_ar": "سييرا 2500"
+            },
+            {
+                "name_en": "Sierra 2500 Classic",
+                "name_ar": "سييرا 2500 كلاسيك"
+            },
+            {
+                "name_en": "Sierra 2500HD",
+                "name_ar": "سييرا 2500HD"
+            },
+            {
+                "name_en": "Sierra 2500HD Classic",
+                "name_ar": "سييرا 2500HD كلاسيك"
+            },
+            {
+                "name_en": "Sierra 3500",
+                "name_ar": "سييرا 3500"
+            },
+            {
+                "name_en": "Sierra 3500 Classic",
+                "name_ar": "سييرا 3500 كلاسيك"
+            },
+            {
+                "name_en": "Sierra 3500HD",
+                "name_ar": "سييرا 3500HD"
+            },
+            {
+                "name_en": "Sierra 3500HD CC",
+                "name_ar": "سييرا 3500HD CC"
+            },
+            {
+                "name_en": "Sierra C3",
+                "name_ar": "سييرا C3"
+            },
+            {
+                "name_en": "Sonoma",
+                "name_ar": "سونُوما"
+            },
+            {
+                "name_en": "Suburban",
+                "name_ar": "سوبربان"
+            },
+            {
+                "name_en": "Syclone",
+                "name_ar": "سيكلون"
+            },
+            {
+                "name_en": "Terrain",
+                "name_ar": "تيرين"
+            },
+            {
+                "name_en": "Typhoon",
+                "name_ar": "تايفون"
+            },
+            {
+                "name_en": "Vandura",
+                "name_ar": "فاندورا"
+            },
+            {
+                "name_en": "Yukon",
+                "name_ar": "يوكون"
+            },
+            {
+                "name_en": "Yukon XL",
+                "name_ar": "يوكون XL"
+            }
+        ]
+    },
+    {
+        "name_en": "Honda",
+        "name_ar": "هوندا",
+        "logo": "img\/cars\/honda-logo.png",
+        "models": [
+            {
+                "name_en": "Accord",
+                "name_ar": "أكورد"
+            },
+            {
+                "name_en": "Accord Hybrid",
+                "name_ar": "أكورد هايبرد"
+            },
+            {
+                "name_en": "Accord Plug-In",
+                "name_ar": "أكورد بلج إن"
+            },
+            {
+                "name_en": "Civic",
+                "name_ar": "سيفيك"
+            },
+            {
+                "name_en": "Civic CRX",
+                "name_ar": "سيفيك CRX"
+            },
+            {
+                "name_en": "Civic del Sol",
+                "name_ar": "سيفيك ديل سول"
+            },
+            {
+                "name_en": "Clarity Electric",
+                "name_ar": "كلاريتي إلكتريك"
+            },
+            {
+                "name_en": "Clarity Fuel Cell",
+                "name_ar": "كلاريتي خلية الوقود"
+            },
+            {
+                "name_en": "Clarity Plug-In Hybrid",
+                "name_ar": "كلاريتي بلج إن هايبرد"
+            },
+            {
+                "name_en": "CR-V",
+                "name_ar": "CR-V"
+            },
+            {
+                "name_en": "CR-V Hybrid",
+                "name_ar": "CR-V هايبرد"
+            },
+            {
+                "name_en": "CR-Z",
+                "name_ar": "CR-Z"
+            },
+            {
+                "name_en": "Crosstour",
+                "name_ar": "كروس تور"
+            },
+            {
+                "name_en": "Element",
+                "name_ar": "إليمنت"
+            },
+            {
+                "name_en": "FCX Clarity",
+                "name_ar": "FCX كلاريتي"
+            },
+            {
+                "name_en": "Fit",
+                "name_ar": "فيت"
+            },
+            {
+                "name_en": "Fit EV",
+                "name_ar": "فيت EV"
+            },
+            {
+                "name_en": "HR-V",
+                "name_ar": "HR-V"
+            },
+            {
+                "name_en": "Insight",
+                "name_ar": "إنسايت"
+            },
+            {
+                "name_en": "Odyssey",
+                "name_ar": "أوديسي"
+            },
+            {
+                "name_en": "Passport",
+                "name_ar": "باسپورت"
+            },
+            {
+                "name_en": "Pilot",
+                "name_ar": "بايلوت"
+            },
+            {
+                "name_en": "Prelude",
+                "name_ar": "بريلود"
+            },
+            {
+                "name_en": "Prologue",
+                "name_ar": "بروولوج"
+            },
+            {
+                "name_en": "Ridgeline",
+                "name_ar": "ريدج لاين"
+            },
+            {
+                "name_en": "S2000",
+                "name_ar": "S2000"
+            }
+        ]
+    },
+    {
+        "name_en": "HUMMER",
+        "name_ar": "هامر",
+        "logo": "img\/cars\/hummer-logo.png",
+        "models": [
+            {
+                "name_en": "H1",
+                "name_ar": "H1"
+            },
+            {
+                "name_en": "H1 Alpha",
+                "name_ar": "H1 ألفا"
+            },
+            {
+                "name_en": "H2",
+                "name_ar": "H2"
+            },
+            {
+                "name_en": "H2 SUT",
+                "name_ar": "H2 SUT"
+            },
+            {
+                "name_en": "H3",
+                "name_ar": "H3"
+            },
+            {
+                "name_en": "H3T",
+                "name_ar": "H3T"
+            }
+        ]
+    },
+    {
+        "name_en": "Hyundai",
+        "name_ar": "هيونداي",
+        "logo": "img\/cars\/hyundai-logo.png",
+        "models": [
+            {
+                "name_en": "Accent",
+                "name_ar": "أكسنت"
+            },
+            {
+                "name_en": "Azera",
+                "name_ar": "أزيرا"
+            },
+            {
+                "name_en": "Elantra",
+                "name_ar": "إلنترا"
+            },
+            {
+                "name_en": "Elantra Coupe",
+                "name_ar": "إلنترا كوبيه"
+            },
+            {
+                "name_en": "Elantra GT",
+                "name_ar": "إلنترا GT"
+            },
+            {
+                "name_en": "Elantra Hybrid",
+                "name_ar": "إلنترا هايبرد"
+            },
+            {
+                "name_en": "Elantra N",
+                "name_ar": "إلنترا N"
+            },
+            {
+                "name_en": "Elantra Touring",
+                "name_ar": "إلنترا تورينج"
+            },
+            {
+                "name_en": "Entourage",
+                "name_ar": "إنتوراج"
+            },
+            {
+                "name_en": "Equus",
+                "name_ar": "إيكوس"
+            },
+            {
+                "name_en": "Excel",
+                "name_ar": "إكسيل"
+            },
+            {
+                "name_en": "Genesis",
+                "name_ar": "جينيسيس"
+            },
+            {
+                "name_en": "Genesis Coupe",
+                "name_ar": "جينيسيس كوبيه"
+            },
+            {
+                "name_en": "Ioniq 5",
+                "name_ar": "أيونيك 5"
+            },
+            {
+                "name_en": "IONIQ 6",
+                "name_ar": "أيونيك 6"
+            },
+            {
+                "name_en": "Ioniq Electric",
+                "name_ar": "أيونيك إلكتريك"
+            },
+            {
+                "name_en": "Ioniq Hybrid",
+                "name_ar": "أيونيك هايبرد"
+            },
+            {
+                "name_en": "Ioniq Plug-in Hybrid",
+                "name_ar": "أيونيك بلج إن هايبرد"
+            },
+            {
+                "name_en": "Kona",
+                "name_ar": "كونا"
+            },
+            {
+                "name_en": "Kona Electric",
+                "name_ar": "كونا إلكتريك"
+            },
+            {
+                "name_en": "Kona N",
+                "name_ar": "كونا N"
+            },
+            {
+                "name_en": "Nexo",
+                "name_ar": "نيكسو"
+            },
+            {
+                "name_en": "Palisade",
+                "name_ar": "باليسايد"
+            },
+            {
+                "name_en": "Santa Cruz",
+                "name_ar": "سانتا كروز"
+            },
+            {
+                "name_en": "Santa Fe",
+                "name_ar": "سانتا في"
+            },
+            {
+                "name_en": "Santa Fe Hybrid",
+                "name_ar": "سانتا في هايبرد"
+            },
+            {
+                "name_en": "Santa Fe Plug-In Hybrid",
+                "name_ar": "سانتا في بلج إن هايبرد"
+            },
+            {
+                "name_en": "Santa Fe Sport",
+                "name_ar": "سانتا في سبورت"
+            },
+            {
+                "name_en": "Santa Fe XL",
+                "name_ar": "سانتا في XL"
+            },
+            {
+                "name_en": "Scoupe",
+                "name_ar": "سكوب"
+            },
+            {
+                "name_en": "Sonata",
+                "name_ar": "سوناتا"
+            },
+            {
+                "name_en": "Sonata Hybrid",
+                "name_ar": "سوناتا هايبرد"
+            },
+            {
+                "name_en": "Sonata Plug-in Hybrid",
+                "name_ar": "سوناتا بلج إن هايبرد"
+            },
+            {
+                "name_en": "Tiburon",
+                "name_ar": "تيبورن"
+            },
+            {
+                "name_en": "Tucson",
+                "name_ar": "توسان"
+            },
+            {
+                "name_en": "Tucson Fuel Cell",
+                "name_ar": "توسان خلية الوقود"
+            },
+            {
+                "name_en": "Tucson Hybrid",
+                "name_ar": "توسان هايبرد"
+            },
+            {
+                "name_en": "Tucson Plug-in Hybrid",
+                "name_ar": "توسان بلج إن هايبرد"
+            },
+            {
+                "name_en": "Veloster",
+                "name_ar": "ڤيلوسير"
+            },
+            {
+                "name_en": "Veloster N",
+                "name_ar": "ڤيلوسير N"
+            },
+            {
+                "name_en": "Veloster Turbo",
+                "name_ar": "ڤيلوسير توربو"
+            },
+            {
+                "name_en": "Venue",
+                "name_ar": "فينيو"
+            },
+            {
+                "name_en": "Veracruz",
+                "name_ar": "ڤيراكروز"
+            },
+            {
+                "name_en": "XG300",
+                "name_ar": "XG300"
+            },
+            {
+                "name_en": "XG350",
+                "name_ar": "XG350"
+            }
+        ]
+    },
+    {
+        "name_en": "Ineos",
+        "name_ar": "إينيوس",
+        "logo": "img\/cars\/ineos-logo.png",
+        "models": [
+            {
+                "name_en": "Grenadier",
+                "name_ar": "جرينادير"
+            }
+        ]
+    },
+    {
+        "name_en": "Infiniti",
+        "name_ar": "إنفينيتي",
+        "logo": "img\/cars\/infiniti-logo.png",
+        "models": [
+            {
+                "name_en": "EX35",
+                "name_ar": "EX35"
+            },
+            {
+                "name_en": "EX37",
+                "name_ar": "EX37"
+            },
+            {
+                "name_en": "FX35",
+                "name_ar": "FX35"
+            },
+            {
+                "name_en": "FX37",
+                "name_ar": "FX37"
+            },
+            {
+                "name_en": "FX45",
+                "name_ar": "FX45"
+            },
+            {
+                "name_en": "FX50",
+                "name_ar": "FX50"
+            },
+            {
+                "name_en": "G20",
+                "name_ar": "G20"
+            },
+            {
+                "name_en": "G25",
+                "name_ar": "G25"
+            },
+            {
+                "name_en": "G35",
+                "name_ar": "G35"
+            },
+            {
+                "name_en": "G37",
+                "name_ar": "G37"
+            },
+            {
+                "name_en": "I30",
+                "name_ar": "I30"
+            },
+            {
+                "name_en": "I35",
+                "name_ar": "I35"
+            },
+            {
+                "name_en": "J30",
+                "name_ar": "J30"
+            },
+            {
+                "name_en": "JX35",
+                "name_ar": "JX35"
+            },
+            {
+                "name_en": "M30",
+                "name_ar": "M30"
+            },
+            {
+                "name_en": "M35",
+                "name_ar": "M35"
+            },
+            {
+                "name_en": "M35h",
+                "name_ar": "M35h"
+            },
+            {
+                "name_en": "M37",
+                "name_ar": "M37"
+            },
+            {
+                "name_en": "M45",
+                "name_ar": "M45"
+            },
+            {
+                "name_en": "M56",
+                "name_ar": "M56"
+            },
+            {
+                "name_en": "Q40",
+                "name_ar": "Q40"
+            },
+            {
+                "name_en": "Q45",
+                "name_ar": "Q45"
+            },
+            {
+                "name_en": "Q50",
+                "name_ar": "Q50"
+            },
+            {
+                "name_en": "Q50 Hybrid",
+                "name_ar": "Q50 هايبرد"
+            },
+            {
+                "name_en": "Q60",
+                "name_ar": "Q60"
+            },
+            {
+                "name_en": "Q70",
+                "name_ar": "Q70"
+            },
+            {
+                "name_en": "Q70 Hybrid",
+                "name_ar": "Q70 هايبرد"
+            },
+            {
+                "name_en": "Q70L",
+                "name_ar": "Q70L"
+            },
+            {
+                "name_en": "QX30",
+                "name_ar": "QX30"
+            },
+            {
+                "name_en": "QX4",
+                "name_ar": "QX4"
+            },
+            {
+                "name_en": "QX50",
+                "name_ar": "QX50"
+            },
+            {
+                "name_en": "QX55",
+                "name_ar": "QX55"
+            },
+            {
+                "name_en": "QX56",
+                "name_ar": "QX56"
+            },
+            {
+                "name_en": "QX60",
+                "name_ar": "QX60"
+            },
+            {
+                "name_en": "QX60 Hybrid",
+                "name_ar": "QX60 هايبرد"
+            },
+            {
+                "name_en": "QX70",
+                "name_ar": "QX70"
+            },
+            {
+                "name_en": "QX80",
+                "name_ar": "QX80"
+            }
+        ]
+    },
+    {
+        "name_en": "Isuzu",
+        "name_ar": "إيسوزو",
+        "logo": "img\/cars\/isuzu-logo.png",
+        "models": [
+            {
+                "name_en": "Amigo",
+                "name_ar": "أميجو"
+            },
+            {
+                "name_en": "Ascender",
+                "name_ar": "أسكندر"
+            },
+            {
+                "name_en": "Axiom",
+                "name_ar": "أكسيوم"
+            },
+            {
+                "name_en": "Hombre",
+                "name_ar": "هومبري"
+            },
+            {
+                "name_en": "I-Mark",
+                "name_ar": "I-مارك"
+            },
+            {
+                "name_en": "i-Series",
+                "name_ar": "i-سيريز"
+            },
+            {
+                "name_en": "Impulse",
+                "name_ar": "إمبالس"
+            },
+            {
+                "name_en": "Oasis",
+                "name_ar": "واحة"
+            },
+            {
+                "name_en": "Pickup",
+                "name_ar": "بيك أب"
+            },
+            {
+                "name_en": "Rodeo",
+                "name_ar": "روديو"
+            },
+            {
+                "name_en": "Rodeo Sport",
+                "name_ar": "روديو سبورت"
+            },
+            {
+                "name_en": "Stylus",
+                "name_ar": "ستايلس"
+            },
+            {
+                "name_en": "Trooper",
+                "name_ar": "تروبر"
+            },
+            {
+                "name_en": "Trooper II",
+                "name_ar": "تروبر II"
+            },
+            {
+                "name_en": "VehiCROSS",
+                "name_ar": "فيهي كروس"
+            }
+        ]
+    },
+    {
+        "name_en": "Jaguar",
+        "name_ar": "جاكوار",
+        "logo": "img\/cars\/jaguar-logo.png",
+        "models": [
+            {
+                "name_en": "E-PACE",
+                "name_ar": "E-PACE"
+            },
+            {
+                "name_en": "F-PACE",
+                "name_ar": "F-PACE"
+            },
+            {
+                "name_en": "F-TYPE",
+                "name_ar": "F-TYPE"
+            },
+            {
+                "name_en": "I-PACE",
+                "name_ar": "I-PACE"
+            },
+            {
+                "name_en": "S-Type",
+                "name_ar": "S-تايب"
+            },
+            {
+                "name_en": "S-Type R",
+                "name_ar": "S-تايب R"
+            },
+            {
+                "name_en": "X-Type",
+                "name_ar": "X-تايب"
+            },
+            {
+                "name_en": "XE",
+                "name_ar": "XE"
+            },
+            {
+                "name_en": "XF",
+                "name_ar": "XF"
+            },
+            {
+                "name_en": "XF Sportbrake",
+                "name_ar": "XF سبورت بريك"
+            },
+            {
+                "name_en": "XJ",
+                "name_ar": "XJ"
+            },
+            {
+                "name_en": "XJL",
+                "name_ar": "XJL"
+            },
+            {
+                "name_en": "XJR",
+                "name_ar": "XJR"
+            },
+            {
+                "name_en": "XJR575",
+                "name_ar": "XJR575"
+            },
+            {
+                "name_en": "XK",
+                "name_ar": "XK"
+            },
+            {
+                "name_en": "XKR",
+                "name_ar": "XKR"
+            }
+        ]
+    },
+    {
+        "name_en": "Jeep",
+        "name_ar": "جيب",
+        "logo": "img\/cars\/jeep-logo.png",
+        "models": [
+            {
+                "name_en": "Cherokee",
+                "name_ar": "شيروكي"
+            },
+            {
+                "name_en": "CJ-5",
+                "name_ar": "CJ-5"
+            },
+            {
+                "name_en": "CJ-7",
+                "name_ar": "CJ-7"
+            },
+            {
+                "name_en": "Comanche",
+                "name_ar": "كومانشي"
+            },
+            {
+                "name_en": "Commander",
+                "name_ar": "كوماندر"
+            },
+            {
+                "name_en": "Compass",
+                "name_ar": "كومباس"
+            },
+            {
+                "name_en": "Gladiator",
+                "name_ar": "جلادياتور"
+            },
+            {
+                "name_en": "Grand Cherokee",
+                "name_ar": "جراند شيروكي"
+            },
+            {
+                "name_en": "Grand Cherokee L",
+                "name_ar": "جراند شيروكي L"
+            },
+            {
+                "name_en": "Grand Cherokee WK",
+                "name_ar": "جراند شيروكي WK"
+            },
+            {
+                "name_en": "Grand Wagoneer",
+                "name_ar": "جراند واجونير"
+            },
+            {
+                "name_en": "Grand Wagoneer L",
+                "name_ar": "جراند واجونير L"
+            },
+            {
+                "name_en": "J-10",
+                "name_ar": "J-10"
+            },
+            {
+                "name_en": "J-20",
+                "name_ar": "J-20"
+            },
+            {
+                "name_en": "Liberty",
+                "name_ar": "ليبرتي"
+            },
+            {
+                "name_en": "Patriot",
+                "name_ar": "باتريوت"
+            },
+            {
+                "name_en": "Renegade",
+                "name_ar": "رينجيد"
+            },
+            {
+                "name_en": "Scrambler",
+                "name_ar": "سكرامبلر"
+            },
+            {
+                "name_en": "Wagoneer",
+                "name_ar": "واجونير"
+            },
+            {
+                "name_en": "Wagoneer L",
+                "name_ar": "واجونير L"
+            },
+            {
+                "name_en": "Wrangler",
+                "name_ar": "رانجلر"
+            },
+            {
+                "name_en": "Wrangler Unlimited",
+                "name_ar": "رانجلر أنليميتد"
+            }
+        ]
+    },
+    {
+        "name_en": "Kia",
+        "name_ar": "كيا",
+        "logo": "img\/cars\/kia-logo.png",
+        "models": [
+            {
+                "name_en": "Amanti",
+                "name_ar": "أمانتي"
+            },
+            {
+                "name_en": "Borrego",
+                "name_ar": "بورريجو"
+            },
+            {
+                "name_en": "Cadenza",
+                "name_ar": "كادينزا"
+            },
+            {
+                "name_en": "Carnival",
+                "name_ar": "كارنيفال"
+            },
+            {
+                "name_en": "EV6",
+                "name_ar": "EV6"
+            },
+            {
+                "name_en": "EV9",
+                "name_ar": "EV9"
+            },
+            {
+                "name_en": "Forte",
+                "name_ar": "فورتي"
+            },
+            {
+                "name_en": "Forte Koup",
+                "name_ar": "فورتي كوب"
+            },
+            {
+                "name_en": "Forte5",
+                "name_ar": "فورتي5"
+            },
+            {
+                "name_en": "K5",
+                "name_ar": "K5"
+            },
+            {
+                "name_en": "K900",
+                "name_ar": "K900"
+            },
+            {
+                "name_en": "Niro",
+                "name_ar": "نيرو"
+            },
+            {
+                "name_en": "Niro EV",
+                "name_ar": "نيرو EV"
+            },
+            {
+                "name_en": "Niro Plug-In Hybrid",
+                "name_ar": "نيرو بلج إن هايبرد"
+            },
+            {
+                "name_en": "Optima",
+                "name_ar": "أوبتيما"
+            },
+            {
+                "name_en": "Optima Hybrid",
+                "name_ar": "أوبتيما هايبرد"
+            },
+            {
+                "name_en": "Optima Plug-In Hybrid",
+                "name_ar": "أوبتيما بلج إن هايبرد"
+            },
+            {
+                "name_en": "Rio",
+                "name_ar": "ريو"
+            },
+            {
+                "name_en": "Rio 5-Door",
+                "name_ar": "ريو 5-دور"
+            },
+            {
+                "name_en": "Rio5",
+                "name_ar": "ريو5"
+            },
+            {
+                "name_en": "Rondo",
+                "name_ar": "روندو"
+            },
+            {
+                "name_en": "Sedona",
+                "name_ar": "سيدونا"
+            },
+            {
+                "name_en": "Seltos",
+                "name_ar": "سيلتوس"
+            },
+            {
+                "name_en": "Sephia",
+                "name_ar": "سيفيا"
+            },
+            {
+                "name_en": "Sorento",
+                "name_ar": "سورينتو"
+            },
+            {
+                "name_en": "Sorento Hybrid",
+                "name_ar": "سورينتو هايبرد"
+            },
+            {
+                "name_en": "Sorento Plug-In Hybrid",
+                "name_ar": "سورينتو بلج إن هايبرد"
+            },
+            {
+                "name_en": "Soul",
+                "name_ar": "سول"
+            },
+            {
+                "name_en": "Soul EV",
+                "name_ar": "سول EV"
+            },
+            {
+                "name_en": "Spectra",
+                "name_ar": "سبكترا"
+            },
+            {
+                "name_en": "Sportage",
+                "name_ar": "سبورتاج"
+            },
+            {
+                "name_en": "Sportage Hybrid",
+                "name_ar": "سبورتاج هايبرد"
+            },
+            {
+                "name_en": "Sportage Plug-In Hybrid",
+                "name_ar": "سبورتاج بلج إن هايبرد"
+            },
+            {
+                "name_en": "Stinger",
+                "name_ar": "ستنجر"
+            },
+            {
+                "name_en": "Telluride",
+                "name_ar": "تيلورايد"
+            }
+        ]
+    },
+    {
+        "name_en": "Lamborghini",
+        "name_ar": "لامبورجيني",
+        "logo": "img\/cars\/lamborghini-logo.png",
+        "models": [
+            {
+                "name_en": "Aventador",
+                "name_ar": "أفينتادور"
+            },
+            {
+                "name_en": "Countach",
+                "name_ar": "كونتاش"
+            },
+            {
+                "name_en": "Diablo",
+                "name_ar": "ديابلو"
+            },
+            {
+                "name_en": "Gallardo",
+                "name_ar": "جالاردو"
+            },
+            {
+                "name_en": "Huracan",
+                "name_ar": "هوراكان"
+            },
+            {
+                "name_en": "Murcielago",
+                "name_ar": "مورسيلاجو"
+            },
+            {
+                "name_en": "Revuelto",
+                "name_ar": "ريفويلتو"
+            },
+            {
+                "name_en": "Sian",
+                "name_ar": "سيان"
+            },
+            {
+                "name_en": "Urus",
+                "name_ar": "أوروس"
+            }
+        ]
+    },
+    {
+        "name_en": "Land Rover",
+        "name_ar": "لاند روفر",
+        "logo": "img\/cars\/land-rover-logo.png",
+        "models": [
+            {
+                "name_en": "Defender",
+                "name_ar": "ديفيندر"
+            },
+            {
+                "name_en": "Discovery",
+                "name_ar": "ديسكفري"
+            },
+            {
+                "name_en": "Discovery Series II",
+                "name_ar": "ديسكفري سيريز II"
+            },
+            {
+                "name_en": "Discovery Sport",
+                "name_ar": "ديسكفري سبورت"
+            },
+            {
+                "name_en": "Freelander",
+                "name_ar": "فريلاندر"
+            },
+            {
+                "name_en": "LR2",
+                "name_ar": "LR2"
+            },
+            {
+                "name_en": "LR3",
+                "name_ar": "LR3"
+            },
+            {
+                "name_en": "LR4",
+                "name_ar": "LR4"
+            },
+            {
+                "name_en": "Range Rover",
+                "name_ar": "رينج روڤر"
+            },
+            {
+                "name_en": "Range Rover Evoque",
+                "name_ar": "رينج روڤر إيفوك"
+            },
+            {
+                "name_en": "Range Rover Evoque Convertible",
+                "name_ar": "رينج روڤر إيفوك كشف"
+            },
+            {
+                "name_en": "Range Rover Evoque Coupe",
+                "name_ar": "رينج روڤر إيفوك كوبيه"
+            },
+            {
+                "name_en": "Range Rover Sport",
+                "name_ar": "رينج روڤر سبورت"
+            },
+            {
+                "name_en": "Range Rover Velar",
+                "name_ar": "رينج روڤر ڤيلار"
+            }
+        ]
+    },
+    {
+        "name_en": "Lexus",
+        "name_ar": "لكزس",
+        "logo": "img\/cars\/lexus-logo.png",
+        "models": [
+            {
+                "name_en": "CT 200h",
+                "name_ar": "CT 200h"
+            },
+            {
+                "name_en": "ES 250",
+                "name_ar": "ES 250"
+            },
+            {
+                "name_en": "ES 300",
+                "name_ar": "ES 300"
+            },
+            {
+                "name_en": "ES 300h",
+                "name_ar": "ES 300h"
+            },
+            {
+                "name_en": "ES 330",
+                "name_ar": "ES 330"
+            },
+            {
+                "name_en": "ES 350",
+                "name_ar": "ES 350"
+            },
+            {
+                "name_en": "GS 200t",
+                "name_ar": "GS 200t"
+            },
+            {
+                "name_en": "GS 300",
+                "name_ar": "GS 300"
+            },
+            {
+                "name_en": "GS 350",
+                "name_ar": "GS 350"
+            },
+            {
+                "name_en": "GS 400",
+                "name_ar": "GS 400"
+            },
+            {
+                "name_en": "GS 430",
+                "name_ar": "GS 430"
+            },
+            {
+                "name_en": "GS 450h",
+                "name_ar": "GS 450h"
+            },
+            {
+                "name_en": "GS 460",
+                "name_ar": "GS 460"
+            },
+            {
+                "name_en": "GS F",
+                "name_ar": "GS F"
+            },
+            {
+                "name_en": "GX 460",
+                "name_ar": "GX 460"
+            },
+            {
+                "name_en": "GX 470",
+                "name_ar": "GX 470"
+            },
+            {
+                "name_en": "GX 550",
+                "name_ar": "GX 550"
+            },
+            {
+                "name_en": "HS 250h",
+                "name_ar": "HS 250h"
+            },
+            {
+                "name_en": "IS 200t",
+                "name_ar": "IS 200t"
+            },
+            {
+                "name_en": "IS 250",
+                "name_ar": "IS 250"
+            },
+            {
+                "name_en": "IS 250C",
+                "name_ar": "IS 250C"
+            },
+            {
+                "name_en": "IS 300",
+                "name_ar": "IS 300"
+            },
+            {
+                "name_en": "IS 350",
+                "name_ar": "IS 350"
+            },
+            {
+                "name_en": "IS 350C",
+                "name_ar": "IS 350C"
+            },
+            {
+                "name_en": "IS 500",
+                "name_ar": "IS 500"
+            },
+            {
+                "name_en": "IS F",
+                "name_ar": "IS F"
+            },
+            {
+                "name_en": "LC 500",
+                "name_ar": "LC 500"
+            },
+            {
+                "name_en": "LC 500 Convertible",
+                "name_ar": "LC 500 كشف"
+            },
+            {
+                "name_en": "LC 500h",
+                "name_ar": "LC 500h"
+            },
+            {
+                "name_en": "LFA",
+                "name_ar": "LFA"
+            },
+            {
+                "name_en": "LS 400",
+                "name_ar": "LS 400"
+            },
+            {
+                "name_en": "LS 430",
+                "name_ar": "LS 430"
+            },
+            {
+                "name_en": "LS 460",
+                "name_ar": "LS 460"
+            },
+            {
+                "name_en": "LS 500",
+                "name_ar": "LS 500"
+            },
+            {
+                "name_en": "LS 500h",
+                "name_ar": "LS 500h"
+            },
+            {
+                "name_en": "LS 600h L",
+                "name_ar": "LS 600h L"
+            },
+            {
+                "name_en": "LX 450",
+                "name_ar": "LX 450"
+            },
+            {
+                "name_en": "LX 470",
+                "name_ar": "LX 470"
+            },
+            {
+                "name_en": "LX 570",
+                "name_ar": "LX 570"
+            },
+            {
+                "name_en": "LX 600",
+                "name_ar": "LX 600"
+            },
+            {
+                "name_en": "NX 200t",
+                "name_ar": "NX 200t"
+            },
+            {
+                "name_en": "NX 250",
+                "name_ar": "NX 250"
+            },
+            {
+                "name_en": "NX 300",
+                "name_ar": "NX 300"
+            },
+            {
+                "name_en": "NX 300h",
+                "name_ar": "NX 300h"
+            },
+            {
+                "name_en": "NX 350",
+                "name_ar": "NX 350"
+            },
+            {
+                "name_en": "NX 350h",
+                "name_ar": "NX 350h"
+            },
+            {
+                "name_en": "NX 450h+",
+                "name_ar": "NX 450h+"
+            },
+            {
+                "name_en": "RC 200t",
+                "name_ar": "RC 200t"
+            },
+            {
+                "name_en": "RC 300",
+                "name_ar": "RC 300"
+            },
+            {
+                "name_en": "RC 350",
+                "name_ar": "RC 350"
+            },
+            {
+                "name_en": "RC F",
+                "name_ar": "RC F"
+            },
+            {
+                "name_en": "RX 300",
+                "name_ar": "RX 300"
+            },
+            {
+                "name_en": "RX 330",
+                "name_ar": "RX 330"
+            },
+            {
+                "name_en": "RX 350",
+                "name_ar": "RX 350"
+            },
+            {
+                "name_en": "RX 350h",
+                "name_ar": "RX 350h"
+            },
+            {
+                "name_en": "RX 350L",
+                "name_ar": "RX 350L"
+            },
+            {
+                "name_en": "RX 400h",
+                "name_ar": "RX 400h"
+            },
+            {
+                "name_en": "RX 450h",
+                "name_ar": "RX 450h"
+            },
+            {
+                "name_en": "RX 450hL",
+                "name_ar": "RX 450hL"
+            },
+            {
+                "name_en": "RX 500h",
+                "name_ar": "RX 500h"
+            },
+            {
+                "name_en": "RZ 300e",
+                "name_ar": "RZ 300e"
+            },
+            {
+                "name_en": "RZ 450e",
+                "name_ar": "RZ 450e"
+            },
+            {
+                "name_en": "SC 300",
+                "name_ar": "SC 300"
+            },
+            {
+                "name_en": "SC 400",
+                "name_ar": "SC 400"
+            },
+            {
+                "name_en": "SC 430",
+                "name_ar": "SC 430"
+            },
+            {
+                "name_en": "TX 350",
+                "name_ar": "TX 350"
+            },
+            {
+                "name_en": "TX 500h",
+                "name_ar": "TX 500h"
+            },
+            {
+                "name_en": "TX 550h+",
+                "name_ar": "TX 550h+"
+            },
+            {
+                "name_en": "UX 200",
+                "name_ar": "UX 200"
+            },
+            {
+                "name_en": "UX 250h",
+                "name_ar": "UX 250h"
+            },
+            {
+                "name_en": "UX 300h",
+                "name_ar": "UX 300h"
+            }
+        ]
+    },
+    {
+        "name_en": "Lincoln",
+        "name_ar": "لينكولن",
+        "logo": "img\/cars\/lincoln-logo.png",
+        "models": [
+            {
+                "name_en": "Aviator",
+                "name_ar": "أفياتور"
+            },
+            {
+                "name_en": "Blackwood",
+                "name_ar": "بلاك وود"
+            },
+            {
+                "name_en": "Continental",
+                "name_ar": "كونتيننتال"
+            },
+            {
+                "name_en": "Corsair",
+                "name_ar": "كورسير"
+            },
+            {
+                "name_en": "LS",
+                "name_ar": "LS"
+            },
+            {
+                "name_en": "Mark LT",
+                "name_ar": "مارك LT"
+            },
+            {
+                "name_en": "Mark VI",
+                "name_ar": "مارك VI"
+            },
+            {
+                "name_en": "Mark VII",
+                "name_ar": "مارك VII"
+            },
+            {
+                "name_en": "Mark VIII",
+                "name_ar": "مارك VIII"
+            },
+            {
+                "name_en": "MKC",
+                "name_ar": "MKC"
+            },
+            {
+                "name_en": "MKS",
+                "name_ar": "MKS"
+            },
+            {
+                "name_en": "MKT",
+                "name_ar": "MKT"
+            },
+            {
+                "name_en": "MKT Town Car",
+                "name_ar": "MKT تاون كار"
+            },
+            {
+                "name_en": "MKX",
+                "name_ar": "MKX"
+            },
+            {
+                "name_en": "MKZ",
+                "name_ar": "MKZ"
+            },
+            {
+                "name_en": "MKZ Hybrid",
+                "name_ar": "MKZ هايبرد"
+            },
+            {
+                "name_en": "Nautilus",
+                "name_ar": "نوتيلوس"
+            },
+            {
+                "name_en": "Navigator",
+                "name_ar": "نافيجيتور"
+            },
+            {
+                "name_en": "Navigator L",
+                "name_ar": "نافيجيتور L"
+            },
+            {
+                "name_en": "Town Car",
+                "name_ar": "تاون كار"
+            },
+            {
+                "name_en": "Zephyr",
+                "name_ar": "زيفير"
+            }
+        ]
+    },
+    {
+        "name_en": "Lotus",
+        "name_ar": "لوتس",
+        "logo": "img\/cars\/lotus-logo.png",
+        "models": [
+            {
+                "name_en": "Elise",
+                "name_ar": "إيليز"
+            },
+            {
+                "name_en": "Emira",
+                "name_ar": "إميرا"
+            },
+            {
+                "name_en": "Esprit",
+                "name_ar": "إسبريت"
+            },
+            {
+                "name_en": "Evora",
+                "name_ar": "إيفورا"
+            },
+            {
+                "name_en": "Evora 400",
+                "name_ar": "إيفورا 400"
+            },
+            {
+                "name_en": "Evora GT",
+                "name_ar": "إيفورا GT"
+            },
+            {
+                "name_en": "Exige",
+                "name_ar": "إكسيج"
+            }
+        ]
+    },
+    {
+        "name_en": "Lucid",
+        "name_ar": "لوسيد",
+        "logo": "img\/cars\/lucid-logo.png",
+        "models": [
+            {
+                "name_en": "Air",
+                "name_ar": "إير"
+            }
+        ]
+    },
+    {
+        "name_en": "Maserati",
+        "name_ar": "مازيراتي",
+        "logo": "img\/cars\/maserati-logo.png",
+        "models": [
+            {
+                "name_en": "Coupe",
+                "name_ar": "كوبيه"
+            },
+            {
+                "name_en": "Ghibli",
+                "name_ar": "جيبلي"
+            },
+            {
+                "name_en": "GranCabrio",
+                "name_ar": "جران كابريو"
+            },
+            {
+                "name_en": "GranSport",
+                "name_ar": "جران سبورت"
+            },
+            {
+                "name_en": "GranTurismo",
+                "name_ar": "جران توريزمو"
+            },
+            {
+                "name_en": "Grecale",
+                "name_ar": "جريكالي"
+            },
+            {
+                "name_en": "Levante",
+                "name_ar": "ليفانتي"
+            },
+            {
+                "name_en": "MC20",
+                "name_ar": "MC20"
+            },
+            {
+                "name_en": "MC20 Cielo",
+                "name_ar": "MC20 تشيلو"
+            },
+            {
+                "name_en": "Quattroporte",
+                "name_ar": "كواتروبورتي"
+            },
+            {
+                "name_en": "Spyder",
+                "name_ar": "سبايدر"
+            }
+        ]
+    },
+    {
+        "name_en": "Maybach",
+        "name_ar": "مايباخ",
+        "logo": "img\/cars\/maybach-logo.png",
+        "models": [
+            {
+                "name_en": "57",
+                "name_ar": "57"
+            },
+            {
+                "name_en": "62",
+                "name_ar": "62"
+            }
+        ]
+    },
+    {
+        "name_en": "Mazda",
+        "name_ar": "مازدا",
+        "logo": "img\/cars\/mazda-logo.png",
+        "models": [
+            {
+                "name_en": "323",
+                "name_ar": "323"
+            },
+            {
+                "name_en": "626",
+                "name_ar": "626"
+            },
+            {
+                "name_en": "929",
+                "name_ar": "929"
+            },
+            {
+                "name_en": "B-Series",
+                "name_ar": "B-سيريز"
+            },
+            {
+                "name_en": "CX-3",
+                "name_ar": "CX-3"
+            },
+            {
+                "name_en": "CX-30",
+                "name_ar": "CX-30"
+            },
+            {
+                "name_en": "CX-5",
+                "name_ar": "CX-5"
+            },
+            {
+                "name_en": "CX-50",
+                "name_ar": "CX-50"
+            },
+            {
+                "name_en": "CX-7",
+                "name_ar": "CX-7"
+            },
+            {
+                "name_en": "CX-70",
+                "name_ar": "CX-70"
+            },
+            {
+                "name_en": "CX-9",
+                "name_ar": "CX-9"
+            },
+            {
+                "name_en": "CX-90",
+                "name_ar": "CX-90"
+            },
+            {
+                "name_en": "GLC",
+                "name_ar": "GLC"
+            },
+            {
+                "name_en": "Mazda2",
+                "name_ar": "مازدا2"
+            },
+            {
+                "name_en": "Mazda3",
+                "name_ar": "مازدا3"
+            },
+            {
+                "name_en": "Mazda3 Hatchback",
+                "name_ar": "مازدا3 هاتشباك"
+            },
+            {
+                "name_en": "Mazda3 Sedan",
+                "name_ar": "مازدا3 سيدان"
+            },
+            {
+                "name_en": "Mazda5",
+                "name_ar": "مازدا5"
+            },
+            {
+                "name_en": "Mazda6",
+                "name_ar": "مازدا6"
+            },
+            {
+                "name_en": "Mazdaspeed MX-5",
+                "name_ar": "مازدا سبيد MX-5"
+            },
+            {
+                "name_en": "Mazdaspeed Protege",
+                "name_ar": "مازدا سبيد بروتيجي"
+            },
+            {
+                "name_en": "Mazdaspeed3",
+                "name_ar": "مازدا سبيد3"
+            },
+            {
+                "name_en": "Mazdaspeed6",
+                "name_ar": "مازدا سبيد6"
+            },
+            {
+                "name_en": "Millenia",
+                "name_ar": "ميلينيا"
+            },
+            {
+                "name_en": "MPV",
+                "name_ar": "MPV"
+            },
+            {
+                "name_en": "MX-3",
+                "name_ar": "MX-3"
+            },
+            {
+                "name_en": "MX-30 EV",
+                "name_ar": "MX-30 EV"
+            },
+            {
+                "name_en": "MX-5 Miata",
+                "name_ar": "MX-5 مياتا"
+            },
+            {
+                "name_en": "MX-5 Miata RF",
+                "name_ar": "MX-5 مياتا RF"
+            },
+            {
+                "name_en": "MX-6",
+                "name_ar": "MX-6"
+            },
+            {
+                "name_en": "Navajo",
+                "name_ar": "نافاجو"
+            },
+            {
+                "name_en": "Protege",
+                "name_ar": "بروتيجي"
+            },
+            {
+                "name_en": "Protege5",
+                "name_ar": "بروتيجي5"
+            },
+            {
+                "name_en": "RX-7",
+                "name_ar": "RX-7"
+            },
+            {
+                "name_en": "RX-8",
+                "name_ar": "RX-8"
+            },
+            {
+                "name_en": "Tribute",
+                "name_ar": "تريبيوت"
+            },
+            {
+                "name_en": "Tribute Hybrid",
+                "name_ar": "تريبيوت هايبرد"
+            },
+            {
+                "name_en": "Truck",
+                "name_ar": "شاحنة"
+            }
+        ]
+    },
+    {
+        "name_en": "McLaren",
+        "name_ar": "ماكلارين",
+        "logo": "img\/cars\/mclaren-logo.png",
+        "models": [
+            {
+                "name_en": "570GT",
+                "name_ar": "570GT"
+            },
+            {
+                "name_en": "570S",
+                "name_ar": "570S"
+            },
+            {
+                "name_en": "570S Spider",
+                "name_ar": "570S سبايدر"
+            },
+            {
+                "name_en": "600LT",
+                "name_ar": "600LT"
+            },
+            {
+                "name_en": "600LT Spider",
+                "name_ar": "600LT سبايدر"
+            },
+            {
+                "name_en": "620R",
+                "name_ar": "620R"
+            },
+            {
+                "name_en": "650S Coupe",
+                "name_ar": "650S كوبيه"
+            },
+            {
+                "name_en": "650S Spider",
+                "name_ar": "650S سبايدر"
+            },
+            {
+                "name_en": "675LT",
+                "name_ar": "675LT"
+            },
+            {
+                "name_en": "675LT Spider",
+                "name_ar": "675LT سبايدر"
+            },
+            {
+                "name_en": "720S",
+                "name_ar": "720S"
+            },
+            {
+                "name_en": "720S Spider",
+                "name_ar": "720S سبايدر"
+            },
+            {
+                "name_en": "750S",
+                "name_ar": "750S"
+            },
+            {
+                "name_en": "750S Spider",
+                "name_ar": "750S سبايدر"
+            },
+            {
+                "name_en": "765LT",
+                "name_ar": "765LT"
+            },
+            {
+                "name_en": "765LT Spider",
+                "name_ar": "765LT سبايدر"
+            },
+            {
+                "name_en": "Artura",
+                "name_ar": "أرتورا"
+            },
+            {
+                "name_en": "Elva",
+                "name_ar": "إلفا"
+            },
+            {
+                "name_en": "GT",
+                "name_ar": "GT"
+            },
+            {
+                "name_en": "MP4-12C",
+                "name_ar": "MP4-12C"
+            },
+            {
+                "name_en": "MP4-12C Spider",
+                "name_ar": "MP4-12C سبايدر"
+            },
+            {
+                "name_en": "P1",
+                "name_ar": "P1"
+            },
+            {
+                "name_en": "Senna",
+                "name_ar": "سينا"
+            },
+            {
+                "name_en": "Speedtail",
+                "name_ar": "سبيدتيل"
+            }
+        ]
+    },
+    {
+        "name_en": "Mercedes-Benz",
+        "name_ar": "مرسيدس-بنز",
+        "logo": "img\/cars\/mercedes-benz-logo.png",
+        "models": [
+            {
+                "name_en": "190-Class",
+                "name_ar": "190-كلاس"
+            },
+            {
+                "name_en": "240-Class",
+                "name_ar": "240-كلاس"
+            },
+            {
+                "name_en": "260-Class",
+                "name_ar": "260-كلاس"
+            },
+            {
+                "name_en": "280-Class",
+                "name_ar": "280-كلاس"
+            },
+            {
+                "name_en": "300-Class",
+                "name_ar": "300-كلاس"
+            },
+            {
+                "name_en": "350-Class",
+                "name_ar": "350-كلاس"
+            },
+            {
+                "name_en": "380-Class",
+                "name_ar": "380-كلاس"
+            },
+            {
+                "name_en": "400-Class",
+                "name_ar": "400-كلاس"
+            },
+            {
+                "name_en": "420-Class",
+                "name_ar": "420-كلاس"
+            },
+            {
+                "name_en": "500-Class",
+                "name_ar": "500-كلاس"
+            },
+            {
+                "name_en": "560-Class",
+                "name_ar": "560-كلاس"
+            },
+            {
+                "name_en": "600-Class",
+                "name_ar": "600-كلاس"
+            },
+            {
+                "name_en": "A-Class",
+                "name_ar": "A-كلاس"
+            },
+            {
+                "name_en": "AMG GT",
+                "name_ar": "AMG GT"
+            },
+            {
+                "name_en": "B-Class",
+                "name_ar": "B-كلاس"
+            },
+            {
+                "name_en": "C-Class",
+                "name_ar": "C-كلاس"
+            },
+            {
+                "name_en": "CL-Class",
+                "name_ar": "CL-كلاس"
+            },
+            {
+                "name_en": "CLA",
+                "name_ar": "CLA"
+            },
+            {
+                "name_en": "CLE",
+                "name_ar": "CLE"
+            },
+            {
+                "name_en": "CLK",
+                "name_ar": "CLK"
+            },
+            {
+                "name_en": "CLS",
+                "name_ar": "CLS"
+            },
+            {
+                "name_en": "E-Class",
+                "name_ar": "E-كلاس"
+            },
+            {
+                "name_en": "EQB",
+                "name_ar": "EQB"
+            },
+            {
+                "name_en": "EQC",
+                "name_ar": "EQC"
+            },
+            {
+                "name_en": "EQE",
+                "name_ar": "EQE"
+            },
+            {
+                "name_en": "EQS",
+                "name_ar": "EQS"
+            },
+            {
+                "name_en": "eSprinter",
+                "name_ar": "eSprinter"
+            },
+            {
+                "name_en": "G-Class",
+                "name_ar": "G-كلاس"
+            },
+            {
+                "name_en": "GL-Class",
+                "name_ar": "GL-كلاس"
+            },
+            {
+                "name_en": "GLA",
+                "name_ar": "GLA"
+            },
+            {
+                "name_en": "GLB",
+                "name_ar": "GLB"
+            },
+            {
+                "name_en": "GLC",
+                "name_ar": "GLC"
+            },
+            {
+                "name_en": "GLE",
+                "name_ar": "GLE"
+            },
+            {
+                "name_en": "GLK",
+                "name_ar": "GLK"
+            },
+            {
+                "name_en": "GLS",
+                "name_ar": "GLS"
+            },
+            {
+                "name_en": "M-Class",
+                "name_ar": "M-كلاس"
+            },
+            {
+                "name_en": "Metris",
+                "name_ar": "ميتريس"
+            },
+            {
+                "name_en": "R-Class",
+                "name_ar": "R-كلاس"
+            },
+            {
+                "name_en": "S-Class",
+                "name_ar": "S-كلاس"
+            },
+            {
+                "name_en": "SL-Class",
+                "name_ar": "SL-كلاس"
+            },
+            {
+                "name_en": "SLC",
+                "name_ar": "SLC"
+            },
+            {
+                "name_en": "SLK",
+                "name_ar": "SLK"
+            },
+            {
+                "name_en": "SLR",
+                "name_ar": "SLR"
+            },
+            {
+                "name_en": "SLS AMG",
+                "name_ar": "SLS AMG"
+            },
+            {
+                "name_en": "Sprinter",
+                "name_ar": "سبرينتر"
+            },
+            {
+                "name_en": "Sprinter Worker",
+                "name_ar": "سبرينتر وركر"
+            }
+        ]
+    },
+    {
+        "name_en": "Mercury",
+        "name_ar": "ميركوري",
+        "logo": "img\/cars\/mercury-logo.png",
+        "models": [
+            {
+                "name_en": "Capri",
+                "name_ar": "كابري"
+            },
+            {
+                "name_en": "Cougar",
+                "name_ar": "كوغار"
+            },
+            {
+                "name_en": "Grand Marquis",
+                "name_ar": "جراند ماركيز"
+            },
+            {
+                "name_en": "LN7",
+                "name_ar": "LN7"
+            },
+            {
+                "name_en": "Lynx",
+                "name_ar": "لينكس"
+            },
+            {
+                "name_en": "Marauder",
+                "name_ar": "مارودر"
+            },
+            {
+                "name_en": "Mariner",
+                "name_ar": "مارينر"
+            },
+            {
+                "name_en": "Mariner Hybrid",
+                "name_ar": "مارينر هايبرد"
+            },
+            {
+                "name_en": "Marquis",
+                "name_ar": "ماركيز"
+            },
+            {
+                "name_en": "Milan",
+                "name_ar": "ميلان"
+            },
+            {
+                "name_en": "Milan Hybrid",
+                "name_ar": "ميلان هايبرد"
+            },
+            {
+                "name_en": "Montego",
+                "name_ar": "مونتيجو"
+            },
+            {
+                "name_en": "Monterey",
+                "name_ar": "مونتيري"
+            },
+            {
+                "name_en": "Mountaineer",
+                "name_ar": "ماونتينير"
+            },
+            {
+                "name_en": "Mystique",
+                "name_ar": "ميستيك"
+            },
+            {
+                "name_en": "Sable",
+                "name_ar": "سيبل"
+            },
+            {
+                "name_en": "Topaz",
+                "name_ar": "توباز"
+            },
+            {
+                "name_en": "Tracer",
+                "name_ar": "ترايسر"
+            },
+            {
+                "name_en": "Villager",
+                "name_ar": "فيليجر"
+            },
+            {
+                "name_en": "Zephyr",
+                "name_ar": "زيفير"
+            }
+        ]
+    },
+    {
+        "name_en": "MINI",
+        "name_ar": "ميني",
+        "logo": "img\/cars\/mini-logo.png",
+        "models": [
+            {
+                "name_en": "Clubman",
+                "name_ar": "كلوبمان"
+            },
+            {
+                "name_en": "Convertible",
+                "name_ar": "كابريوليه"
+            },
+            {
+                "name_en": "Cooper",
+                "name_ar": "كوبر"
+            },
+            {
+                "name_en": "Cooper Clubman",
+                "name_ar": "كوبر كلوبمان"
+            },
+            {
+                "name_en": "Cooper Convertible",
+                "name_ar": "كوبر كابريوليه"
+            },
+            {
+                "name_en": "Cooper Countryman",
+                "name_ar": "كوبر كنتريمان"
+            },
+            {
+                "name_en": "Cooper Coupe",
+                "name_ar": "كوبر كوبيه"
+            },
+            {
+                "name_en": "Cooper Roadster",
+                "name_ar": "كوبر رودستر"
+            },
+            {
+                "name_en": "Countryman",
+                "name_ar": "كنتريمان"
+            },
+            {
+                "name_en": "Countryman Plug-in Hybrid",
+                "name_ar": "كنتريمان الهجينة القابلة للشحن"
+            },
+            {
+                "name_en": "Coupe",
+                "name_ar": "كوبيه"
+            },
+            {
+                "name_en": "Hardtop 2 Door",
+                "name_ar": "هاتشباك 2 باب"
+            },
+            {
+                "name_en": "Hardtop 4 Door",
+                "name_ar": "هاتشباك 4 أبواب"
+            },
+            {
+                "name_en": "Mini E",
+                "name_ar": "ميني إي"
+            },
+            {
+                "name_en": "Paceman",
+                "name_ar": "بايسمان"
+            },
+            {
+                "name_en": "Roadster",
+                "name_ar": "رودستر"
+            }
+        ]
+    },
+    {
+        "name_en": "Mitsubishi",
+        "name_ar": "ميتسوبيشي",
+        "logo": "img\/cars\/mitsubishi-logo.png",
+        "models": [
+            {
+                "name_en": "3000GT",
+                "name_ar": "3000GT"
+            },
+            {
+                "name_en": "Cordia",
+                "name_ar": "كورديا"
+            },
+            {
+                "name_en": "Diamante",
+                "name_ar": "ديامانتي"
+            },
+            {
+                "name_en": "Eclipse",
+                "name_ar": "إكليبس"
+            },
+            {
+                "name_en": "Eclipse Cross",
+                "name_ar": "إكليبس كروس"
+            },
+            {
+                "name_en": "Eclipse Spyder",
+                "name_ar": "إكليبس سبايدر"
+            },
+            {
+                "name_en": "Endeavor",
+                "name_ar": "إنديفور"
+            },
+            {
+                "name_en": "Expo",
+                "name_ar": "إكسبو"
+            },
+            {
+                "name_en": "Galant",
+                "name_ar": "جالانت"
+            },
+            {
+                "name_en": "i-MiEV",
+                "name_ar": "i-MiEV"
+            },
+            {
+                "name_en": "Lancer",
+                "name_ar": "لانسر"
+            },
+            {
+                "name_en": "Lancer Evolution",
+                "name_ar": "لانسر إيفولوشن"
+            },
+            {
+                "name_en": "Lancer Sportback",
+                "name_ar": "لانسر سبورتباك"
+            },
+            {
+                "name_en": "Mighty Max",
+                "name_ar": "مايتي ماكس"
+            },
+            {
+                "name_en": "Mirage",
+                "name_ar": "ميراج"
+            },
+            {
+                "name_en": "Mirage G4",
+                "name_ar": "ميراج G4"
+            },
+            {
+                "name_en": "Montero",
+                "name_ar": "مونتيرو"
+            },
+            {
+                "name_en": "Montero Sport",
+                "name_ar": "مونتيرو سبورت"
+            },
+            {
+                "name_en": "Outlander",
+                "name_ar": "أوتلاندر"
+            },
+            {
+                "name_en": "Outlander PHEV",
+                "name_ar": "أوتلاندر PHEV"
+            },
+            {
+                "name_en": "Outlander Sport",
+                "name_ar": "أوتلاندر سبورت"
+            },
+            {
+                "name_en": "Precis",
+                "name_ar": "بريسيس"
+            },
+            {
+                "name_en": "Raider",
+                "name_ar": "رايدر"
+            },
+            {
+                "name_en": "Sigma",
+                "name_ar": "سيجما"
+            },
+            {
+                "name_en": "Starion",
+                "name_ar": "ستاريون"
+            },
+            {
+                "name_en": "Tredia",
+                "name_ar": "تريديا"
+            },
+            {
+                "name_en": "Truck",
+                "name_ar": "شاحنة"
+            },
+            {
+                "name_en": "Vanwagon",
+                "name_ar": "فان واجون"
+            }
+        ]
+    },
+    {
+        "name_en": "Nissan",
+        "name_ar": "نيسان",
+        "logo": "img\/cars\/nissan-logo.png",
+        "models": [
+            {
+                "name_en": "200SX",
+                "name_ar": "200SX"
+            },
+            {
+                "name_en": "240SX",
+                "name_ar": "240SX"
+            },
+            {
+                "name_en": "300ZX",
+                "name_ar": "300ZX"
+            },
+            {
+                "name_en": "350Z",
+                "name_ar": "350Z"
+            },
+            {
+                "name_en": "370Z",
+                "name_ar": "370Z"
+            },
+            {
+                "name_en": "Altima",
+                "name_ar": "ألتيما"
+            },
+            {
+                "name_en": "Altima Hybrid",
+                "name_ar": "ألتيما هجينة"
+            },
+            {
+                "name_en": "Ariya",
+                "name_ar": "أريا"
+            },
+            {
+                "name_en": "Armada",
+                "name_ar": "أرمادا"
+            },
+            {
+                "name_en": "Axxess",
+                "name_ar": "أكسس"
+            },
+            {
+                "name_en": "cube",
+                "name_ar": "كيوب"
+            },
+            {
+                "name_en": "Frontier",
+                "name_ar": "فرونتير"
+            },
+            {
+                "name_en": "GT-R",
+                "name_ar": "جي تي-آر"
+            },
+            {
+                "name_en": "JUKE",
+                "name_ar": "جوك"
+            },
+            {
+                "name_en": "Kicks",
+                "name_ar": "كيكس"
+            },
+            {
+                "name_en": "LEAF",
+                "name_ar": "ليف"
+            },
+            {
+                "name_en": "Maxima",
+                "name_ar": "ماكسيما"
+            },
+            {
+                "name_en": "Murano",
+                "name_ar": "مورانو"
+            },
+            {
+                "name_en": "Murano CrossCabriolet",
+                "name_ar": "مورانو كروس كابريوليه"
+            },
+            {
+                "name_en": "Murano Hybrid",
+                "name_ar": "مورانو هجينة"
+            },
+            {
+                "name_en": "NV",
+                "name_ar": "NV"
+            },
+            {
+                "name_en": "NV200",
+                "name_ar": "NV200"
+            },
+            {
+                "name_en": "NX",
+                "name_ar": "NX"
+            },
+            {
+                "name_en": "Pathfinder",
+                "name_ar": "باثفايندر"
+            },
+            {
+                "name_en": "Pathfinder Hybrid",
+                "name_ar": "باثفايندر هجينة"
+            },
+            {
+                "name_en": "Pickup",
+                "name_ar": "بيك أب"
+            },
+            {
+                "name_en": "Pulsar",
+                "name_ar": "بولسار"
+            },
+            {
+                "name_en": "Quest",
+                "name_ar": "كويست"
+            },
+            {
+                "name_en": "Rogue",
+                "name_ar": "روغ"
+            },
+            {
+                "name_en": "Rogue Hybrid",
+                "name_ar": "روغ هجينة"
+            },
+            {
+                "name_en": "Rogue Sport",
+                "name_ar": "روغ سبورت"
+            },
+            {
+                "name_en": "Sentra",
+                "name_ar": "سينترا"
+            },
+            {
+                "name_en": "Stanza",
+                "name_ar": "ستانزا"
+            },
+            {
+                "name_en": "Titan",
+                "name_ar": "تايتان"
+            },
+            {
+                "name_en": "Titan XD",
+                "name_ar": "تايتان XD"
+            },
+            {
+                "name_en": "Truck",
+                "name_ar": "شاحنة"
+            },
+            {
+                "name_en": "Van",
+                "name_ar": "فان"
+            },
+            {
+                "name_en": "Versa",
+                "name_ar": "فيرسا"
+            },
+            {
+                "name_en": "Versa Note",
+                "name_ar": "فيرسا نوت"
+            },
+            {
+                "name_en": "Xterra",
+                "name_ar": "إكستيرا"
+            },
+            {
+                "name_en": "Z",
+                "name_ar": "زد"
+            }
+        ]
+    },
+    {
+        "name_en": "Oldsmobile",
+        "name_ar": "أولدزموبيل",
+        "logo": "img\/cars\/oldsmobile-logo.png",
+        "models": [
+            {
+                "name_en": "Achieva",
+                "name_ar": "أشيفا"
+            },
+            {
+                "name_en": "Alero",
+                "name_ar": "أليرو"
+            },
+            {
+                "name_en": "Aurora",
+                "name_ar": "أورورا"
+            },
+            {
+                "name_en": "Bravada",
+                "name_ar": "برافادا"
+            },
+            {
+                "name_en": "Ciera",
+                "name_ar": "سييرا"
+            },
+            {
+                "name_en": "Custom Cruiser",
+                "name_ar": "كوستوم كروزر"
+            },
+            {
+                "name_en": "Cutlass",
+                "name_ar": "كاتلاس"
+            },
+            {
+                "name_en": "Cutlass Calais",
+                "name_ar": "كاتلاس كاليه"
+            },
+            {
+                "name_en": "Cutlass Ciera",
+                "name_ar": "كاتلاس سييرا"
+            },
+            {
+                "name_en": "Cutlass Cruiser",
+                "name_ar": "كاتلاس كروزر"
+            },
+            {
+                "name_en": "Cutlass Salon",
+                "name_ar": "كاتلاس صالون"
+            },
+            {
+                "name_en": "Cutlass Supreme",
+                "name_ar": "كاتلاس سوبريم"
+            },
+            {
+                "name_en": "Delta Eighty-Eight",
+                "name_ar": "دلتا 88"
+            },
+            {
+                "name_en": "Delta Eighty-Eight Royale",
+                "name_ar": "دلتا 88 رويال"
+            },
+            {
+                "name_en": "Eighty-Eight",
+                "name_ar": "88"
+            },
+            {
+                "name_en": "Eighty-Eight Royale",
+                "name_ar": "88 رويال"
+            },
+            {
+                "name_en": "Firenza",
+                "name_ar": "فيرينزا"
+            },
+            {
+                "name_en": "Intrigue",
+                "name_ar": "إنترجي"
+            },
+            {
+                "name_en": "LSS",
+                "name_ar": "LSS"
+            },
+            {
+                "name_en": "Ninety-Eight",
+                "name_ar": "98"
+            },
+            {
+                "name_en": "Omega",
+                "name_ar": "أوميغا"
+            },
+            {
+                "name_en": "Regency",
+                "name_ar": "ريجينسي"
+            },
+            {
+                "name_en": "Silhouette",
+                "name_ar": "سيليويت"
+            },
+            {
+                "name_en": "Toronado",
+                "name_ar": "تورونادو"
+            }
+        ]
+    },
+    {
+        "name_en": "Panoz",
+        "name_ar": "بانوز",
+        "logo": "img\/cars\/panoz-logo.png",
+        "models": [
+            {
+                "name_en": "Esperante",
+                "name_ar": "إسبيرانتي"
+            }
+        ]
+    },
+    {
+        "name_en": "Plymouth",
+        "name_ar": "بليموث",
+        "logo": "img\/cars\/plymouth-logo.png",
+        "models": [
+            {
+                "name_en": "Acclaim",
+                "name_ar": "أكليم"
+            },
+            {
+                "name_en": "Arrow",
+                "name_ar": "آرو"
+            },
+            {
+                "name_en": "Breeze",
+                "name_ar": "بريز"
+            },
+            {
+                "name_en": "Caravelle",
+                "name_ar": "كارافيل"
+            },
+            {
+                "name_en": "Champ",
+                "name_ar": "شامب"
+            },
+            {
+                "name_en": "Colt",
+                "name_ar": "كولت"
+            },
+            {
+                "name_en": "Gran Fury",
+                "name_ar": "جران فيوري"
+            },
+            {
+                "name_en": "Grand Voyager",
+                "name_ar": "جراند فوييجر"
+            },
+            {
+                "name_en": "Horizon",
+                "name_ar": "هورايزون"
+            },
+            {
+                "name_en": "Laser",
+                "name_ar": "ليزر"
+            },
+            {
+                "name_en": "Neon",
+                "name_ar": "نيون"
+            },
+            {
+                "name_en": "Prowler",
+                "name_ar": "بروولر"
+            },
+            {
+                "name_en": "Reliant K",
+                "name_ar": "ريليانت كيه"
+            },
+            {
+                "name_en": "Reliant K America",
+                "name_ar": "ريليانت كيه أمريكا"
+            },
+            {
+                "name_en": "Sapporo",
+                "name_ar": "سابورو"
+            },
+            {
+                "name_en": "Scamp",
+                "name_ar": "سكامب"
+            },
+            {
+                "name_en": "Sundance",
+                "name_ar": "صندانس"
+            },
+            {
+                "name_en": "TC3",
+                "name_ar": "TC3"
+            },
+            {
+                "name_en": "Trailduster",
+                "name_ar": "ترايلدستر"
+            },
+            {
+                "name_en": "Turismo",
+                "name_ar": "توريسمو"
+            },
+            {
+                "name_en": "Voyager",
+                "name_ar": "فوييجر"
+            }
+        ]
+    },
+    {
+        "name_en": "Polestar",
+        "name_ar": "بولستار",
+        "logo": "img\/cars\/polestar-logo.png",
+        "models": [
+            {
+                "name_en": "1",
+                "name_ar": "1"
+            },
+            {
+                "name_en": "2",
+                "name_ar": "2"
+            }
+        ]
+    },
+    {
+        "name_en": "Pontiac",
+        "name_ar": "بونتياك",
+        "logo": "img\/cars\/pontiac-logo.png",
+        "models": [
+            {
+                "name_en": "1000",
+                "name_ar": "1000"
+            },
+            {
+                "name_en": "2000",
+                "name_ar": "2000"
+            },
+            {
+                "name_en": "6000",
+                "name_ar": "6000"
+            },
+            {
+                "name_en": "Aztek",
+                "name_ar": "أزتيك"
+            },
+            {
+                "name_en": "Bonneville",
+                "name_ar": "بونيفيل"
+            },
+            {
+                "name_en": "Catalina",
+                "name_ar": "كاتالينا"
+            },
+            {
+                "name_en": "Fiero",
+                "name_ar": "فييرو"
+            },
+            {
+                "name_en": "Firebird",
+                "name_ar": "فايربيرد"
+            },
+            {
+                "name_en": "G3",
+                "name_ar": "G3"
+            },
+            {
+                "name_en": "G5",
+                "name_ar": "G5"
+            },
+            {
+                "name_en": "G6",
+                "name_ar": "G6"
+            },
+            {
+                "name_en": "G8",
+                "name_ar": "G8"
+            },
+            {
+                "name_en": "Grand Am",
+                "name_ar": "جراند آم"
+            },
+            {
+                "name_en": "Grand Le Mans",
+                "name_ar": "جراند ليمانز"
+            },
+            {
+                "name_en": "Grand Prix",
+                "name_ar": "جراند بريكس"
+            },
+            {
+                "name_en": "GTO",
+                "name_ar": "GTO"
+            },
+            {
+                "name_en": "Le Mans",
+                "name_ar": "ليمانز"
+            },
+            {
+                "name_en": "Montana",
+                "name_ar": "مونتانا"
+            },
+            {
+                "name_en": "Montana SV6",
+                "name_ar": "مونتانا SV6"
+            },
+            {
+                "name_en": "Parisienne",
+                "name_ar": "باريسيان"
+            },
+            {
+                "name_en": "Phoenix",
+                "name_ar": "فينيكس"
+            },
+            {
+                "name_en": "Safari",
+                "name_ar": "سفاري"
+            },
+            {
+                "name_en": "Solstice",
+                "name_ar": "سولستيس"
+            },
+            {
+                "name_en": "Sunbird",
+                "name_ar": "صن بيرد"
+            },
+            {
+                "name_en": "Sunfire",
+                "name_ar": "صن فاير"
+            },
+            {
+                "name_en": "T1000",
+                "name_ar": "T1000"
+            },
+            {
+                "name_en": "Torrent",
+                "name_ar": "تورنت"
+            },
+            {
+                "name_en": "Trans Sport",
+                "name_ar": "ترانس سبورت"
+            },
+            {
+                "name_en": "Vibe",
+                "name_ar": "فايب"
+            }
+        ]
+    },
+    {
+        "name_en": "Porsche",
+        "name_ar": "بورشه",
+        "logo": "img\/cars\/porsche-logo.png",
+        "models": [
+            {
+                "name_en": "718 Boxster",
+                "name_ar": "718 بوكستر"
+            },
+            {
+                "name_en": "718 Cayman",
+                "name_ar": "718 كايمان"
+            },
+            {
+                "name_en": "911",
+                "name_ar": "911"
+            },
+            {
+                "name_en": "918 Spyder",
+                "name_ar": "918 سبايدر"
+            },
+            {
+                "name_en": "924",
+                "name_ar": "924"
+            },
+            {
+                "name_en": "928",
+                "name_ar": "928"
+            },
+            {
+                "name_en": "944",
+                "name_ar": "944"
+            },
+            {
+                "name_en": "968",
+                "name_ar": "968"
+            },
+            {
+                "name_en": "Boxster",
+                "name_ar": "بوكستر"
+            },
+            {
+                "name_en": "Carrera GT",
+                "name_ar": "كاريرا GT"
+            },
+            {
+                "name_en": "Cayenne",
+                "name_ar": "كايين"
+            },
+            {
+                "name_en": "Cayman",
+                "name_ar": "كايمان"
+            },
+            {
+                "name_en": "Macan",
+                "name_ar": "ماكان"
+            },
+            {
+                "name_en": "Panamera",
+                "name_ar": "باناميرا"
+            },
+            {
+                "name_en": "Taycan",
+                "name_ar": "تايكان"
+            }
+        ]
+    },
+    {
+        "name_en": "Ram",
+        "name_ar": "رام",
+        "logo": "img\/cars\/ram-logo.png",
+        "models": [
+            {
+                "name_en": "1500",
+                "name_ar": "1500"
+            },
+            {
+                "name_en": "1500 Classic",
+                "name_ar": "1500 كلاسيك"
+            },
+            {
+                "name_en": "2500",
+                "name_ar": "2500"
+            },
+            {
+                "name_en": "3500",
+                "name_ar": "3500"
+            },
+            {
+                "name_en": "C\/V",
+                "name_ar": "C\/V"
+            },
+            {
+                "name_en": "Dakota",
+                "name_ar": "داكوتا"
+            },
+            {
+                "name_en": "ProMaster",
+                "name_ar": "برومستر"
+            },
+            {
+                "name_en": "ProMaster City",
+                "name_ar": "برومستر سيتي"
+            },
+            {
+                "name_en": "ProMaster EV",
+                "name_ar": "برومستر EV"
+            },
+            {
+                "name_en": "Ram Pickup 1500 Classic",
+                "name_ar": "رام بيك أب 1500 كلاسيك"
+            }
+        ]
+    },
+    {
+        "name_en": "Rivian",
+        "name_ar": "ريفيان",
+        "logo": "img\/cars\/rivian-logo.png",
+        "models": [
+            {
+                "name_en": "R1S",
+                "name_ar": "R1S"
+            },
+            {
+                "name_en": "R1T",
+                "name_ar": "R1T"
+            }
+        ]
+    },
+    {
+        "name_en": "Rolls-Royce",
+        "name_ar": "رولز رويس",
+        "logo": "img\/cars\/rolls-royce-logo.png",
+        "models": [
+            {
+                "name_en": "Corniche",
+                "name_ar": "كورنيش"
+            },
+            {
+                "name_en": "Cullinan",
+                "name_ar": "كولينان"
+            },
+            {
+                "name_en": "Dawn",
+                "name_ar": "داون"
+            },
+            {
+                "name_en": "Ghost",
+                "name_ar": "جوست"
+            },
+            {
+                "name_en": "Ghost Series II",
+                "name_ar": "جوست سيريز II"
+            },
+            {
+                "name_en": "Park Ward",
+                "name_ar": "بارك وارد"
+            },
+            {
+                "name_en": "Phantom",
+                "name_ar": "فانتوم"
+            },
+            {
+                "name_en": "Phantom Coupe",
+                "name_ar": "فانتوم كوبيه"
+            },
+            {
+                "name_en": "Phantom Drophead Coupe",
+                "name_ar": "فانتوم دروبهيد كوبيه"
+            },
+            {
+                "name_en": "Silver Seraph",
+                "name_ar": "سيلفر سيراف"
+            },
+            {
+                "name_en": "Spectre",
+                "name_ar": "سبكتر"
+            },
+            {
+                "name_en": "Wraith",
+                "name_ar": "ريث"
+            }
+        ]
+    },
+    {
+        "name_en": "Saab",
+        "name_ar": "ساب",
+        "logo": "img\/cars\/saab-logo.png",
+        "models": [
+            {
+                "name_en": "9-2X",
+                "name_ar": "9-2X"
+            },
+            {
+                "name_en": "9-3",
+                "name_ar": "9-3"
+            },
+            {
+                "name_en": "9-3 Griffin",
+                "name_ar": "9-3 غريفين"
+            },
+            {
+                "name_en": "9-3X",
+                "name_ar": "9-3X"
+            },
+            {
+                "name_en": "9-4X",
+                "name_ar": "9-4X"
+            },
+            {
+                "name_en": "9-5",
+                "name_ar": "9-5"
+            },
+            {
+                "name_en": "9-7X",
+                "name_ar": "9-7X"
+            },
+            {
+                "name_en": "900",
+                "name_ar": "900"
+            },
+            {
+                "name_en": "9000",
+                "name_ar": "9000"
+            }
+        ]
+    },
+    {
+        "name_en": "Saturn",
+        "name_ar": "ساتورن",
+        "logo": "img\/cars\/saturn-logo.png",
+        "models": [
+            {
+                "name_en": "Astra",
+                "name_ar": "أسترا"
+            },
+            {
+                "name_en": "Aura",
+                "name_ar": "أورا"
+            },
+            {
+                "name_en": "Ion",
+                "name_ar": "أيُون"
+            },
+            {
+                "name_en": "Ion Red Line",
+                "name_ar": "أيُون ريد لاين"
+            },
+            {
+                "name_en": "L-Series",
+                "name_ar": "إل-سيريز"
+            },
+            {
+                "name_en": "L300",
+                "name_ar": "إل300"
+            },
+            {
+                "name_en": "Outlook",
+                "name_ar": "أوتلوك"
+            },
+            {
+                "name_en": "Relay",
+                "name_ar": "ريلاي"
+            },
+            {
+                "name_en": "S-Series",
+                "name_ar": "إس-سيريز"
+            },
+            {
+                "name_en": "SKY",
+                "name_ar": "سكاي"
+            },
+            {
+                "name_en": "Vue",
+                "name_ar": "فيو"
+            }
+        ]
+    },
+    {
+        "name_en": "Scion",
+        "name_ar": "سايون",
+        "logo": "img\/cars\/scion-logo.png",
+        "models": [
+            {
+                "name_en": "FR-S",
+                "name_ar": "FR-S"
+            },
+            {
+                "name_en": "iA",
+                "name_ar": "iA"
+            },
+            {
+                "name_en": "iM",
+                "name_ar": "iM"
+            },
+            {
+                "name_en": "iQ",
+                "name_ar": "iQ"
+            },
+            {
+                "name_en": "iQ EV",
+                "name_ar": "iQ EV"
+            },
+            {
+                "name_en": "tC",
+                "name_ar": "tC"
+            },
+            {
+                "name_en": "xA",
+                "name_ar": "xA"
+            },
+            {
+                "name_en": "xB",
+                "name_ar": "xB"
+            },
+            {
+                "name_en": "xD",
+                "name_ar": "xD"
+            }
+        ]
+    },
+    {
+        "name_en": "Smart",
+        "name_ar": "سمارت",
+        "logo": "img\/cars\/smart-logo.png",
+        "models": [
+            {
+                "name_en": "EQ fortwo",
+                "name_ar": "EQ فورتو"
+            },
+            {
+                "name_en": "fortwo",
+                "name_ar": "فورتو"
+            },
+            {
+                "name_en": "fortwo electric drive",
+                "name_ar": "فورتو الكهربائية"
+            }
+        ]
+    },
+    {
+        "name_en": "Sterling",
+        "name_ar": "ستيرلينغ",
+        "logo": "img\/cars\/sterling-logo.png",
+        "models": [
+            {
+                "name_en": "825",
+                "name_ar": "825"
+            },
+            {
+                "name_en": "827",
+                "name_ar": "827"
+            }
+        ]
+    },
+    {
+        "name_en": "Subaru",
+        "name_ar": "سوبارو",
+        "logo": "img\/cars\/subaru-logo.png",
+        "models": [
+            {
+                "name_en": "Ascent",
+                "name_ar": "أسينت"
+            },
+            {
+                "name_en": "B9 Tribeca",
+                "name_ar": "B9 تريبيكا"
+            },
+            {
+                "name_en": "Baja",
+                "name_ar": "باجا"
+            },
+            {
+                "name_en": "Brat",
+                "name_ar": "برات"
+            },
+            {
+                "name_en": "BRZ",
+                "name_ar": "BRZ"
+            },
+            {
+                "name_en": "Crosstrek",
+                "name_ar": "كروس تريك"
+            },
+            {
+                "name_en": "DL",
+                "name_ar": "DL"
+            },
+            {
+                "name_en": "Forester",
+                "name_ar": "فورستر"
+            },
+            {
+                "name_en": "GL",
+                "name_ar": "GL"
+            },
+            {
+                "name_en": "GL-10",
+                "name_ar": "GL-10"
+            },
+            {
+                "name_en": "GLF",
+                "name_ar": "GLF"
+            },
+            {
+                "name_en": "Impreza",
+                "name_ar": "إمبريزا"
+            },
+            {
+                "name_en": "Justy",
+                "name_ar": "جوستي"
+            },
+            {
+                "name_en": "Legacy",
+                "name_ar": "ليجاسي"
+            },
+            {
+                "name_en": "Loyale",
+                "name_ar": "لويال"
+            },
+            {
+                "name_en": "Outback",
+                "name_ar": "آوتباك"
+            },
+            {
+                "name_en": "RX",
+                "name_ar": "RX"
+            },
+            {
+                "name_en": "Solterra",
+                "name_ar": "سولتيرا"
+            },
+            {
+                "name_en": "Standard",
+                "name_ar": "ستاندارد"
+            },
+            {
+                "name_en": "SVX",
+                "name_ar": "SVX"
+            },
+            {
+                "name_en": "Tribeca",
+                "name_ar": "تريبيكا"
+            },
+            {
+                "name_en": "WRX",
+                "name_ar": "WRX"
+            },
+            {
+                "name_en": "XT",
+                "name_ar": "XT"
+            }
+        ]
+    },
+    {
+        "name_en": "Suzuki",
+        "name_ar": "سوزوكي",
+        "logo": "img\/cars\/suzuki-logo.png",
+        "models": [
+            {
+                "name_en": "Aerio",
+                "name_ar": "إيريو"
+            },
+            {
+                "name_en": "Equator",
+                "name_ar": "إكواتور"
+            },
+            {
+                "name_en": "Esteem",
+                "name_ar": "إستييم"
+            },
+            {
+                "name_en": "Forenza",
+                "name_ar": "فورينزا"
+            },
+            {
+                "name_en": "Grand Vitara",
+                "name_ar": "جراند فيتارا"
+            },
+            {
+                "name_en": "Kizashi",
+                "name_ar": "كيزاشي"
+            },
+            {
+                "name_en": "Reno",
+                "name_ar": "رينو"
+            },
+            {
+                "name_en": "Samurai",
+                "name_ar": "ساموراي"
+            },
+            {
+                "name_en": "Sidekick",
+                "name_ar": "سايد كيك"
+            },
+            {
+                "name_en": "Swift",
+                "name_ar": "سويفت"
+            },
+            {
+                "name_en": "SX4",
+                "name_ar": "SX4"
+            },
+            {
+                "name_en": "SX4 Crossover",
+                "name_ar": "SX4 كروس أوفر"
+            },
+            {
+                "name_en": "SX4 Sport",
+                "name_ar": "SX4 سبورت"
+            },
+            {
+                "name_en": "SX4 Sportback",
+                "name_ar": "SX4 سبورتباك"
+            },
+            {
+                "name_en": "Verona",
+                "name_ar": "فيرونا"
+            },
+            {
+                "name_en": "Vitara",
+                "name_ar": "فيتارا"
+            },
+            {
+                "name_en": "X-90",
+                "name_ar": "X-90"
+            },
+            {
+                "name_en": "XL7",
+                "name_ar": "XL7"
+            }
+        ]
+    },
+    {
+        "name_en": "Tesla",
+        "name_ar": "تسلا",
+        "logo": "img\/cars\/tesla-logo.png",
+        "models": [
+            {
+                "name_en": "Cybertruck",
+                "name_ar": "سايبرتراك"
+            },
+            {
+                "name_en": "Model 3",
+                "name_ar": "موديل 3"
+            },
+            {
+                "name_en": "Model S",
+                "name_ar": "موديل S"
+            },
+            {
+                "name_en": "Model X",
+                "name_ar": "موديل X"
+            },
+            {
+                "name_en": "Model Y",
+                "name_ar": "موديل Y"
+            },
+            {
+                "name_en": "Roadster",
+                "name_ar": "رودستر"
+            }
+        ]
+    },
+    {
+        "name_en": "Toyota",
+        "name_ar": "تويوتا",
+        "logo": "img\/cars\/toyota-logo.png",
+        "models": [
+            {
+                "name_en": "4Runner",
+                "name_ar": "4رانر"
+            },
+            {
+                "name_en": "86",
+                "name_ar": "86"
+            },
+            {
+                "name_en": "Avalon",
+                "name_ar": "أفالون"
+            },
+            {
+                "name_en": "Avalon Hybrid",
+                "name_ar": "أفالون هايبرد"
+            },
+            {
+                "name_en": "bZ4X",
+                "name_ar": "bZ4X"
+            },
+            {
+                "name_en": "C-HR",
+                "name_ar": "C-HR"
+            },
+            {
+                "name_en": "Camry",
+                "name_ar": "كامري"
+            },
+            {
+                "name_en": "Camry Hybrid",
+                "name_ar": "كامري هايبرد"
+            },
+            {
+                "name_en": "Camry Solara",
+                "name_ar": "كامري سولارا"
+            },
+            {
+                "name_en": "Celica",
+                "name_ar": "سيليكا"
+            },
+            {
+                "name_en": "Corolla",
+                "name_ar": "كورولا"
+            },
+            {
+                "name_en": "Corolla Cross",
+                "name_ar": "كورولا كروس"
+            },
+            {
+                "name_en": "Corolla Cross Hybrid",
+                "name_ar": "كورولا كروس هايبرد"
+            },
+            {
+                "name_en": "Corolla Hatchback",
+                "name_ar": "كورولا هاتشباك"
+            },
+            {
+                "name_en": "Corolla Hybrid",
+                "name_ar": "كورولا هايبرد"
+            },
+            {
+                "name_en": "Corolla iM",
+                "name_ar": "كورولا iM"
+            },
+            {
+                "name_en": "Corona",
+                "name_ar": "كورونا"
+            },
+            {
+                "name_en": "Cressida",
+                "name_ar": "كريسيدا"
+            },
+            {
+                "name_en": "Crown",
+                "name_ar": "كراون"
+            },
+            {
+                "name_en": "ECHO",
+                "name_ar": "إيكو"
+            },
+            {
+                "name_en": "FJ Cruiser",
+                "name_ar": "FJ كروزر"
+            },
+            {
+                "name_en": "GR Corolla",
+                "name_ar": "GR كورولا"
+            },
+            {
+                "name_en": "GR Supra",
+                "name_ar": "GR سوبرا"
+            },
+            {
+                "name_en": "GR86",
+                "name_ar": "GR86"
+            },
+            {
+                "name_en": "Grand Highlander",
+                "name_ar": "جراند هايلاندر"
+            },
+            {
+                "name_en": "Highlander",
+                "name_ar": "هايلاندر"
+            },
+            {
+                "name_en": "Highlander Hybrid",
+                "name_ar": "هايلاندر هايبرد"
+            },
+            {
+                "name_en": "Land Cruiser",
+                "name_ar": "لاند كروزر"
+            },
+            {
+                "name_en": "Matrix",
+                "name_ar": "ماتريكس"
+            },
+            {
+                "name_en": "Mirai",
+                "name_ar": "ميراي"
+            },
+            {
+                "name_en": "MR2",
+                "name_ar": "MR2"
+            },
+            {
+                "name_en": "MR2 Spyder",
+                "name_ar": "MR2 سبايدر"
+            },
+            {
+                "name_en": "Paseo",
+                "name_ar": "باسيو"
+            },
+            {
+                "name_en": "Pickup",
+                "name_ar": "بيك أب"
+            },
+            {
+                "name_en": "Previa",
+                "name_ar": "بريفيا"
+            },
+            {
+                "name_en": "Prius",
+                "name_ar": "بريوس"
+            },
+            {
+                "name_en": "Prius c",
+                "name_ar": "بريوس c"
+            },
+            {
+                "name_en": "Prius Plug-in Hybrid",
+                "name_ar": "بريوس الهجينة القابلة للشحن"
+            },
+            {
+                "name_en": "Prius Prime",
+                "name_ar": "بريوس برايم"
+            },
+            {
+                "name_en": "Prius v",
+                "name_ar": "بريوس v"
+            },
+            {
+                "name_en": "RAV4",
+                "name_ar": "راف 4"
+            },
+            {
+                "name_en": "RAV4 EV",
+                "name_ar": "راف 4 EV"
+            },
+            {
+                "name_en": "RAV4 Hybrid",
+                "name_ar": "راف 4 هايبرد"
+            },
+            {
+                "name_en": "RAV4 Prime",
+                "name_ar": "راف 4 برايم"
+            },
+            {
+                "name_en": "Sequoia",
+                "name_ar": "سيكويا"
+            },
+            {
+                "name_en": "Sienna",
+                "name_ar": "سيينا"
+            },
+            {
+                "name_en": "Starlet",
+                "name_ar": "ستارليت"
+            },
+            {
+                "name_en": "Supra",
+                "name_ar": "سوبرا"
+            },
+            {
+                "name_en": "T100",
+                "name_ar": "T100"
+            },
+            {
+                "name_en": "Tacoma",
+                "name_ar": "تاكوما"
+            },
+            {
+                "name_en": "Tercel",
+                "name_ar": "تيرسل"
+            },
+            {
+                "name_en": "Tundra",
+                "name_ar": "تندرا"
+            },
+            {
+                "name_en": "Van",
+                "name_ar": "فان"
+            },
+            {
+                "name_en": "Venza",
+                "name_ar": "فينزا"
+            },
+            {
+                "name_en": "Yaris",
+                "name_ar": "ياريس"
+            },
+            {
+                "name_en": "Yaris iA",
+                "name_ar": "ياريس iA"
+            }
+        ]
+    },
+    {
+        "name_en": "VinFast",
+        "name_ar": "فينفاست",
+        "logo": "img\/cars\/vinfast-logo.png",
+        "models": [
+            {
+                "name_en": "VF8",
+                "name_ar": "VF8"
+            }
+        ]
+    },
+    {
+        "name_en": "Volkswagen",
+        "name_ar": "فولكس فاجن",
+        "logo": "img\/cars\/volkswagen-logo.png",
+        "models": [
+            {
+                "name_en": "Arteon",
+                "name_ar": "أرتيون"
+            },
+            {
+                "name_en": "Atlas",
+                "name_ar": "أطلس"
+            },
+            {
+                "name_en": "Atlas Cross Sport",
+                "name_ar": "أطلس كروس سبورت"
+            },
+            {
+                "name_en": "Beetle",
+                "name_ar": "بيتل"
+            },
+            {
+                "name_en": "Cabrio",
+                "name_ar": "كابريو"
+            },
+            {
+                "name_en": "Cabriolet",
+                "name_ar": "كابريوليه"
+            },
+            {
+                "name_en": "CC",
+                "name_ar": "CC"
+            },
+            {
+                "name_en": "Corrado",
+                "name_ar": "كورادو"
+            },
+            {
+                "name_en": "Dasher",
+                "name_ar": "داشر"
+            },
+            {
+                "name_en": "e-Golf",
+                "name_ar": "e-جولف"
+            },
+            {
+                "name_en": "Eos",
+                "name_ar": "إيوس"
+            },
+            {
+                "name_en": "EuroVan",
+                "name_ar": "يورو فان"
+            },
+            {
+                "name_en": "Fox",
+                "name_ar": "فوكس"
+            },
+            {
+                "name_en": "GLI",
+                "name_ar": "GLI"
+            },
+            {
+                "name_en": "Golf",
+                "name_ar": "جولف"
+            },
+            {
+                "name_en": "Golf Alltrack",
+                "name_ar": "جولف أولتراك"
+            },
+            {
+                "name_en": "Golf GTI",
+                "name_ar": "جولف GTI"
+            },
+            {
+                "name_en": "Golf R",
+                "name_ar": "جولف R"
+            },
+            {
+                "name_en": "Golf SportWagen",
+                "name_ar": "جولف سبورت واجن"
+            },
+            {
+                "name_en": "ID.4",
+                "name_ar": "ID.4"
+            },
+            {
+                "name_en": "Jetta",
+                "name_ar": "جيتا"
+            },
+            {
+                "name_en": "Jetta GLI",
+                "name_ar": "جيتا GLI"
+            },
+            {
+                "name_en": "New Beetle",
+                "name_ar": "نيو بيتل"
+            },
+            {
+                "name_en": "Passat",
+                "name_ar": "باسات"
+            },
+            {
+                "name_en": "Phaeton",
+                "name_ar": "فايتون"
+            },
+            {
+                "name_en": "Pickup",
+                "name_ar": "بيك أب"
+            },
+            {
+                "name_en": "Quantum",
+                "name_ar": "كوانتوم"
+            },
+            {
+                "name_en": "R32",
+                "name_ar": "R32"
+            },
+            {
+                "name_en": "Rabbit",
+                "name_ar": "رابيت"
+            },
+            {
+                "name_en": "Routan",
+                "name_ar": "روتان"
+            },
+            {
+                "name_en": "Scirocco",
+                "name_ar": "سايروكو"
+            },
+            {
+                "name_en": "Taos",
+                "name_ar": "تاوس"
+            },
+            {
+                "name_en": "Tiguan",
+                "name_ar": "تيجوان"
+            },
+            {
+                "name_en": "Tiguan Limited",
+                "name_ar": "تيجوان ليميتد"
+            },
+            {
+                "name_en": "Touareg",
+                "name_ar": "طوارق"
+            },
+            {
+                "name_en": "Touareg 2",
+                "name_ar": "طوارق 2"
+            },
+            {
+                "name_en": "Vanagon",
+                "name_ar": "فاناجون"
+            }
+        ]
+    },
+    {
+        "name_en": "Volvo",
+        "name_ar": "فولفو",
+        "logo": "img\/cars\/volvo-logo.png",
+        "models": [
+            {
+                "name_en": "240",
+                "name_ar": "240"
+            },
+            {
+                "name_en": "260",
+                "name_ar": "260"
+            },
+            {
+                "name_en": "740",
+                "name_ar": "740"
+            },
+            {
+                "name_en": "760",
+                "name_ar": "760"
+            },
+            {
+                "name_en": "780",
+                "name_ar": "780"
+            },
+            {
+                "name_en": "850",
+                "name_ar": "850"
+            },
+            {
+                "name_en": "940",
+                "name_ar": "940"
+            },
+            {
+                "name_en": "960",
+                "name_ar": "960"
+            },
+            {
+                "name_en": "C30",
+                "name_ar": "C30"
+            },
+            {
+                "name_en": "C40",
+                "name_ar": "C40"
+            },
+            {
+                "name_en": "C70",
+                "name_ar": "C70"
+            },
+            {
+                "name_en": "Coupe",
+                "name_ar": "كوبيه"
+            },
+            {
+                "name_en": "S40",
+                "name_ar": "S40"
+            },
+            {
+                "name_en": "S60",
+                "name_ar": "S60"
+            },
+            {
+                "name_en": "S60 Cross Country",
+                "name_ar": "S60 كروس كنتري"
+            },
+            {
+                "name_en": "S60 R",
+                "name_ar": "S60 R"
+            },
+            {
+                "name_en": "S70",
+                "name_ar": "S70"
+            },
+            {
+                "name_en": "S80",
+                "name_ar": "S80"
+            },
+            {
+                "name_en": "S90",
+                "name_ar": "S90"
+            },
+            {
+                "name_en": "V40",
+                "name_ar": "V40"
+            },
+            {
+                "name_en": "V50",
+                "name_ar": "V50"
+            },
+            {
+                "name_en": "V60",
+                "name_ar": "V60"
+            },
+            {
+                "name_en": "V60 Cross Country",
+                "name_ar": "V60 كروس كنتري"
+            },
+            {
+                "name_en": "V70",
+                "name_ar": "V70"
+            },
+            {
+                "name_en": "V70 R",
+                "name_ar": "V70 R"
+            },
+            {
+                "name_en": "V90",
+                "name_ar": "V90"
+            },
+            {
+                "name_en": "V90 Cross Country",
+                "name_ar": "V90 كروس كنتري"
+            },
+            {
+                "name_en": "XC",
+                "name_ar": "XC"
+            },
+            {
+                "name_en": "XC40",
+                "name_ar": "XC40"
+            },
+            {
+                "name_en": "XC60",
+                "name_ar": "XC60"
+            },
+            {
+                "name_en": "XC70",
+                "name_ar": "XC70"
+            },
+            {
+                "name_en": "XC90",
+                "name_ar": "XC90"
+            }
+        ]
+    },
+    {
+        "name_en": "Wagoneer",
+        "name_ar": "واغونير",
+        "logo": "img\/cars\/wagoneer-logo.png",
+        "models": [
+            {
+                "name_en": "Grand Wagoneer",
+                "name_ar": "جراند واغونير"
+            },
+            {
+                "name_en": "Grand Wagoneer L",
+                "name_ar": "جراند واغونير L"
+            },
+            {
+                "name_en": "Wagoneer",
+                "name_ar": "واغونير"
+            },
+            {
+                "name_en": "Wagoneer L",
+                "name_ar": "واغونير L"
+            }
+        ]
+    }
+]
