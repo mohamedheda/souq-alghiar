@@ -2,7 +2,7 @@
     {
         "name_en": "Acura",
         "name_ar": "أكيورا",
-        "logo": "img\/cars\/acura-logo.png",
+        "logo": "img\/cars\/acura.png",
         "models": [
             {
                 "name_en": "CL",
@@ -77,7 +77,7 @@
     {
         "name_en": "Alfa Romeo",
         "name_ar": "ألفا روميو",
-        "logo": "img\/cars\/alfa-romeo-logo.png",
+        "logo": "img\/cars\/alfa-romeo.png",
         "models": [
             {
                 "name_en": "164",
@@ -120,7 +120,7 @@
     {
         "name_en": "AM General",
         "name_ar": "إيه إم جنرال",
-        "logo": "img\/cars\/am-general-logo.png",
+        "logo": "img\/cars\/am-general.png",
         "models": [
             {
                 "name_en": "Hummer",
@@ -131,7 +131,7 @@
     {
         "name_en": "Aston Martin",
         "name_ar": "أستون مارتن",
-        "logo": "img\/cars\/aston-martin-logo.png",
+        "logo": "img\/cars\/aston-martin.png",
         "models": [
             {
                 "name_en": "DB11",
@@ -206,7 +206,7 @@
     {
         "name_en": "Audi",
         "name_ar": "أودي",
-        "logo": "img\/cars\/audi-logo.png",
+        "logo": "img\/cars\/audi.png",
         "models": [
             {
                 "name_en": "100",
@@ -465,7 +465,7 @@
     {
         "name_en": "Bentley",
         "name_ar": "بنتلي",
-        "logo": "img\/cars\/bentley-logo.png",
+        "logo": "img\/cars\/bentley.png",
         "models": [
             {
                 "name_en": "Arnage",
@@ -572,7 +572,7 @@
     {
         "name_en": "BMW",
         "name_ar": "بي إم دبليو",
-        "logo": "img\/cars\/bmw-logo.png",
+        "logo": "img\/cars\/bmw.png",
         "models": [
             {
                 "name_en": "1 Series",
@@ -731,7 +731,7 @@
     {
         "name_en": "Bugatti",
         "name_ar": "بوجاتي",
-        "logo": "img\/cars\/bugatti-logo.png",
+        "logo": "img\/cars\/bugatti.png",
         "models": [
             {
                 "name_en": "Veyron 16.4",
@@ -742,7 +742,7 @@
     {
         "name_en": "Buick",
         "name_ar": "بويك",
-        "logo": "img\/cars\/buick-logo.png",
+        "logo": "img\/cars\/buick.png",
         "models": [
             {
                 "name_en": "Cascada",
@@ -857,7 +857,7 @@
     {
         "name_en": "Cadillac",
         "name_ar": "كاديلاك",
-        "logo": "img\/cars\/cadillac-logo.png",
+        "logo": "img\/cars\/cadillac.png",
         "models": [
             {
                 "name_en": "Allante",
@@ -1028,7 +1028,7 @@
     {
         "name_en": "Chevrolet",
         "name_ar": "شيفروليه",
-        "logo": "img\/cars\/chevrolet-logo.png",
+        "logo": "img\/cars\/chevrolet.png",
         "models": [
             {
                 "name_en": "Astro",
@@ -1419,7 +1419,7 @@
     {
         "name_en": "Chrysler",
         "name_ar": "كرايسلر",
-        "logo": "img\/cars\/chrysler-logo.png",
+        "logo": "img\/cars\/chrysler.png",
         "models": [
             {
                 "name_en": "200",
@@ -1538,7 +1538,7 @@
     {
         "name_en": "Daewoo",
         "name_ar": "دايو",
-        "logo": "img\/cars\/daewoo-logo.png",
+        "logo": "img\/cars\/daewoo.png",
         "models": [
             {
                 "name_en": "Lanos",
@@ -1557,7 +1557,7 @@
     {
         "name_en": "Datsun",
         "name_ar": "داتسون",
-        "logo": "img\/cars\/datsun-logo.png",
+        "logo": "img\/cars\/datsun.png",
         "models": [
             {
                 "name_en": "200SX",
@@ -1608,7 +1608,7 @@
     {
         "name_en": "Dodge",
         "name_ar": "دودج",
-        "logo": "img\/cars\/dodge-logo.png",
+        "logo": "img\/cars\/dodge.png",
         "models": [
             {
                 "name_en": "400",
@@ -1823,7 +1823,7 @@
     {
         "name_en": "Eagle",
         "name_ar": "إيغل",
-        "logo": "img\/cars\/eagle-logo.png",
+        "logo": "img\/cars\/eagle.png",
         "models": [
             {
                 "name_en": "Eagle 30",
@@ -1854,7 +1854,7 @@
     {
         "name_en": "Ferrari",
         "name_ar": "فيراري",
-        "logo": "img\/cars\/ferrari-logo.png",
+        "logo": "img\/cars\/ferrari.png",
         "models": [
             {
                 "name_en": "296 GTB",
@@ -2045,7 +2045,7 @@
     {
         "name_en": "FIAT",
         "name_ar": "فيات",
-        "logo": "img\/cars\/fiat-logo.png",
+        "logo": "img\/cars\/fiat.png",
         "models": [
             {
                 "name_en": "124 Spider",
@@ -2076,7 +2076,7 @@
     {
         "name_en": "Fisker",
         "name_ar": "فيسكر",
-        "logo": "img\/cars\/fisker-logo.png",
+        "logo": "img\/cars\/fisker.png",
         "models": [
             {
                 "name_en": "Karma",
@@ -2091,7 +2091,7 @@
     {
         "name_en": "Ford",
         "name_ar": "فورد",
-        "logo": "img\/cars\/ford-logo.png",
+        "logo": "img\/cars\/ford.png",
         "models": [
             {
                 "name_en": "Aerostar",
@@ -2390,7 +2390,7 @@
     {
         "name_en": "Genesis",
         "name_ar": "جينيسيس",
-        "logo": "img\/cars\/genesis-logo.png",
+        "logo": "img\/cars\/genesis.png",
         "models": [
             {
                 "name_en": "Electrified G80",
@@ -2425,7 +2425,7 @@
     {
         "name_en": "Geo",
         "name_ar": "جيو",
-        "logo": "img\/cars\/geo-logo.png",
+        "logo": "img\/cars\/geo.png",
         "models": [
             {
                 "name_en": "Metro",
@@ -2452,7 +2452,7 @@
     {
         "name_en": "GMC",
         "name_ar": "جي إم سي",
-        "logo": "img\/cars\/gmc-logo.png",
+        "logo": "img\/cars\/gmc.png",
         "models": [
             {
                 "name_en": "Acadia",
@@ -2627,7 +2627,7 @@
     {
         "name_en": "Honda",
         "name_ar": "هوندا",
-        "logo": "img\/cars\/honda-logo.png",
+        "logo": "img\/cars\/honda.png",
         "models": [
             {
                 "name_en": "Accord",
@@ -2738,7 +2738,7 @@
     {
         "name_en": "HUMMER",
         "name_ar": "هامر",
-        "logo": "img\/cars\/hummer-logo.png",
+        "logo": "img\/cars\/hummer.png",
         "models": [
             {
                 "name_en": "H1",
@@ -2769,7 +2769,7 @@
     {
         "name_en": "Hyundai",
         "name_ar": "هيونداي",
-        "logo": "img\/cars\/hyundai-logo.png",
+        "logo": "img\/cars\/hyundai.png",
         "models": [
             {
                 "name_en": "Accent",
@@ -2956,7 +2956,7 @@
     {
         "name_en": "Ineos",
         "name_ar": "إينيوس",
-        "logo": "img\/cars\/ineos-logo.png",
+        "logo": "img\/cars\/ineos.png",
         "models": [
             {
                 "name_en": "Grenadier",
@@ -2967,7 +2967,7 @@
     {
         "name_en": "Infiniti",
         "name_ar": "إنفينيتي",
-        "logo": "img\/cars\/infiniti-logo.png",
+        "logo": "img\/cars\/infiniti.png",
         "models": [
             {
                 "name_en": "EX35",
@@ -3122,7 +3122,7 @@
     {
         "name_en": "Isuzu",
         "name_ar": "إيسوزو",
-        "logo": "img\/cars\/isuzu-logo.png",
+        "logo": "img\/cars\/isuzu.png",
         "models": [
             {
                 "name_en": "Amigo",
@@ -3189,7 +3189,7 @@
     {
         "name_en": "Jaguar",
         "name_ar": "جاكوار",
-        "logo": "img\/cars\/jaguar-logo.png",
+        "logo": "img\/cars\/jaguar.png",
         "models": [
             {
                 "name_en": "E-PACE",
@@ -3260,7 +3260,7 @@
     {
         "name_en": "Jeep",
         "name_ar": "جيب",
-        "logo": "img\/cars\/jeep-logo.png",
+        "logo": "img\/cars\/jeep.png",
         "models": [
             {
                 "name_en": "Cherokee",
@@ -3355,7 +3355,7 @@
     {
         "name_en": "Kia",
         "name_ar": "كيا",
-        "logo": "img\/cars\/kia-logo.png",
+        "logo": "img\/cars\/kia.png",
         "models": [
             {
                 "name_en": "Amanti",
@@ -3502,7 +3502,7 @@
     {
         "name_en": "Lamborghini",
         "name_ar": "لامبورجيني",
-        "logo": "img\/cars\/lamborghini-logo.png",
+        "logo": "img\/cars\/lamborghini.png",
         "models": [
             {
                 "name_en": "Aventador",
@@ -3545,7 +3545,7 @@
     {
         "name_en": "Land Rover",
         "name_ar": "لاند روفر",
-        "logo": "img\/cars\/land-rover-logo.png",
+        "logo": "img\/cars\/land-rover.png",
         "models": [
             {
                 "name_en": "Defender",
@@ -3608,7 +3608,7 @@
     {
         "name_en": "Lexus",
         "name_ar": "لكزس",
-        "logo": "img\/cars\/lexus-logo.png",
+        "logo": "img\/cars\/lexus.png",
         "models": [
             {
                 "name_en": "CT 200h",
@@ -3899,7 +3899,7 @@
     {
         "name_en": "Lincoln",
         "name_ar": "لينكولن",
-        "logo": "img\/cars\/lincoln-logo.png",
+        "logo": "img\/cars\/lincoln.png",
         "models": [
             {
                 "name_en": "Aviator",
@@ -3990,7 +3990,7 @@
     {
         "name_en": "Lotus",
         "name_ar": "لوتس",
-        "logo": "img\/cars\/lotus-logo.png",
+        "logo": "img\/cars\/lotus.png",
         "models": [
             {
                 "name_en": "Elise",
@@ -4025,7 +4025,7 @@
     {
         "name_en": "Lucid",
         "name_ar": "لوسيد",
-        "logo": "img\/cars\/lucid-logo.png",
+        "logo": "img\/cars\/lucid.png",
         "models": [
             {
                 "name_en": "Air",
@@ -4036,7 +4036,7 @@
     {
         "name_en": "Maserati",
         "name_ar": "مازيراتي",
-        "logo": "img\/cars\/maserati-logo.png",
+        "logo": "img\/cars\/maserati.png",
         "models": [
             {
                 "name_en": "Coupe",
@@ -4087,7 +4087,7 @@
     {
         "name_en": "Maybach",
         "name_ar": "مايباخ",
-        "logo": "img\/cars\/maybach-logo.png",
+        "logo": "img\/cars\/maybach.png",
         "models": [
             {
                 "name_en": "57",
@@ -4102,7 +4102,7 @@
     {
         "name_en": "Mazda",
         "name_ar": "مازدا",
-        "logo": "img\/cars\/mazda-logo.png",
+        "logo": "img\/cars\/mazda.png",
         "models": [
             {
                 "name_en": "323",
@@ -4261,7 +4261,7 @@
     {
         "name_en": "McLaren",
         "name_ar": "ماكلارين",
-        "logo": "img\/cars\/mclaren-logo.png",
+        "logo": "img\/cars\/mclaren.png",
         "models": [
             {
                 "name_en": "570GT",
@@ -4364,7 +4364,7 @@
     {
         "name_en": "Mercedes-Benz",
         "name_ar": "مرسيدس-بنز",
-        "logo": "img\/cars\/mercedes-benz-logo.png",
+        "logo": "img\/cars\/mercedes-benz.png",
         "models": [
             {
                 "name_en": "190-Class",
@@ -4555,7 +4555,7 @@
     {
         "name_en": "Mercury",
         "name_ar": "ميركوري",
-        "logo": "img\/cars\/mercury-logo.png",
+        "logo": "img\/cars\/mercury.png",
         "models": [
             {
                 "name_en": "Capri",
@@ -4642,7 +4642,7 @@
     {
         "name_en": "MINI",
         "name_ar": "ميني",
-        "logo": "img\/cars\/mini-logo.png",
+        "logo": "img\/cars\/mini.png",
         "models": [
             {
                 "name_en": "Clubman",
@@ -4713,7 +4713,7 @@
     {
         "name_en": "Mitsubishi",
         "name_ar": "ميتسوبيشي",
-        "logo": "img\/cars\/mitsubishi-logo.png",
+        "logo": "img\/cars\/mitsubishi.png",
         "models": [
             {
                 "name_en": "3000GT",
@@ -4832,7 +4832,7 @@
     {
         "name_en": "Nissan",
         "name_ar": "نيسان",
-        "logo": "img\/cars\/nissan-logo.png",
+        "logo": "img\/cars\/nissan.png",
         "models": [
             {
                 "name_en": "200SX",
@@ -5003,7 +5003,7 @@
     {
         "name_en": "Oldsmobile",
         "name_ar": "أولدزموبيل",
-        "logo": "img\/cars\/oldsmobile-logo.png",
+        "logo": "img\/cars\/oldsmobile.png",
         "models": [
             {
                 "name_en": "Achieva",
@@ -5106,7 +5106,7 @@
     {
         "name_en": "Panoz",
         "name_ar": "بانوز",
-        "logo": "img\/cars\/panoz-logo.png",
+        "logo": "img\/cars\/panoz.png",
         "models": [
             {
                 "name_en": "Esperante",
@@ -5117,7 +5117,7 @@
     {
         "name_en": "Plymouth",
         "name_ar": "بليموث",
-        "logo": "img\/cars\/plymouth-logo.png",
+        "logo": "img\/cars\/plymouth.png",
         "models": [
             {
                 "name_en": "Acclaim",
@@ -5208,7 +5208,7 @@
     {
         "name_en": "Polestar",
         "name_ar": "بولستار",
-        "logo": "img\/cars\/polestar-logo.png",
+        "logo": "img\/cars\/polestar.png",
         "models": [
             {
                 "name_en": "1",
@@ -5223,7 +5223,7 @@
     {
         "name_en": "Pontiac",
         "name_ar": "بونتياك",
-        "logo": "img\/cars\/pontiac-logo.png",
+        "logo": "img\/cars\/pontiac.png",
         "models": [
             {
                 "name_en": "1000",
@@ -5346,7 +5346,7 @@
     {
         "name_en": "Porsche",
         "name_ar": "بورشه",
-        "logo": "img\/cars\/porsche-logo.png",
+        "logo": "img\/cars\/porsche.png",
         "models": [
             {
                 "name_en": "718 Boxster",
@@ -5413,7 +5413,7 @@
     {
         "name_en": "Ram",
         "name_ar": "رام",
-        "logo": "img\/cars\/ram-logo.png",
+        "logo": "img\/cars\/ram.png",
         "models": [
             {
                 "name_en": "1500",
@@ -5460,7 +5460,7 @@
     {
         "name_en": "Rivian",
         "name_ar": "ريفيان",
-        "logo": "img\/cars\/rivian-logo.png",
+        "logo": "img\/cars\/rivian.png",
         "models": [
             {
                 "name_en": "R1S",
@@ -5475,7 +5475,7 @@
     {
         "name_en": "Rolls-Royce",
         "name_ar": "رولز رويس",
-        "logo": "img\/cars\/rolls-royce-logo.png",
+        "logo": "img\/cars\/rolls-royce.png",
         "models": [
             {
                 "name_en": "Corniche",
@@ -5530,7 +5530,7 @@
     {
         "name_en": "Saab",
         "name_ar": "ساب",
-        "logo": "img\/cars\/saab-logo.png",
+        "logo": "img\/cars\/saab.png",
         "models": [
             {
                 "name_en": "9-2X",
@@ -5573,7 +5573,7 @@
     {
         "name_en": "Saturn",
         "name_ar": "ساتورن",
-        "logo": "img\/cars\/saturn-logo.png",
+        "logo": "img\/cars\/saturn.png",
         "models": [
             {
                 "name_en": "Astra",
@@ -5624,7 +5624,7 @@
     {
         "name_en": "Scion",
         "name_ar": "سايون",
-        "logo": "img\/cars\/scion-logo.png",
+        "logo": "img\/cars\/scion.png",
         "models": [
             {
                 "name_en": "FR-S",
@@ -5667,7 +5667,7 @@
     {
         "name_en": "Smart",
         "name_ar": "سمارت",
-        "logo": "img\/cars\/smart-logo.png",
+        "logo": "img\/cars\/smart.png",
         "models": [
             {
                 "name_en": "EQ fortwo",
@@ -5686,7 +5686,7 @@
     {
         "name_en": "Sterling",
         "name_ar": "ستيرلينغ",
-        "logo": "img\/cars\/sterling-logo.png",
+        "logo": "img\/cars\/sterling.png",
         "models": [
             {
                 "name_en": "825",
@@ -5701,7 +5701,7 @@
     {
         "name_en": "Subaru",
         "name_ar": "سوبارو",
-        "logo": "img\/cars\/subaru-logo.png",
+        "logo": "img\/cars\/subaru.png",
         "models": [
             {
                 "name_en": "Ascent",
@@ -5800,7 +5800,7 @@
     {
         "name_en": "Suzuki",
         "name_ar": "سوزوكي",
-        "logo": "img\/cars\/suzuki-logo.png",
+        "logo": "img\/cars\/suzuki.png",
         "models": [
             {
                 "name_en": "Aerio",
@@ -5879,7 +5879,7 @@
     {
         "name_en": "Tesla",
         "name_ar": "تسلا",
-        "logo": "img\/cars\/tesla-logo.png",
+        "logo": "img\/cars\/tesla.png",
         "models": [
             {
                 "name_en": "Cybertruck",
@@ -5910,7 +5910,7 @@
     {
         "name_en": "Toyota",
         "name_ar": "تويوتا",
-        "logo": "img\/cars\/toyota-logo.png",
+        "logo": "img\/cars\/toyota.png",
         "models": [
             {
                 "name_en": "4Runner",
@@ -6141,7 +6141,7 @@
     {
         "name_en": "VinFast",
         "name_ar": "فينفاست",
-        "logo": "img\/cars\/vinfast-logo.png",
+        "logo": "img\/cars\/vinfast.png",
         "models": [
             {
                 "name_en": "VF8",
@@ -6152,7 +6152,7 @@
     {
         "name_en": "Volkswagen",
         "name_ar": "فولكس فاجن",
-        "logo": "img\/cars\/volkswagen-logo.png",
+        "logo": "img\/cars\/volkswagen.png",
         "models": [
             {
                 "name_en": "Arteon",
@@ -6307,7 +6307,7 @@
     {
         "name_en": "Volvo",
         "name_ar": "فولفو",
-        "logo": "img\/cars\/volvo-logo.png",
+        "logo": "img\/cars\/volvo.png",
         "models": [
             {
                 "name_en": "240",
@@ -6442,7 +6442,7 @@
     {
         "name_en": "Wagoneer",
         "name_ar": "واغونير",
-        "logo": "img\/cars\/wagoneer-logo.png",
+        "logo": "img\/cars\/wagoneer.png",
         "models": [
             {
                 "name_en": "Grand Wagoneer",

@@ -275,4 +275,10 @@ return [
     'unapproved_purchase_order_offers' => 'Unapproved purchase orders offers',
     'suppliers' => 'Suppliers' ,
     'merchant'=> 'merchant',
+    'marks'=> 'Marks',
+    'mark'=> 'Mark',
+    'models'=> 'Models',
+    'model'=> 'Model',
+    'show_home'=> 'show home',
+    'important'=> 'important',
 ];

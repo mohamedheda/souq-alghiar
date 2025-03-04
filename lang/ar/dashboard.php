@@ -276,4 +276,10 @@ return [
     'unapproved_purchase_order_offers' => 'عروض أسعار تحت المراجعة',
     'suppliers' => 'الموردين',
     'merchant'=> 'تاجر',
+    'marks'=> 'الماركات',
+    'mark'=> 'الماركة',
+    'models'=> 'الموديلات',
+    'model'=> 'الموديل',
+    'show_home'=> 'عرض في الصفحة الرئيسية',
+    'important'=> 'مهم',
 ];

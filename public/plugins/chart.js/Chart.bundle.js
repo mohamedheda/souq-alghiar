@@ -4933,7 +4933,7 @@ var controller_line = core_datasetController.extend({
 			line._datasetIndex = me.index;
 			// Data
 			line._children = points;
-			// Model
+			// CarModel
 			line._model = me._resolveLineOptions(line);
 
 			line.pivot();
@@ -5586,7 +5586,7 @@ var controller_radar = core_datasetController.extend({
 		// Data
 		line._children = points;
 		line._loop = true;
-		// Model
+		// CarModel
 		line._model = me._resolveLineOptions(line);
 
 		line.pivot();

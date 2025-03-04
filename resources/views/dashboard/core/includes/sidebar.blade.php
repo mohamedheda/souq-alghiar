@@ -38,6 +38,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item  {{ in_array(request()->route()->getName(),['marks.index', 'users.marks', 'marks.edit', 'marks.show'])? 'menu-open': '' }}">
+                    <a href="{{ route('marks.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-circle"></i>
+                        <p>
+                            @lang('dashboard.marks')
+                        </p>
+                    </a>
+                </li>
                 @permission('roles-read')
                     <li class="nav-item  {{ in_array(request()->route()->getName(),['roles.index','roles.create','roles.edit','roles.mangers','managers.create','managers.edit'])? 'menu-open': '' }}">
                         <a href="{{ route('roles.index') }}" class="nav-link">

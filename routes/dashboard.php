@@ -3,6 +3,8 @@
 use App\Http\Controllers\Dashboard\Auth\AuthController;
 use App\Http\Controllers\Dashboard\Home\HomeController;
 use App\Http\Controllers\Dashboard\Mangers\MangerController;
+use App\Http\Controllers\Dashboard\Mark\MarkController;
+use App\Http\Controllers\Dashboard\Model\ModelController;
 use App\Http\Controllers\Dashboard\Roles\RoleController;
 use App\Http\Controllers\Dashboard\Settings\SettingController;
 use App\Http\Controllers\Dashboard\User\UserController;
@@ -24,6 +26,10 @@ Route::group([
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [HomeController::class, 'index'])->name('/');
         Route::resource('users', UserController::class);
+        Route::resource('marks', MarkController::class);
+        Route::get('marks/{id}/models', [MarkController::class,'getModels'])->name('marks.models');
+        Route::get('marks/{id}/models/create', [ModelController::class,'create'])->name('marks.models.create');
+        Route::resource('models', ModelController::class)->except('index','create');
     });
     Route::resource('settings' , SettingController::class)->only('edit','update');
     Route::post('update-password' , [SettingController::class,'updatePassword'])->name('update-password');
