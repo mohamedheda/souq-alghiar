@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Repository\CategoryRepositoryInterface;
 use App\Repository\CityRepositoryInterface;
+use App\Repository\Eloquent\CategoryRepository;
 use App\Repository\Eloquent\CityRepository;
 use App\Repository\Eloquent\InfoRepository;
 use App\Repository\Eloquent\ManagerRepository;
@@ -46,7 +48,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(CityRepositoryInterface::class, CityRepository::class);
         $this->app->singleton(MarkRepositoryInterface::class, MarkRepository::class);
         $this->app->singleton(ModelRepositoryInterface::class, ModelRepository::class);
-
+        $this->app->singleton(CategoryRepositoryInterface::class, CategoryRepository::class);
     }
 
     /**

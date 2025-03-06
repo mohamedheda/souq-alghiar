@@ -38,11 +38,19 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item  {{ in_array(request()->route()->getName(),['marks.index', 'users.marks', 'marks.edit', 'marks.show'])? 'menu-open': '' }}">
+                <li class="nav-item  {{ in_array(request()->route()->getName(),['marks.index', 'marks.update', 'marks.edit', 'marks.show'])? 'menu-open': '' }}">
                     <a href="{{ route('marks.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-circle"></i>
                         <p>
                             @lang('dashboard.marks')
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item  {{ in_array(request()->route()->getName(),['categories.index', 'categories.update', 'categories.edit', 'categories.show'])? 'menu-open': '' }}">
+                    <a href="{{ route('categories.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-circle"></i>
+                        <p>
+                            @lang('dashboard.categories')
                         </p>
                     </a>
                 </li>

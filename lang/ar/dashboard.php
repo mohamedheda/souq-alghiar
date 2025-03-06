@@ -282,4 +282,7 @@ return [
     'model'=> 'الموديل',
     'show_home'=> 'عرض في الصفحة الرئيسية',
     'important'=> 'مهم',
+    'sub_category'=> 'القسم الداخلي',
+    'sub_categories'=> 'الاقسام الداخلية',
+
 ];

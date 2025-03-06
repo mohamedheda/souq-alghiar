@@ -278,7 +278,9 @@ return [
     'marks'=> 'Marks',
     'mark'=> 'Mark',
     'models'=> 'Models',
-    'model'=> 'Model',
     'show_home'=> 'show home',
     'important'=> 'important',
+    'model'=> 'Model',
+    'sub_category'=> 'sub category',
+    'sub_categories'=> 'sub categories',
 ];

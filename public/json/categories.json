@@ -1,0 +1,113 @@
+[
+    {
+        "name_ar": "قطع غيار",
+        "name_en": "Spare Parts",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "أجزاء خارجية", "name_en": "Exterior Parts"},
+            {"name_ar": "فلاتر", "name_en": "Filters"},
+            {"name_ar": "سيور", "name_en": "Belts"},
+            {"name_ar": "رمان بلي", "name_en": "Ball Bearings"},
+            {"name_ar": "تكييف وتبريد", "name_en": "Air Conditioning and Cooling"},
+            {"name_ar": "عفشة وفرامل", "name_en": "Suspension and Brakes"},
+            {"name_ar": "أجزاء موتور", "name_en": "Engine Parts"},
+            {"name_ar": "إلكترونيات", "name_en": "Electronics"},
+            {"name_ar": "مساحات السيارات", "name_en": "Wiper Blades"}
+        ]
+    },
+    {
+        "name_ar": "سوائل",
+        "name_en": "Fluids",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "زيت موتور", "name_en": "Engine Oil"},
+            {"name_ar": "زيت فتيس", "name_en": "Transmission Oil"},
+            {"name_ar": "زيت فرامل", "name_en": "Brake Fluid"},
+            {"name_ar": "زيت باور", "name_en": "Power Steering Fluid"},
+            {"name_ar": "سائل تبريد", "name_en": "Coolant"},
+            {"name_ar": "إضافات الأداء", "name_en": "Performance Additives"},
+            {"name_ar": "سوائل الموتوسيكل", "name_en": "Motorcycle Fluids"}
+        ]
+    },
+    {
+        "name_ar": "بطاريات",
+        "name_en": "Batteries",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "بطاريات سيارات", "name_en": "Car Batteries"},
+            {"name_ar": "بطاريات موتوسيكل", "name_en": "Motorcycle Batteries"},
+            {"name_ar": "شواحن بطاريات", "name_en": "Battery Chargers"},
+            {"name_ar": "أجهزة قياس شحن البطارية", "name_en": "Battery Charge Testers"}
+        ]
+    },
+    {
+        "name_ar": "العناية بالسيارة",
+        "name_en": "Car Care",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "أجزاء خارجية", "name_en": "Exterior Parts"},
+            {"name_ar": "فلاتر", "name_en": "Filters"},
+            {"name_ar": "سيور", "name_en": "Belts"},
+            {"name_ar": "رمان بلي", "name_en": "Ball Bearings"},
+            {"name_ar": "تكييف وتبريد", "name_en": "Air Conditioning and Cooling"},
+            {"name_ar": "عفشة وفرامل", "name_en": "Suspension and Brakes"},
+            {"name_ar": "أجزاء موتور", "name_en": "Engine Parts"},
+            {"name_ar": "إلكترونيات", "name_en": "Electronics"},
+            {"name_ar": "مساحات السيارات", "name_en": "Wiper Blades"}
+        ]
+    },
+    {
+        "name_ar": "أنظمة الإضاءة",
+        "name_en": "Lighting Systems",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "كشافات أمامية وخلفية", "name_en": "Headlights and Taillights"},
+            {"name_ar": "إضاءات LED", "name_en": "LED Lights"},
+            {"name_ar": "إضاءة داخلية", "name_en": "Interior Lighting"}
+        ]
+    },
+    {
+        "name_ar": "إكسسوارات",
+        "name_en": "Accessories",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "إكسسوارات داخلية", "name_en": "Interior Accessories"},
+            {"name_ar": "إكسسوارات داخلية", "name_en": "Interior Accessories"},
+            {"name_ar": "إكسسوارات داخلية", "name_en": "Interior Accessories"},
+            {"name_ar": "إكسسوارات داخلية", "name_en": "Interior Accessories"},
+            {"name_ar": "إكسسوارات خارجية", "name_en": "Exterior Accessories"}
+        ]
+    },
+    {
+        "name_ar": "الإطارات والجنوط",
+        "name_en": "Tires & Wheels",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "إطارات سيارات", "name_en": "Car Tires"},
+            {"name_ar": "جنوط سيارات", "name_en": "Car Rims"},
+            {"name_ar": "إكسسوارات الإطارات", "name_en": "Tire Accessories"},
+            {"name_ar": "إطارات موتوسيكل", "name_en": "Motorcycle Tires"},
+            {"name_ar": "إطارات شاحنات", "name_en": "Truck Tires"},
+            {"name_ar": "أجهزة قياس ضغط الإطارات", "name_en": "Tire Pressure Gauges"},
+            {"name_ar": "أجهزة توازن الإطارات", "name_en": "Tire Balancing Equipment"},
+            {"name_ar": "مواد تنظيف وصيانة الإطارات", "name_en": "Tire Cleaning and Maintenance Products"}
+        ]
+    },
+    {
+        "name_ar": "أنظمة الأمان والراحة",
+        "name_en": "Safety & Comfort Systems",
+        "show_home": 1,
+        "subcategories": [
+            {"name_ar": "أنظمة الفرامل ABS", "name_en": "ABS Brake Systems"},
+            {"name_ar": "كاميرات خلفية", "name_en": "Rear Cameras"},
+            {"name_ar": "حساسات مسافة", "name_en": "Parking Sensors"},
+            {"name_ar": "أجهزة إنذار", "name_en": "Alarm Systems"},
+            {"name_ar": "حساسات ركن", "name_en": "Parking Sensors"},
+            {"name_ar": "أجهزة توازن الإطارات", "name_en": "Wheel Balancing Devices"},
+            {"name_ar": "مواد تنظيف وصيانة الإطارات", "name_en": "Tire Cleaning and Maintenance Products"},
+            {"name_ar": "معطرات السيارة", "name_en": "Car Air Fresheners"},
+            {"name_ar": "أجهزة تكييف وتهوية لراحة القيادة", "name_en": "Car Air Conditioning and Ventilation"},
+            {"name_ar": "نظم مراقبة ضغط الإطارات", "name_en": "Tire Pressure Monitoring Systems"}
+        ]
+    }
+]

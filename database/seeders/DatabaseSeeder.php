@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CitySeeder::class,
             InfoSeeder::class,
-            CarMarkSeeder::class,
+//            CarMarkSeeder::class,
         ]);
     }
 }

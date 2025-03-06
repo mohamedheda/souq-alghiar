@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Dashboard\Auth\AuthController;
+use App\Http\Controllers\Dashboard\Category\CategoryController;
+use App\Http\Controllers\Dashboard\Category\SubCategoryController;
 use App\Http\Controllers\Dashboard\Home\HomeController;
 use App\Http\Controllers\Dashboard\Mangers\MangerController;
 use App\Http\Controllers\Dashboard\Mark\MarkController;
@@ -30,6 +32,10 @@ Route::group([
         Route::get('marks/{id}/models', [MarkController::class,'getModels'])->name('marks.models');
         Route::get('marks/{id}/models/create', [ModelController::class,'create'])->name('marks.models.create');
         Route::resource('models', ModelController::class)->except('index','create');
+        Route::resource('categories', CategoryController::class);
+        Route::get('categories/{id}/sub-categories', [CategoryController::class,'getSubCategories'])->name('categories.sub_categories');
+        Route::get('categories/{id}/sub-categories/create', [SubCategoryController::class,'create'])->name('categories.sub_categories.create');
+        Route::resource('sub-categories', SubCategoryController::class)->except('index','create');
     });
     Route::resource('settings' , SettingController::class)->only('edit','update');
     Route::post('update-password' , [SettingController::class,'updatePassword'])->name('update-password');
