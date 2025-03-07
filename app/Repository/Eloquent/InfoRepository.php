@@ -17,4 +17,5 @@ class InfoRepository extends Repository implements InfoRepositoryInterface
     {
         return $this->model::where('key', $key)->value('value') ?? $default;
     }
+
 }

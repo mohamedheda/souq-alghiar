@@ -152,4 +152,5 @@ abstract class Repository implements RepositoryInterface
     {
         return $this->model::query()->whereHasMorph($relation, $class)->get();
     }
+
 }

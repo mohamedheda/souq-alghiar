@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\V1\Auth\Email\ChangeEmailController;
 use App\Http\Controllers\Api\V1\Auth\Otp\OtpController;
 use App\Http\Controllers\Api\V1\Auth\Password\PasswordController;
 use App\Http\Controllers\Api\V1\City\CityController;
+use App\Http\Controllers\Api\V1\Product\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'auth', 'controller' => AuthController::class], function () {
@@ -31,3 +32,7 @@ Route::group(['prefix' => 'password'], function () {
     Route::post('/update', [PasswordController::class, 'updatePassword']);
 });
 Route::get('cities',[CityController::class,'index']);
+
+Route::group(['middleware' => 'auth:api' ], function () {
+    Route::post('products',[ProductController::class ,'store']);
+});

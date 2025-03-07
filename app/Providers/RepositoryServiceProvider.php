@@ -12,6 +12,7 @@ use App\Repository\Eloquent\MarkRepository;
 use App\Repository\Eloquent\ModelRepository;
 use App\Repository\Eloquent\OtpRepository;
 use App\Repository\Eloquent\PermissionRepository;
+use App\Repository\Eloquent\ProductRepository;
 use App\Repository\Eloquent\Repository;
 use App\Repository\Eloquent\RoleRepository;
 use App\Repository\Eloquent\SettingsRepository;
@@ -22,6 +23,7 @@ use App\Repository\MarkRepositoryInterface;
 use App\Repository\ModelRepositoryInterface;
 use App\Repository\OtpRepositoryInterface;
 use App\Repository\PermissionRepositoryInterface;
+use App\Repository\ProductRepositoryInterface;
 use App\Repository\RepositoryInterface;
 use App\Repository\RoleRepositoryInterface;
 use App\Repository\SettingsRepositoryInterface;
@@ -49,6 +51,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(MarkRepositoryInterface::class, MarkRepository::class);
         $this->app->singleton(ModelRepositoryInterface::class, ModelRepository::class);
         $this->app->singleton(CategoryRepositoryInterface::class, CategoryRepository::class);
+        $this->app->singleton(ProductRepositoryInterface::class, ProductRepository::class);
     }
 
     /**

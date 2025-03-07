@@ -19,4 +19,14 @@ class UserRepository extends Repository implements UserRepositoryInterface
     {
         return $this->model::query()->where('is_active', true);
     }
+
+    public function incrementValue(string $key, int $amount = 1, $id = null)
+    {
+        return $this->model::where('id', $id)->increment($key, $amount);
+    }
+
+    public function decrementValue(string $key, int $amount = 1, $id = null)
+    {
+        return $this->model::where('id', $id)->decrement($key, $amount);
+    }
 }

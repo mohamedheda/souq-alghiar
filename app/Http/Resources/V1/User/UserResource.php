@@ -24,6 +24,7 @@ class UserResource extends JsonResource
             'image' => $this->whenNotNull($this->image),
             'otp_token' => $this->whenNotNull($this->otp?->token),
             'otp_verified' => $this->whenNotNull($this->otp_verified),
+            'can_add_product' => $this->whenNotNull($this->canAddProduct),
             'token' => $this->when($this->withToken, $this->token()),
         ];
     }

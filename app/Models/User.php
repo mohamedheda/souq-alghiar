@@ -2,9 +2,12 @@
 
 namespace App\Models;
 
+use App\Repository\InfoRepositoryInterface;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Gate;
 use Laravel\Sanctum\HasApiTokens;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Tymon\JWTAuth\Contracts\JWTSubject;
@@ -55,6 +58,20 @@ class User extends Authenticatable implements JWTSubject
         'password' => 'hashed',
     ];
 
+    public function productsCount(): Attribute
+    {
+        return Attribute::make(get: fn() => $this->products()?->count());
+    }
+
+    public function canAddProduct(): Attribute
+    {
+        return Attribute::make(get: function () {
+            return ($this->wallet >= app(InfoRepositoryInterface::class)->getValue('product_addition_points')
+                    || ! filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled') , FILTER_VALIDATE_BOOLEAN) )
+                    && !$this->is_blocked;
+        });
+    }
+
     public function getJWTIdentifier()
     {
         return $this->getKey();
@@ -79,5 +96,10 @@ class User extends Authenticatable implements JWTSubject
     public function otps()
     {
         return $this->hasMany(Otp::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
     }
 }
