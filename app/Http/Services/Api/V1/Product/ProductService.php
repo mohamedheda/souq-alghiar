@@ -2,10 +2,14 @@
 
 namespace App\Http\Services\Api\V1\Product;
 
+use App\Http\Resources\V1\Product\ProductDetailsResource;
 use App\Http\Services\Mutual\FileManagerService;
 use App\Http\Traits\Responser;
+use App\Repository\Eloquent\ProductImageRepository;
 use App\Repository\Eloquent\UserRepository;
 use App\Repository\InfoRepositoryInterface;
+use App\Repository\ProductImageRepositoryInterface;
+use App\Repository\ProductMakesRepositoryInterface;
 use App\Repository\ProductRepositoryInterface;
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -18,9 +22,10 @@ class ProductService
     const SPECIFIC_MAKES = 0;
 
     public function __construct(
-        private readonly FileManagerService         $fileManagerService,
-        private readonly ProductRepositoryInterface $productRepository,
-        private readonly UserRepository             $userRepository,
+        private readonly FileManagerService              $fileManagerService,
+        private readonly ProductRepositoryInterface      $productRepository,
+        private readonly ProductImageRepositoryInterface $productImageRepository,
+        private readonly ProductHelperService $helperService ,
     )
     {
 
@@ -36,11 +41,11 @@ class ProductService
                 $data['user_id'] = auth('api')->id();
                 $product = $this->productRepository->create($data);
                 if (filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled'), FILTER_VALIDATE_BOOLEAN))
-                    $this->withdrawPoints($request->featured);
+                    $this->helperService->withdrawPoints($request->featured);
                 if ($request->images && is_array($request->images))
-                    $this->attachImages($request->images, $product);
+                    $this->helperService->attachImages($request->images, $product);
                 if ($request->makes && is_array($request->makes) && $request->all_makes == self::SPECIFIC_MAKES)
-                    $this->attachMakes($request->makes, $product);
+                    $this->helperService->attachMakes($request->makes, $product);
             } else {
                 return $this->responseFail(message: $response->message());
             }
@@ -53,27 +58,66 @@ class ProductService
         }
     }
 
-    private function attachImages($images, $product)
+    public function update($id, $request)
     {
-        $saved_image_paths = [];
-        foreach ($images as $image) {
-            $saved_image_paths[] = ['image' => $this->fileManagerService->uploadFile($image, 'products')];
+        DB::beginTransaction();
+        try {
+            $data = $request->except(['images', 'makes', 'deleted_makes', 'deleted_images']);
+            $this->productRepository->update($id, $data);
+
+            $product = $this->productRepository->getById($id);
+
+            if ($request->images && is_array($request->images))
+                $this->helperService->attachImages($request->images, $product);
+            if ($request->makes && is_array($request->makes) && $request->all_makes == self::SPECIFIC_MAKES)
+                $this->helperService->attachMakes($request->makes, $product);
+            if ($request->deleted_makes && is_array($request->deleted_makes))
+                $this->helperService->deleteMakes($request->deleted_makes);
+            if ($request->deleted_images && is_array($request->deleted_images))
+                $this->helperService->deleteImages($request->deleted_images);
+
+            DB::commit();
+            return $this->responseSuccess(message: __('messages.updated successfully'));
+        } catch (Exception $e) {
+            DB::rollBack();
+//            return $e;
+            return $this->responseFail(message: __('messages.Something went wrong'));
         }
-        $product->images()?->createMany($saved_image_paths);
     }
 
-    private function attachMakes($makes, $product)
-    {
-        $product->markes()?->createMany(array_values($makes));
-    }
 
-    private function withdrawPoints($featured)
+
+    public function delete($id)
     {
-        $points_amount = $featured ?
-            app(InfoRepositoryInterface::class)->getValue('featured_product_points') :
-            app(InfoRepositoryInterface::class)->getValue('product_addition_points');
-        $this->userRepository->decrementValue('wallet', $points_amount
-            , auth('api')->id());
-        // TODO : Save logs for wallets .
+        DB::beginTransaction();
+        try {
+            $product = $this->productRepository->getById($id);
+            $deleted_makes = $product->markes()?->pluck('id');
+            $deleted_images = $product->images()?->pluck('id');
+            if (!empty($deleted_makes))
+                $this->helperService->deleteMakes($deleted_makes);
+            if (!empty($deleted_images))
+                $this->helperService->deleteImages($deleted_images);
+            $this->productRepository->delete($id);
+            DB::commit();
+            return $this->responseSuccess(message: __('messages.deleted successfully'));
+        } catch (Exception $e) {
+            DB::rollBack();
+//            return $e;
+            return $this->responseFail(message: __('messages.Something went wrong'));
+        }
+    }
+    public function show($id){
+        try {
+            $product = $this->productRepository->getById($id,relations:['images','category:id,name_ar,name_en','markes','markes.make:id,name_ar,name_en,logo','markes.model:id,name_ar,name_en']);
+            $product->labels=$this->helperService->prepareLabels($product);
+//            return $product;
+            DB::commit();
+            return $this->responseSuccess(data: ProductDetailsResource::make($product));
+        } catch (Exception $e) {
+            DB::rollBack();
+            return $e;
+            return $this->responseFail(message: __('messages.Something went wrong'));
+        }
     }
 }

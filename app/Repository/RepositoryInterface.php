@@ -61,4 +61,6 @@ interface RepositoryInterface
     );
 
     public function whereHasMorph($relation, $class);
+    public function deleteWhereIn($column, $ids = []);
+
 }

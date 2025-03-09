@@ -120,6 +120,11 @@ abstract class Repository implements RepositoryInterface
         return $model->delete();
     }
 
+    public function deleteWhereIn($column, $ids = []): bool
+    {
+        return $this->model::query()->whereIn($column, $ids)->delete();
+    }
+
     public function forceDelete($modelId, array $filesFields = []): bool
     {
         $model = $this->getById($modelId);

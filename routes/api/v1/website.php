@@ -35,4 +35,7 @@ Route::get('cities',[CityController::class,'index']);
 
 Route::group(['middleware' => 'auth:api' ], function () {
     Route::post('products',[ProductController::class ,'store']);
+    Route::post('products/{id}',[ProductController::class ,'update']);
+    Route::delete('products/{id}',[ProductController::class ,'delete']);
+    Route::get('products/{id}',[ProductController::class ,'show']);
 });

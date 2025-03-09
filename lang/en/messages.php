@@ -180,4 +180,9 @@ return [
     'product_addition_points_required' => 'You need more points to add a product , Please purchase points.',
     'free_product_limit_reached' => 'You have reached the maximum number of products. Please upgrade your account to a merchant account to be able to add more products.',
     'user_blocked' => 'Your account is blocked. Please contact support.',
+
+    'New' => 'New' ,
+    'Used' => 'Used' ,
+    'all_makes' => 'All Makes' ,
+    'LE' => 'LE' ,
     ];
