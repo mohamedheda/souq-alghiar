@@ -32,10 +32,14 @@ Route::group(['prefix' => 'password'], function () {
     Route::post('/update', [PasswordController::class, 'updatePassword']);
 });
 Route::get('cities',[CityController::class,'index']);
+Route::get('products',[ProductController::class ,'index']);
+
 
 Route::group(['middleware' => 'auth:api' ], function () {
-    Route::post('products',[ProductController::class ,'store']);
-    Route::post('products/{id}',[ProductController::class ,'update']);
-    Route::delete('products/{id}',[ProductController::class ,'delete']);
-    Route::get('products/{id}',[ProductController::class ,'show']);
+    Route::prefix('products')->group(function (){
+        Route::post('/',[ProductController::class ,'store']);
+        Route::post('{id}',[ProductController::class ,'update']);
+        Route::delete('{id}',[ProductController::class ,'delete']);
+        Route::get('{id}',[ProductController::class ,'show']);
+    });
 });

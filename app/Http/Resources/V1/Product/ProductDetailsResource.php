@@ -2,6 +2,8 @@
 
 namespace App\Http\Resources\V1\Product;
 
+use App\Http\Resources\V1\Product\ProductHelper\ProductImageResource;
+use App\Http\Resources\V1\Product\ProductHelper\ProductMakeDetailsResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

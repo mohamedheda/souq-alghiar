@@ -6,11 +6,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "foolz/sphinxql-query-builder": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/socialite": "^5.18",
         "laravel/tinker": "^2.8",
+        "manticoresoftware/manticoresearch-php": "dev-master",
         "mcamara/laravel-localization": "^1.8",
         "santigarcor/laratrust": "^8.3",
         "tymon/jwt-auth": "^2.0"

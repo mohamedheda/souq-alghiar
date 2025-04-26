@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Resources\V1\Product;
+namespace App\Http\Resources\V1\Product\ProductHelper;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ProductMakeDetailsResource extends JsonResource
+class ProductMakeResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,9 +16,6 @@ class ProductMakeDetailsResource extends JsonResource
     {
         return [
             'make' => $this->make?->imageUrl,
-            'model' => $this->model?->t('name'),
-            'year_from' => $this->year_from,
-            'year_to' => $this->year_to,
         ];
     }
 }

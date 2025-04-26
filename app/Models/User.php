@@ -62,6 +62,14 @@ class User extends Authenticatable implements JWTSubject
     {
         return Attribute::make(get: fn() => $this->products()?->count());
     }
+    public function imageUrl(): Attribute
+    {
+        return Attribute::get(function () {
+            if ($this->image)
+                return url($this->image);
+            return null;
+        });
+    }
 
     public function canAddProduct(): Attribute
     {

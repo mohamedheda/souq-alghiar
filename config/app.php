@@ -173,6 +173,7 @@ return [
         App\Providers\TelescopeServiceProvider::class,
         RepositoryServiceProvider::class,
         PlatformServiceProvider::class,
+        \App\Providers\ViewServiceProvider::class,
     ])->toArray(),
 
     /*

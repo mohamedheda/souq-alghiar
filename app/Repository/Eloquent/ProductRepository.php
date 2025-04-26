@@ -12,4 +12,8 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
     {
         parent::__construct($model);
     }
+    public function cursorProducts($per_page,$relations=[]){
+        $query= $this->model::query();
+        return $query->with($relations)->latest('updated_at')->cursorPaginate($per_page,cursorName: 'page');
+    }
 }

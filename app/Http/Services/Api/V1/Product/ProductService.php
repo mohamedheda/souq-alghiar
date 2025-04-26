@@ -3,6 +3,9 @@
 namespace App\Http\Services\Api\V1\Product;
 
 use App\Http\Resources\V1\Product\ProductDetailsResource;
+use App\Http\Resources\V1\Product\ProductPaginationResource;
+use App\Http\Resources\V1\Product\ProductResource;
+use App\Http\Services\Api\V1\Sphinx\SphinxService;
 use App\Http\Services\Mutual\FileManagerService;
 use App\Http\Traits\Responser;
 use App\Repository\Eloquent\ProductImageRepository;
@@ -12,8 +15,10 @@ use App\Repository\ProductImageRepositoryInterface;
 use App\Repository\ProductMakesRepositoryInterface;
 use App\Repository\ProductRepositoryInterface;
 use Exception;
+use http\Env\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
+use Foolz\SphinxQL\SphinxQL;
 
 class ProductService
 {
@@ -25,10 +30,38 @@ class ProductService
         private readonly FileManagerService              $fileManagerService,
         private readonly ProductRepositoryInterface      $productRepository,
         private readonly ProductImageRepositoryInterface $productImageRepository,
-        private readonly ProductHelperService $helperService ,
+        private readonly ProductHelperService            $helperService,
+        private readonly SphinxService $sphinxService ,
     )
     {
 
+    }
+
+    public function index($request)
+    {
+        $query="";
+        if ($request->key){
+            $key=addslashes($request->key);
+            $query.="@(title,description) $key";
+        }
+        if ($request->category_id){
+            $query.="@category_id=$request->category_id";
+        }
+        if ($request->sub_category_id){
+            $query.="@sub_category_id=$request->sub_category_id";
+        }
+        if ($request->city_id){
+            $query.="@city_id=$request->city_id";
+        }
+
+
+        $data= $this->sphinxService->search('products_index',$query);
+        return $this->responseSuccess(data: $data);
+
+
+
+        $products = $this->productRepository->cursorProducts(1, relations: ['mainImage', 'mainMarkes', 'user']);
+        return $this->responseSuccess(data: ProductPaginationResource::make($products));
     }
 
     public function store($request)
@@ -86,7 +119,6 @@ class ProductService
     }
 
 
-
     public function delete($id)
     {
         DB::beginTransaction();
@@ -107,10 +139,12 @@ class ProductService
             return $this->responseFail(message: __('messages.Something went wrong'));
         }
     }
-    public function show($id){
+
+    public function show($id)
+    {
         try {
-            $product = $this->productRepository->getById($id,relations:['images','category:id,name_ar,name_en','markes','markes.make:id,name_ar,name_en,logo','markes.model:id,name_ar,name_en']);
-            $product->labels=$this->helperService->prepareLabels($product);
+            $product = $this->productRepository->getById($id, relations: ['images', 'category:id,name_ar,name_en', 'markes', 'markes.make:id,name_ar,name_en,logo', 'markes.model:id,name_ar,name_en']);
+            $product->labels = $this->helperService->prepareLabels($product);
 //            return $product;
             DB::commit();
             return $this->responseSuccess(data: ProductDetailsResource::make($product));
