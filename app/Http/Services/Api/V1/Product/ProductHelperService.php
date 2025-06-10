@@ -2,6 +2,7 @@
 
 namespace App\Http\Services\Api\V1\Product;
 
+use App\Http\Services\Api\V1\Sphinx\SphinxService;
 use App\Http\Services\Mutual\FileManagerService;
 use App\Repository\Eloquent\UserRepository;
 use App\Repository\InfoRepositoryInterface;
@@ -15,6 +16,7 @@ class ProductHelperService
         private readonly UserRepository                  $userRepository,
         private readonly ProductMakesRepositoryInterface $productMakesRepository,
         private readonly ProductImageRepositoryInterface $productImageRepository,
+        private readonly SphinxService $sphinxService ,
     )
     {
 
@@ -63,5 +65,40 @@ class ProductHelperService
         if ($product->all_makes)
             $labels[] = __('messages.all_makes');
         return $labels;
+    }
+
+
+
+    public function filterProductsUsingSphinx($request){
+        $query="";
+        if ($request->key){
+            $key=addslashes($request->key);
+            $query.="@(title,description) $key";
+        }
+        $filters = [];
+        if ($request->category_id) {
+            $filters['category_id'] = (int) $request->category_id;
+        }
+        if ($request->sub_category_id) {
+            $filters['sub_category_id'] = (int) $request->sub_category_id;
+        }
+        if ($request->city_id) {
+            $filters['city_id'] = (int) $request->city_id;
+        }
+        if ($request->mark_id) {
+            $filters['mark_id'] = (int) $request->mark_id;
+        }
+        if ($request->model_id) {
+            $filters['model_id'] = (int) $request->model_id;
+        }
+        $range_query=null;
+        if ($request->year){
+            $year = (int) $request->year;
+            $range_query= " AND year_from <= $year AND year_to >= $year;";
+        }
+
+
+        $data= $this->sphinxService->search('products_index',$query , $filters,$range_query);
+        return $data;
     }
 }

@@ -17,13 +17,13 @@ class ProductResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'image' => ProductImageResource::make($this->mainImage),
+            'image' => ProductImageResource::make($this->whenLoaded('mainImage')),
             'featured' => $this->featured,
             'title' => $this->title,
             'price' => $this->priceValue,
             'currency' => $this->productCurrency,
             'all_makes' => $this->all_makes ,
-            'makes' => $this->when(!$this->all_makes, ProductMakeResource::collection($this->whenLoaded('mainMarkes'))),
+            'makes' => $this->when(!$this->all_makes, ProductMakeResource::collection($this->markes->take(3))),
             'more_than_main_makes' => $this->moreThanMainMarkes ,
             'user_image' => $this->user?->imageUrl,
             'user_name' => $this->user?->name,

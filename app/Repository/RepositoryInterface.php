@@ -30,6 +30,12 @@ interface RepositoryInterface
         array $columns = ['*'],
         array $relations = [],
     ): array|Collection;
+    public function whereIn(
+        $data,
+        array $columns = ['*'],
+        array $relations = [],
+        array $withCount = []
+    ): array|Collection;
 
     public function first(
         $byColumn,

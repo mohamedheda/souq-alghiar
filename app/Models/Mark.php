@@ -19,4 +19,7 @@ class Mark extends Model
             return null;
         });
     }
+    public function models(){
+        return $this->hasMany(CarModel::class);
+    }
 }

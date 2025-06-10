@@ -31,9 +31,10 @@ class Product extends Model
     public function moreThanMainMarkes(): Attribute
     {
         return Attribute::get(function () {
-            if (($this->markes()?->count() - 3) > 0) {
+            $count = $this->markes_count ?? $this->markes()?->count();
+            if (($count - 3) > 0) {
                 $formatter = numfmt_create(app()->getLocale(), \NumberFormatter::DECIMAL);
-                return "+". numfmt_format($formatter, $this->markes()?->count() - 3);
+                return "+". numfmt_format($formatter, $count - 3);
             }
             return null;
         });
@@ -68,10 +69,5 @@ class Product extends Model
     public function markes()
     {
         return $this->hasMany(ProductMark::class);
-    }
-
-    public function mainMarkes()
-    {
-        return $this->hasMany(ProductMark::class)->limit(3);
     }
 }

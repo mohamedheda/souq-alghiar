@@ -59,6 +59,15 @@ abstract class Repository implements RepositoryInterface
     {
         return $this->model::query()->select($columns)->with($relations)->where($byColumn, $value)->get();
     }
+    public function whereIn(
+        $data,
+        array $columns = ['*'],
+        array $relations = [],
+        array $withCount = []
+    ): array|Collection{
+        return $this->model::query()->whereIn('id',$data)->select($columns)->with($relations)->withCount($withCount)->get();
+    }
+
 
     public function first(
         $byColumn,

@@ -20,11 +20,20 @@ class SphinxService
         return $this->conn;
     }
 
-    public function search($index, $query)
+    public function search($index, $query, $filters = [] ,$range_query=null,$limit=18)
     {
         $query = "SELECT * FROM $index WHERE MATCH('$query')";
+        if (!empty($filters))
+            foreach ($filters as $filter => $value)
+                $query .= " AND $filter=$value";
+        if($range_query)
+            $query.=$range_query;
+        $query.="ORDER BY updated_at DESC";
+        $page = (int) (request()->get('page', 1));
+        $limit = (int) (request()->get('limit', $limit));
+        $offset = ($page - 1) * $limit;
+        $query.=" LIMIT $limit OFFSET $offset";
         $result = $this->conn->query($query);
-        $data = $result->fetch_all(MYSQLI_ASSOC);
-        return $data;
+        return array_map(fn($item) => $item['id'], $result->fetch_all(MYSQLI_ASSOC));
     }
 }

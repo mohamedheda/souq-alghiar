@@ -31,7 +31,6 @@ class ProductService
         private readonly ProductRepositoryInterface      $productRepository,
         private readonly ProductImageRepositoryInterface $productImageRepository,
         private readonly ProductHelperService            $helperService,
-        private readonly SphinxService $sphinxService ,
     )
     {
 
@@ -39,29 +38,9 @@ class ProductService
 
     public function index($request)
     {
-        $query="";
-        if ($request->key){
-            $key=addslashes($request->key);
-            $query.="@(title,description) $key";
-        }
-        if ($request->category_id){
-            $query.="@category_id=$request->category_id";
-        }
-        if ($request->sub_category_id){
-            $query.="@sub_category_id=$request->sub_category_id";
-        }
-        if ($request->city_id){
-            $query.="@city_id=$request->city_id";
-        }
-
-
-        $data= $this->sphinxService->search('products_index',$query);
-        return $this->responseSuccess(data: $data);
-
-
-
-        $products = $this->productRepository->cursorProducts(1, relations: ['mainImage', 'mainMarkes', 'user']);
-        return $this->responseSuccess(data: ProductPaginationResource::make($products));
+        $productsIds=$this->helperService->filterProductsUsingSphinx($request);
+        $products = $this->productRepository->whereIn(data:$productsIds , relations: ['mainImage', 'markes.make', 'user'],withCount:['markes']);
+        return $this->responseSuccess(data: ProductResource::collection($products));
     }
 
     public function store($request)
