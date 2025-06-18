@@ -9,7 +9,7 @@ class SphinxService
 
     public function __construct()
     {
-        $this->conn = new \mysqli('127.0.0.1', 'root', '', '', 9306);
+        $this->conn = new \mysqli(config('database.sphinx.host'), config('database.sphinx.username'), '', '', 9306);
         if ($this->conn->connect_error) {
             die('Connection failed: ' . $this->conn->connect_error);
         }

@@ -147,5 +147,9 @@ return [
         ],
 
     ],
+    'sphinx' => [
+        'username' => env('SPHINX_USERNAME',''),
+        'host' => env('SPHINX_HOST', '127.0.0.1'),
+    ]
 
 ];
