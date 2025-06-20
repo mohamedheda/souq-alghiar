@@ -12,4 +12,10 @@ class MarkRepository extends Repository implements MarkRepositoryInterface
     {
         parent::__construct($model);
     }
+    public function getAllMarks(){
+        return $this->model::query()
+            ->orderBy('name_'.app()->getLocale())
+            ->get();
+    }
+
 }

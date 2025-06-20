@@ -17,6 +17,7 @@ return new class extends Migration
                 ->nullOnDelete()->cascadeOnUpdate();
             $table->string('name_ar')->nullable();
             $table->string('name_en')->nullable();
+            $table->index('mark_id');
             $table->timestamps();
         });
     }

@@ -7,6 +7,7 @@ use App\Http\Resources\V1\City\CityResource;
 use App\Http\Traits\Responser;
 use App\Repository\CityRepositoryInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class CityController extends Controller
 {
@@ -21,7 +22,7 @@ class CityController extends Controller
 
     public function index()
     {
-        $cities = $this->cityRepository->getCities();
+        $cities = Cache::rememberForever('cities',fn() => $this->cityRepository->getCities());
         return $this->responseSuccess(data: CityResource::collection($cities));
     }
 }

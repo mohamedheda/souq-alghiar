@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->tinyInteger('show_home')->default(0);
             $table->timestamps();
+            $table->index('parent_id');
+            $table->index('show_home');
         });
     }
 

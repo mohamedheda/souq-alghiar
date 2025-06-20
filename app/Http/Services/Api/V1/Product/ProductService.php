@@ -38,9 +38,13 @@ class ProductService
 
     public function index($request)
     {
-        $productsIds=$this->helperService->filterProductsUsingSphinx($request);
-        $products = $this->productRepository->whereIn(data:$productsIds , relations: ['mainImage', 'markes.make', 'user'],withCount:['markes']);
-        return $this->responseSuccess(data: ProductResource::collection($products));
+        $products = $this->productRepository->cursorProducts(15 , relations: ['mainImage', 'markes.make', 'user']);
+        return $this->responseSuccess(data: ProductPaginationResource::make($products));
+    }
+    public function getUserProducts($user_id)
+    {
+        $products = $this->productRepository->cursorProducts(15 , relations: ['mainImage', 'markes.make', 'user'], user_id: $user_id);
+        return $this->responseSuccess(data: ProductPaginationResource::make($products));
     }
 
     public function store($request)
@@ -124,12 +128,10 @@ class ProductService
         try {
             $product = $this->productRepository->getById($id, relations: ['images', 'category:id,name_ar,name_en', 'markes', 'markes.make:id,name_ar,name_en,logo', 'markes.model:id,name_ar,name_en']);
             $product->labels = $this->helperService->prepareLabels($product);
-//            return $product;
-            DB::commit();
+            $product->similar_products=$this->productRepository->getSimilarProducts($product,relations: ['mainImage', 'markes.make', 'user']);
             return $this->responseSuccess(data: ProductDetailsResource::make($product));
         } catch (Exception $e) {
-            DB::rollBack();
-            return $e;
+//            return $e;
             return $this->responseFail(message: __('messages.Something went wrong'));
         }
     }

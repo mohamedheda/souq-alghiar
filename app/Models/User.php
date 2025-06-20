@@ -70,6 +70,15 @@ class User extends Authenticatable implements JWTSubject
             return null;
         });
     }
+    public function coverUrl(): Attribute
+    {
+        return Attribute::get(function () {
+            if ($this->cover)
+                return url($this->cover);
+            // TODO return cached static cover if not exist
+            return null;
+        });
+    }
 
     public function canAddProduct(): Attribute
     {

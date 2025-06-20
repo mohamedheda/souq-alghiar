@@ -5,12 +5,8 @@ namespace App\Http\Resources\V1\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class UserResource extends JsonResource
+class UserProfileDataResource extends JsonResource
 {
-    public function __construct($resource, private readonly bool $withToken)
-    {
-        parent::__construct($resource);
-    }
     /**
      * Transform the resource into an array.
      *
@@ -19,13 +15,15 @@ class UserResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id ,
             'name' => $this->name,
             'email' => $this->email,
+            'user_name' => $this->user_name,
+            'phone' => $this->whenNotNull($this->phone),
             'image' => $this->whenNotNull($this->imageUrl),
-            'otp_token' => $this->whenNotNull($this->otp?->token),
-            'otp_verified' => $this->whenNotNull($this->otp_verified),
-            'can_add_product' => $this->whenNotNull($this->canAddProduct),
-            'token' => $this->when($this->withToken, $this->token()),
+            'cover' => $this->whenNotNull($this->coverUrl),
+            'address' => $this->whenNotNull($this->address),
+            'city_id' => $this->whenNotNull($this->city_id),
         ];
     }
 }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->tinyInteger('show_home')->default(0);
             $table->tinyInteger('important')->default(0);
+            $table->index(['show_home','important']);
             $table->timestamps();
         });
     }

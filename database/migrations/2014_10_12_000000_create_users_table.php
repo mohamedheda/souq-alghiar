@@ -24,7 +24,6 @@ return new class extends Migration {
             $table->string('image')->nullable();
             $table->string('cover')->nullable();
             $table->string('password')->nullable();
-            $table->bigInteger('wallet')->default(0);
             $table->boolean('is_active')->default(1);
             $table->boolean('is_blocked')->default(0);
             $table->boolean('otp_verified')->default(0);

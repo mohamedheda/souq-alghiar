@@ -21,6 +21,9 @@ return new class extends Migration
                 ->nullOnDelete()->cascadeOnUpdate();
             $table->integer('year_from')->default(0);
             $table->integer('year_to')->default(0);
+
+            $table->index('product_id');
+            $table->index(['mark_id', 'model_id', 'year_from', 'year_to']);
             $table->timestamps();
         });
     }

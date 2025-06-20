@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\V1\Auth\SignInRequest;
 use App\Http\Requests\Api\V1\Auth\SignUpRequest;
 use App\Http\Requests\Api\V1\Auth\SocialSignRequest;
+use App\Http\Requests\Api\V1\Auth\User\UpdateProfileRequest;
 use App\Http\Services\Api\V1\Auth\AuthService;
 
 class AuthController extends Controller
@@ -35,5 +36,11 @@ class AuthController extends Controller
     public function whatIsMyPlatform()
     {
         return $this->auth->whatIsMyPlatform();
+    }
+    public function getProfileData(){
+        return $this->auth->getProfileData();
+    }
+    public function updateProfileData(UpdateProfileRequest $request) {
+        return $this->auth->updateProfileData($request);
     }
 }

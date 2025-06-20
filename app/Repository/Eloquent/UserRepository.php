@@ -29,4 +29,10 @@ class UserRepository extends Repository implements UserRepositoryInterface
     {
         return $this->model::where('id', $id)->decrement($key, $amount);
     }
+
+    public function getByUserName($user_name)
+    {
+        return $this->model::where('user_name', $user_name)->first();
+    }
+
 }

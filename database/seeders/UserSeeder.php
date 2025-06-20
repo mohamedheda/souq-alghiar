@@ -17,6 +17,8 @@ class UserSeeder extends Seeder
         User::query()->create([
             'name' => 'User',
             'email' => 'user@souq-alghiar.com',
+            'phone' => '010123456',
+            'user_name' => 'username',
             'password' => 'souq-alghiar1256!#',
             'city_id' => City::first()->id ,
         ]);

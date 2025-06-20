@@ -17,6 +17,9 @@ class ProductController extends Controller
     public function index(Request $request){
         return $this->productService->index($request);
     }
+    public function getUserProducts($user_id){
+        return $this->productService->getUserProducts($user_id);
+    }
     public function store(ProductRequest $request)
     {
         return $this->productService->store($request);

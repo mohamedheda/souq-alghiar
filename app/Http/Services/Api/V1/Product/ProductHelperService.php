@@ -16,7 +16,6 @@ class ProductHelperService
         private readonly UserRepository                  $userRepository,
         private readonly ProductMakesRepositoryInterface $productMakesRepository,
         private readonly ProductImageRepositoryInterface $productImageRepository,
-        private readonly SphinxService $sphinxService ,
     )
     {
 
@@ -53,7 +52,6 @@ class ProductHelperService
             app(InfoRepositoryInterface::class)->getValue('product_addition_points');
         $this->userRepository->decrementValue('wallet', $points_amount
             , auth('api')->id());
-        // TODO : Save logs for wallets .
     }
 
     public function prepareLabels($product)
@@ -66,7 +64,6 @@ class ProductHelperService
             $labels[] = __('messages.all_makes');
         return $labels;
     }
-
 
 
     public function filterProductsUsingSphinx($request){

@@ -17,17 +17,17 @@ enum UserType: string
     {
         return match ($this) {
             self::User => [
-                'email' => ['required', 'email:rfc,dns', Rule::unique('users', 'email')],
+                'phone' => ['required', 'string', 'max:14', new Phone(),'unique:users,phone'],
                 'password' => ['required', Password::min(8)->letters()->numbers()->symbols()],
                 'name' => ['required', 'string', 'max:255'],
                 'city_id' => ['required', Rule::exists('cities', 'id')],
             ],
             self::Merchant => [
-                'email' => ['required', 'email:rfc,dns', Rule::unique('users', 'email')],
+                'email' => ['nullable', 'email:rfc,dns', Rule::unique('users', 'email')],
                 'password' => ['required', Password::min(8)->letters()->numbers()->symbols()],
                 'name' => ['required', 'string', 'max:255'],
-                'user_name' => ['nullable', 'string', 'max:255', 'unique:users,user_name'],
-                'phone' => ['nullable', 'string', 'max:14', new Phone()],
+                'user_name' => ['required', 'string', 'max:255', 'unique:users,user_name'],
+                'phone' => ['required', 'string', 'max:14', new Phone(),'unique:users,phone'],
                 'address' => ['nullable', 'string'],
                 'image' => ['required', 'image'],
                 'city_id' => ['required', Rule::exists('cities', 'id')],

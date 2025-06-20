@@ -185,4 +185,6 @@ return [
     'Used' => 'Used' ,
     'all_makes' => 'All Makes' ,
     'LE' => 'LE' ,
+    'This user doesn’t exist.' => 'This user doesn’t exist.' ,
+
     ];

@@ -25,6 +25,12 @@ return new class extends Migration {
             $table->tinyInteger('all_makes')->default('0')->comment("0->specific makes , 1-> all makes");
             $table->tinyInteger('featured')->default('0')->comment("0->not featured makes , 1-> featured");
             $table->bigInteger('views')->default(0);
+
+            $table->index('category_id');
+            $table->index('sub_category_id');
+            $table->index('user_id');
+            $table->index('featured');
+            $table->fullText(['title', 'description']);
             $table->timestamps();
         });
     }
