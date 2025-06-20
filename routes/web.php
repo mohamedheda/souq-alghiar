@@ -20,6 +20,3 @@ Route::get('/api/featured-posts', function () {
     return $array;
 });
 
-Route::get('/', function () {
-    return view('pages.home',['title' => 'Home Page']);
-});
