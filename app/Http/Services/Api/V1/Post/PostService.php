@@ -38,8 +38,8 @@ class PostService
         try {
             $post = $this->postRepository->getById($id,columns: ['id','user_id','description','mark_id','updated_at'],
                 relations: ['images:id,post_id,image'
-                , 'user:id,name,image', 'mark:id,logo','comments:id,user_id,post_id,comment,updated_at'
-                ,'comments.replies:id,user_id,parent_id,comment,updated_at','comments.user:id,name,image'
+                , 'user:id,name,image', 'mark:id,logo','comments:id,user_id,pinned,post_id,comment,updated_at'
+                ,'comments.replies:id,user_id,pinned,parent_id,comment,updated_at','comments.user:id,name,image'
                 ,'comments.replies.user:id,name,image']);
 //            return $post;
             return $this->responseSuccess(data: PostDetailsResource::make($post));
