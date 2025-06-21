@@ -18,9 +18,14 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
         if($user_id)
             $query->where('user_id',(int) $request->user_id);
         if ($request->key) {
-            $key = $request->key;
+            $cleaned = preg_replace('/[^\p{L}\p{N}\s]/u', '', $request->key); // keep only letters, numbers, and space
 
-            $query->whereRaw("MATCH(title, description) AGAINST(? IN NATURAL LANGUAGE MODE)", [$key]);
+            $searchTerms = collect(explode(' ', $cleaned))
+                ->map(fn($term) => trim($term))
+                ->filter(fn($term) => strlen($term) > 1) // skip empty or 1-char words
+                ->map(fn($term) => '+' . $term . '*')
+                ->implode(' ');
+            $query->whereRaw("MATCH(title, description) AGAINST(? IN BOOLEAN MODE)", [$searchTerms]);
         }
         if($request->category_id)
             $query->where('category_id',(int) $request->category_id);

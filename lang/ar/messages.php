@@ -190,5 +190,6 @@ return [
     'all_makes' => 'كل الماركات' ,
     'LE' => 'جنيه' ,
     'This user doesn’t exist.' => 'هذا المستخدم غير موجود.' ,
+    'comments' => 'تعليقات' ,
 
 ];

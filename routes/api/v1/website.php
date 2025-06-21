@@ -7,6 +7,8 @@ use App\Http\Controllers\Api\V1\Auth\Password\PasswordController;
 use App\Http\Controllers\Api\V1\Category\CategoryController;
 use App\Http\Controllers\Api\V1\City\CityController;
 use App\Http\Controllers\Api\V1\Mark\MarkController;
+use App\Http\Controllers\Api\V1\Post\Comment\CommentController;
+use App\Http\Controllers\Api\V1\Post\PostController;
 use App\Http\Controllers\Api\V1\Product\ProductController;
 use App\Http\Controllers\Api\V1\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -32,17 +34,21 @@ Route::group(['prefix' => 'email', 'middleware' => ['auth:api']], function () {
     Route::post('/change', [ChangeEmailController::class, 'sendOtp']);
     Route::post('/otp/verify', [ChangeEmailController::class, 'change']);
 });
-Route::group(['prefix' => 'password'], function () {
-    Route::post('/forgot', [PasswordController::class, 'forgot']);
-    Route::post('/verify-otp', [PasswordController::class, 'verifyOtp']);
-    Route::post('/reset', [PasswordController::class, 'reset']);
-    Route::post('/update', [PasswordController::class, 'updatePassword']);
-});
+
 Route::group(['middleware' => 'auth:api' ], function () {
     Route::prefix('products')->group(function (){
         Route::post('/',[ProductController::class ,'store']);
         Route::post('{id}',[ProductController::class ,'update']);
         Route::delete('{id}',[ProductController::class ,'delete']);
+    });
+    Route::prefix('posts')->group(function (){
+        Route::post('/',[PostController::class ,'store']);
+        Route::post('{id}',[PostController::class ,'update']);
+        Route::delete('{id}',[PostController::class ,'delete']);
+    });
+    Route::prefix('comments')->group(function (){
+        Route::post('/',[CommentController::class ,'store']);
+        Route::delete('{id}',[CommentController::class ,'delete']);
     });
 });
 
@@ -54,5 +60,13 @@ Route::get('marks/{model_id}',[MarkController::class,'getModels']);
 Route::get('marks',[MarkController::class,'index']);
 Route::get('products/{id}',[ProductController::class ,'show']);
 Route::get('products',[ProductController::class ,'index']);
+Route::get('posts/{id}',[PostController::class ,'show']);
+Route::get('posts',[PostController::class ,'index']);
 Route::get('{user_id}/products',[ProductController::class ,'getUserProducts']);
 Route::get('users/{user_name}',[UserController::class ,'getUserProfile']);
+Route::group(['prefix' => 'password'], function () {
+    Route::post('/forgot', [PasswordController::class, 'forgot']);
+    Route::post('/verify-otp', [PasswordController::class, 'verifyOtp']);
+    Route::post('/reset', [PasswordController::class, 'reset']);
+    Route::post('/update', [PasswordController::class, 'updatePassword']);
+});

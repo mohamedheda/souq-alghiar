@@ -56,8 +56,6 @@ class ProductService
                 $data = $request->except(['images', 'makes']);
                 $data['user_id'] = auth('api')->id();
                 $product = $this->productRepository->create($data);
-                if (filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled'), FILTER_VALIDATE_BOOLEAN))
-                    $this->helperService->withdrawPoints($request->featured);
                 if ($request->images && is_array($request->images))
                     $this->helperService->attachImages($request->images, $product);
                 if ($request->makes && is_array($request->makes) && $request->all_makes == self::SPECIFIC_MAKES)

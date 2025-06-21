@@ -41,5 +41,8 @@ class AuthServiceProvider extends ServiceProvider
 //            else
                 return Response::allow();
         });
+        Gate::define('add-comment', function (User $user, $featured) {
+                return Response::allow();
+        });
     }
 }

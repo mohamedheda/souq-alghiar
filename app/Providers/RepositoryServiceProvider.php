@@ -4,14 +4,18 @@ namespace App\Providers;
 
 use App\Repository\CategoryRepositoryInterface;
 use App\Repository\CityRepositoryInterface;
+use App\Repository\CommentRepositoryInterface;
 use App\Repository\Eloquent\CategoryRepository;
 use App\Repository\Eloquent\CityRepository;
+use App\Repository\Eloquent\CommentRepository;
 use App\Repository\Eloquent\InfoRepository;
 use App\Repository\Eloquent\ManagerRepository;
 use App\Repository\Eloquent\MarkRepository;
 use App\Repository\Eloquent\ModelRepository;
 use App\Repository\Eloquent\OtpRepository;
 use App\Repository\Eloquent\PermissionRepository;
+use App\Repository\Eloquent\PostImageRepository;
+use App\Repository\Eloquent\PostRepository;
 use App\Repository\Eloquent\ProductImageRepository;
 use App\Repository\Eloquent\ProductMakesRepository;
 use App\Repository\Eloquent\ProductRepository;
@@ -25,6 +29,8 @@ use App\Repository\MarkRepositoryInterface;
 use App\Repository\ModelRepositoryInterface;
 use App\Repository\OtpRepositoryInterface;
 use App\Repository\PermissionRepositoryInterface;
+use App\Repository\PostImageRepositoryInterface;
+use App\Repository\PostRepositoryInterface;
 use App\Repository\ProductImageRepositoryInterface;
 use App\Repository\ProductMakesRepositoryInterface;
 use App\Repository\ProductRepositoryInterface;
@@ -58,6 +64,9 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(ProductRepositoryInterface::class, ProductRepository::class);
         $this->app->singleton(ProductMakesRepositoryInterface::class, ProductMakesRepository::class);
         $this->app->singleton(ProductImageRepositoryInterface::class, ProductImageRepository::class);
+        $this->app->singleton(PostRepositoryInterface::class, PostRepository::class);
+        $this->app->singleton(PostImageRepositoryInterface::class, PostImageRepository::class);
+        $this->app->singleton(CommentRepositoryInterface::class, CommentRepository::class);
     }
 
     /**
