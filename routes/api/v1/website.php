@@ -7,9 +7,11 @@ use App\Http\Controllers\Api\V1\Auth\Password\PasswordController;
 use App\Http\Controllers\Api\V1\Category\CategoryController;
 use App\Http\Controllers\Api\V1\City\CityController;
 use App\Http\Controllers\Api\V1\Mark\MarkController;
+use App\Http\Controllers\Api\V1\Package\PackageController;
 use App\Http\Controllers\Api\V1\Post\Comment\CommentController;
 use App\Http\Controllers\Api\V1\Post\PostController;
 use App\Http\Controllers\Api\V1\Product\ProductController;
+use App\Http\Controllers\Api\V1\Subscription\SubscriptionController;
 use App\Http\Controllers\Api\V1\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,6 +52,10 @@ Route::group(['middleware' => 'auth:api' ], function () {
         Route::post('/',[CommentController::class ,'store']);
         Route::delete('{id}',[CommentController::class ,'delete']);
     });
+    Route::prefix('subscription')->group(function (){
+        Route::get('/',[SubscriptionController::class ,'index']);
+        Route::post('/confirm',[SubscriptionController::class ,'confirm']);
+    });
 });
 
 
@@ -62,6 +68,7 @@ Route::get('products/{id}',[ProductController::class ,'show']);
 Route::get('products',[ProductController::class ,'index']);
 Route::get('posts/{id}',[PostController::class ,'show']);
 Route::get('posts',[PostController::class ,'index']);
+Route::get('packages',[PackageController::class ,'index']);
 Route::get('{user_id}/products',[ProductController::class ,'getUserProducts']);
 Route::get('users/{user_name}',[UserController::class ,'getUserProfile']);
 Route::group(['prefix' => 'password'], function () {

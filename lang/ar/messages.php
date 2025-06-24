@@ -191,5 +191,9 @@ return [
     'LE' => 'جنيه' ,
     'This user doesn’t exist.' => 'هذا المستخدم غير موجود.' ,
     'comments' => 'تعليقات' ,
-
+    'year' => 'سنة' ,
+    'month' => 'شهر' ,
+    'unlimited' => 'غير محدود' ,
+    'inactive' => 'غير نشط' ,
+    'active' => 'نشط' ,
 ];

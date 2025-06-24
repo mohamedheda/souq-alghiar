@@ -16,6 +16,7 @@ class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    const ACTIVE=1;
     /**
      * The attributes that are mass assignable.
      *
@@ -38,6 +39,12 @@ class User extends Authenticatable implements JWTSubject
         'is_blocked',
         'otp_verified',
         'is_active',
+        'subscription_ends_at',
+        'subscription_active',
+        'products',
+        'featured_products',
+        'comments',
+        'pinned_comments',
     ];
 
     /**
@@ -80,6 +87,28 @@ class User extends Authenticatable implements JWTSubject
         });
     }
 
+    public function productsAvailableCount(): Attribute
+    {
+        return Attribute::make(get: fn() => is_null($this->products) ? __('messages.unlimited') : $this->products);
+    }
+    public function featuredProductsAvailableCount(): Attribute
+    {
+        return Attribute::make(get: fn() => is_null($this->featured_products) ? __('messages.unlimited') : $this->featured_products);
+    }
+    public function commentsAvailableCount(): Attribute
+    {
+        return Attribute::make(get: fn() => is_null($this->comments) ? __('messages.unlimited') : $this->comments);
+    }
+    public function pinnedCommentsAvailableCount(): Attribute
+    {
+        return Attribute::make(get: fn() => is_null($this->pinned_comments) ? __('messages.unlimited') : $this->pinned_comments);
+    }
+    public function subscriptionActiveTitle(): Attribute
+    {
+        return Attribute::make(get: fn()=> $this->subscription_active == self::ACTIVE ? __('messages.active') : __('messages.inactive'));
+    }
+
+
     public function canAddProduct(): Attribute
     {
         return Attribute::make(get: function () {
@@ -118,5 +147,11 @@ class User extends Authenticatable implements JWTSubject
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+    public function lastSubscription(){
+        return $this->hasOne(Subscription::class)->latestOfMany();
+    }
+    public function subscriptions(){
+        return $this->hasMany(Subscription::class)->latest();
     }
 }

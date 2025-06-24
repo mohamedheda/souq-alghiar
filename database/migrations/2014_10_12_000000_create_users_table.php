@@ -27,6 +27,14 @@ return new class extends Migration {
             $table->boolean('is_active')->default(1);
             $table->boolean('is_blocked')->default(0);
             $table->boolean('otp_verified')->default(0);
+            $table->foreignId('city_id')->nullable()->constrained('cities')
+                ->nullOnDelete()->cascadeOnUpdate();
+            $table->tinyInteger('products')->nullable()->default(0);
+            $table->tinyInteger('featured_products')->nullable()->default(0);
+            $table->tinyInteger('comments')->nullable()->default(0);
+            $table->tinyInteger('pinned_comments')->nullable()->default(0);
+            $table->timestamp('subscription_ends_at')->nullable();
+            $table->tinyInteger('subscription_active')->default(0);
             $table->timestamps();
         });
     }

@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             InfoSeeder::class,
             CarMarkSeeder::class,
             CategorySeeder::class,
-            ProductSeeder::class
+            ProductSeeder::class,
+            PackageSeeder::class ,
         ]);
     }
 }

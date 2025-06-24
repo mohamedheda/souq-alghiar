@@ -11,9 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('city_id')->nullable()->after('email')->constrained('cities')
+        Schema::create('package_features', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('package_id')->nullable()->constrained('packages')
                 ->nullOnDelete()->cascadeOnUpdate();
+            $table->string('name_en')->nullable();
+            $table->string('name_ar')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -22,8 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('city_id');
-        });
+        Schema::dropIfExists('package_features');
     }
 };

@@ -187,5 +187,10 @@ return [
     'LE' => 'LE' ,
     'comments' => 'comments' ,
     'This user doesn’t exist.' => 'This user doesn’t exist.' ,
+    'year' => 'year' ,
+    'month' => 'month' ,
+    'unlimited' => 'unlimited' ,
+    'inactive' => 'inactive' ,
+    'active' => 'active' ,
 
     ];

@@ -13,6 +13,8 @@ use App\Repository\Eloquent\ManagerRepository;
 use App\Repository\Eloquent\MarkRepository;
 use App\Repository\Eloquent\ModelRepository;
 use App\Repository\Eloquent\OtpRepository;
+use App\Repository\Eloquent\PackageFeatureRepository;
+use App\Repository\Eloquent\PackageRepository;
 use App\Repository\Eloquent\PermissionRepository;
 use App\Repository\Eloquent\PostImageRepository;
 use App\Repository\Eloquent\PostRepository;
@@ -22,12 +24,15 @@ use App\Repository\Eloquent\ProductRepository;
 use App\Repository\Eloquent\Repository;
 use App\Repository\Eloquent\RoleRepository;
 use App\Repository\Eloquent\SettingsRepository;
+use App\Repository\Eloquent\SubscriptionRepository;
 use App\Repository\Eloquent\UserRepository;
 use App\Repository\InfoRepositoryInterface;
 use App\Repository\ManagerRepositoryInterface;
 use App\Repository\MarkRepositoryInterface;
 use App\Repository\ModelRepositoryInterface;
 use App\Repository\OtpRepositoryInterface;
+use App\Repository\PackageFeatureRepositoryInterface;
+use App\Repository\PackageRepositoryInterface;
 use App\Repository\PermissionRepositoryInterface;
 use App\Repository\PostImageRepositoryInterface;
 use App\Repository\PostRepositoryInterface;
@@ -37,6 +42,7 @@ use App\Repository\ProductRepositoryInterface;
 use App\Repository\RepositoryInterface;
 use App\Repository\RoleRepositoryInterface;
 use App\Repository\SettingsRepositoryInterface;
+use App\Repository\SubscriptionRepositoryInterface;
 use App\Repository\UserRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
@@ -67,6 +73,9 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(PostRepositoryInterface::class, PostRepository::class);
         $this->app->singleton(PostImageRepositoryInterface::class, PostImageRepository::class);
         $this->app->singleton(CommentRepositoryInterface::class, CommentRepository::class);
+        $this->app->singleton(PackageRepositoryInterface::class, PackageRepository::class);
+        $this->app->singleton(PackageFeatureRepositoryInterface::class, PackageFeatureRepository::class);
+        $this->app->singleton(SubscriptionRepositoryInterface::class, SubscriptionRepository::class);
     }
 
     /**
