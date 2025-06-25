@@ -17,5 +17,13 @@ class MarkRepository extends Repository implements MarkRepositoryInterface
             ->orderBy('name_'.app()->getLocale())
             ->get();
     }
+    public function getHomeMarks(){
+        return $this->model::query()
+            ->orderByDesc('show_home')
+            ->orderByDesc('important')
+            ->limit(16)
+            ->get();
+    }
+
 
 }

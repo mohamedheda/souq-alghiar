@@ -24,6 +24,7 @@ use App\Repository\Eloquent\ProductRepository;
 use App\Repository\Eloquent\Repository;
 use App\Repository\Eloquent\RoleRepository;
 use App\Repository\Eloquent\SettingsRepository;
+use App\Repository\Eloquent\StructureRepository;
 use App\Repository\Eloquent\SubscriptionRepository;
 use App\Repository\Eloquent\UserRepository;
 use App\Repository\InfoRepositoryInterface;
@@ -42,6 +43,7 @@ use App\Repository\ProductRepositoryInterface;
 use App\Repository\RepositoryInterface;
 use App\Repository\RoleRepositoryInterface;
 use App\Repository\SettingsRepositoryInterface;
+use App\Repository\StructureRepositoryInterface;
 use App\Repository\SubscriptionRepositoryInterface;
 use App\Repository\UserRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -76,6 +78,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(PackageRepositoryInterface::class, PackageRepository::class);
         $this->app->singleton(PackageFeatureRepositoryInterface::class, PackageFeatureRepository::class);
         $this->app->singleton(SubscriptionRepositoryInterface::class, SubscriptionRepository::class);
+        $this->app->singleton(StructureRepositoryInterface::class, StructureRepository::class);
     }
 
     /**

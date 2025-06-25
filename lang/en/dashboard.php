@@ -283,4 +283,13 @@ return [
     'model'=> 'Model',
     'sub_category'=> 'sub category',
     'sub_categories'=> 'sub categories',
+    'structure' => 'Structure',
+    'expire_at' => 'expire at' ,
+    'home_content' => 'Home Content',
+    'first' => 'First',
+    'footer_logo' => 'Footer Logo',
+    'phones' => 'phones',
+    'emails' => 'emails',
+    'email' => 'email',
+    'home_image' => 'home image',
 ];

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Package extends Model
 {
     use HasFactory,LanguageToggle;
-
+    protected $guarded=[];
     public function priceValue():Attribute{
         return Attribute::get(fn()=> $this->price . " " . __('messages.LE'));
     }

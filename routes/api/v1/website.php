@@ -6,11 +6,13 @@ use App\Http\Controllers\Api\V1\Auth\Otp\OtpController;
 use App\Http\Controllers\Api\V1\Auth\Password\PasswordController;
 use App\Http\Controllers\Api\V1\Category\CategoryController;
 use App\Http\Controllers\Api\V1\City\CityController;
+use App\Http\Controllers\Api\V1\Home\HomeContentController;
 use App\Http\Controllers\Api\V1\Mark\MarkController;
 use App\Http\Controllers\Api\V1\Package\PackageController;
 use App\Http\Controllers\Api\V1\Post\Comment\CommentController;
 use App\Http\Controllers\Api\V1\Post\PostController;
 use App\Http\Controllers\Api\V1\Product\ProductController;
+use App\Http\Controllers\Api\V1\Structure\HomeController;
 use App\Http\Controllers\Api\V1\Subscription\SubscriptionController;
 use App\Http\Controllers\Api\V1\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -60,6 +62,9 @@ Route::group(['middleware' => 'auth:api' ], function () {
 
 
 // General Routes
+Route::get('header-footer', HomeController::class);
+Route::get('categories-marks', [HomeContentController::class,'categoriesAndMarks']);
+
 Route::get('cities',[CityController::class,'index']);
 Route::get('category',[CategoryController::class,'index']);
 Route::get('marks/{model_id}',[MarkController::class,'getModels']);

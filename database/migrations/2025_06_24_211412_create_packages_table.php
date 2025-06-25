@@ -22,6 +22,7 @@ return new class extends Migration
             $table->tinyInteger('comments')->nullable();
             $table->tinyInteger('pinned_comments')->nullable();
             $table->text('promotional_text')->nullable();
+            $table->tinyInteger('default_package')->default(0);
             $table->timestamps();
         });
     }

@@ -23,6 +23,7 @@ class PackageSeeder extends Seeder
                 'featured_products' => 0,
                 'comments' => 10,
                 'pinned_comments' => 0,
+                'default_package' => 1,
                 'promotional_text' => null,
                 'features' => [
                     'حتى 20 منتج عادي/شهر',
@@ -40,6 +41,7 @@ class PackageSeeder extends Seeder
                 'comments' => 50,
                 'pinned_comments' => 5,
                 'promotional_text' => null,
+                'default_package' => 0,
                 'features' => [
                     'حتى 50 منتج عادي/شهر',
                     'حتى 5 منتجات عادية/شهر',
@@ -58,6 +60,7 @@ class PackageSeeder extends Seeder
                 'comments' => null,
                 'pinned_comments' => 20,
                 'promotional_text' => 'وفر 2200 جنيه مقارنة بالشهري يعادل فقط 416 جنيه/شهر',
+                'default_package' => 0,
                 'features' => [
                     'منتجات عادية غير محدودة',
                     'حتى 20 منتجات مميزة',
@@ -80,6 +83,7 @@ class PackageSeeder extends Seeder
                 'comments' => $package['comments'],
                 'pinned_comments' => $package['pinned_comments'],
                 'promotional_text' => $package['promotional_text'],
+                'default_package' => $package['default_package'],
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

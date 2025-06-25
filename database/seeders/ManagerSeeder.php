@@ -15,7 +15,7 @@ class ManagerSeeder extends Seeder
     {
         $manager=Manager::query()->create([
             'name' => 'Admin',
-            'email' => 'admin@souq-alghiar.com',
+            'email' => 'admin@souq-alghyar.com',
             'phone' => '+96650000000',
             'password' => '123123123'
         ]);

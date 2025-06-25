@@ -9,6 +9,7 @@ use App\Http\Requests\Api\V1\Auth\SocialSignRequest;
 use App\Http\Resources\V1\User\UserProfileDataResource;
 use App\Http\Resources\V1\User\UserResource;
 use App\Http\Services\Api\V1\Auth\Otp\OtpService;
+use App\Http\Services\Api\V1\Subscription\SubscriptionService;
 use App\Http\Services\Mutual\FileManagerService;
 use App\Http\Services\PlatformService;
 use App\Http\Traits\Responser;
@@ -30,6 +31,7 @@ abstract class AuthService extends PlatformService
         private readonly UserRepositoryInterface $userRepository,
         private readonly OtpService              $otpService,
         private readonly FileManagerService      $fileManagerService,
+        private readonly SubscriptionService $subscriptionService
     )
     {
     }
@@ -75,6 +77,8 @@ abstract class AuthService extends PlatformService
             $user = $this->userRepository->create($data);
             $this->otpService->generate($user);
             $user->load('otp');
+            if ($user->type ==UserType::Merchant->value)
+                $this->subscriptionService->confirmDefaultPackage($user);
             DB::commit();
             return $this->responseSuccess(message: __('messages.created successfully'), data: new UserResource($user, true));
         } catch (Exception $e) {

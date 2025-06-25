@@ -27,5 +27,12 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
             ->where('parent_id',$parent_id)
             ->get();
     }
+    public function getHomeCategories(){
+        return $this->model::query()
+            ->orderByDesc('show_home')
+            ->limit(8)
+            ->get();
+    }
+
 
 }

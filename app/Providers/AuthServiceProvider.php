@@ -27,21 +27,23 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Gate::define('add-product', function (User $user, $featured) {
-//            if ($user->is_blocked)
-//                return Response::deny(__('messages.user_blocked'));
-//            elseif ($featured && $user?->wallet < app(InfoRepositoryInterface::class)->getValue('featured_product_points')
-//                && filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled'), FILTER_VALIDATE_BOOLEAN))
-//                return Response::deny(__('messages.featured_product_points_required'));
-//            elseif (!$featured && $user?->wallet < app(InfoRepositoryInterface::class)->getValue('product_addition_points')
-//                && filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled'), FILTER_VALIDATE_BOOLEAN))
-//                return Response::deny(__('messages.product_addition_points_required'));
-//            elseif ($user?->productsCount >= app(InfoRepositoryInterface::class)->getValue('free_product_limit_user')
-//                && $user->type == UserType::User->value)
-//                return Response::deny(__('messages.free_product_limit_reached'));
-//            else
+            if ($user->is_blocked)
+                return Response::deny(__('messages.user_blocked'));
+            elseif ($featured && ! $user->canAddFeaturedProduct)
+                return Response::deny(__('messages.you_cannot_add_featured_products_please_upgrade_your_package'));
+            elseif (! $user->canAddProduct)
+                return Response::deny(__('messages.you_cannot_add_products_please_upgrade_your_package'));
+            else
                 return Response::allow();
         });
-        Gate::define('add-comment', function (User $user, $featured) {
+        Gate::define('add-comment', function (User $user, $pinned) {
+            if ($user->is_blocked)
+                return Response::deny(__('messages.user_blocked'));
+            elseif ($pinned && ! $user->canAddPinnedComment)
+                return Response::deny(__('messages.you_cannot_add_pinned_comment_please_upgrade_your_package'));
+            elseif (! $user->canAddComment)
+                return Response::deny(__('messages.you_cannot_add_comment_please_upgrade_your_package'));
+            else
                 return Response::allow();
         });
     }

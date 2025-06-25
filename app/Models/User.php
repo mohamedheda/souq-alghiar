@@ -16,7 +16,7 @@ class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    const ACTIVE=1;
+    const ACTIVE = 1;
     /**
      * The attributes that are mass assignable.
      *
@@ -69,6 +69,7 @@ class User extends Authenticatable implements JWTSubject
     {
         return Attribute::make(get: fn() => $this->products()?->count());
     }
+
     public function imageUrl(): Attribute
     {
         return Attribute::get(function () {
@@ -77,6 +78,7 @@ class User extends Authenticatable implements JWTSubject
             return null;
         });
     }
+
     public function coverUrl(): Attribute
     {
         return Attribute::get(function () {
@@ -91,33 +93,60 @@ class User extends Authenticatable implements JWTSubject
     {
         return Attribute::make(get: fn() => is_null($this->products) ? __('messages.unlimited') : $this->products);
     }
+
     public function featuredProductsAvailableCount(): Attribute
     {
         return Attribute::make(get: fn() => is_null($this->featured_products) ? __('messages.unlimited') : $this->featured_products);
     }
+
     public function commentsAvailableCount(): Attribute
     {
         return Attribute::make(get: fn() => is_null($this->comments) ? __('messages.unlimited') : $this->comments);
     }
+
     public function pinnedCommentsAvailableCount(): Attribute
     {
         return Attribute::make(get: fn() => is_null($this->pinned_comments) ? __('messages.unlimited') : $this->pinned_comments);
     }
+
     public function subscriptionActiveTitle(): Attribute
     {
-        return Attribute::make(get: fn()=> $this->subscription_active == self::ACTIVE ? __('messages.active') : __('messages.inactive'));
+        return Attribute::make(get: fn() => $this->subscription_active == self::ACTIVE ? __('messages.active') : __('messages.inactive'));
     }
 
 
     public function canAddProduct(): Attribute
     {
         return Attribute::make(get: function () {
-            return ($this->wallet >= app(InfoRepositoryInterface::class)->getValue('product_addition_points')
-                    || ! filter_var(app(InfoRepositoryInterface::class)->getValue('withdraw_points_enabled') , FILTER_VALIDATE_BOOLEAN) )
-                    && !$this->is_blocked;
+            return ($this->products > 0
+                    || is_null($this->products))
+                && !$this->is_blocked && $this->subscription_active;
         });
     }
-
+    public function canAddFeaturedProduct(): Attribute
+    {
+        return Attribute::make(get: function () {
+            return ($this->featured_products > 0
+                    || is_null($this->featured_products))
+                && !$this->is_blocked && $this->subscription_active;
+        });
+    }
+    public function canAddComment(): Attribute
+    {
+        return Attribute::make(get: function () {
+            return ($this->comments > 0
+                    || is_null($this->comments))
+                && !$this->is_blocked && $this->subscription_active;
+        });
+    }
+    public function canAddPinnedComment(): Attribute
+    {
+        return Attribute::make(get: function () {
+            return ($this->pinned_comments > 0
+                    || is_null($this->pinned_comments))
+                && !$this->is_blocked && $this->subscription_active;
+        });
+    }
     public function getJWTIdentifier()
     {
         return $this->getKey();
@@ -148,10 +177,14 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(Product::class);
     }
-    public function lastSubscription(){
+
+    public function lastSubscription()
+    {
         return $this->hasOne(Subscription::class)->latestOfMany();
     }
-    public function subscriptions(){
+
+    public function subscriptions()
+    {
         return $this->hasMany(Subscription::class)->latest();
     }
 }

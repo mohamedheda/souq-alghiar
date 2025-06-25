@@ -45,13 +45,18 @@ class ProductHelperService
         $product->markes()?->createMany(array_values($makes));
     }
 
-    public function withdrawPoints($featured)
+    public function decreaseProductsCount($featured)
     {
-        $points_amount = $featured ?
-            app(InfoRepositoryInterface::class)->getValue('featured_product_points') :
-            app(InfoRepositoryInterface::class)->getValue('product_addition_points');
-        $this->userRepository->decrementValue('wallet', $points_amount
-            , auth('api')->id());
+        if ($featured){
+            if (!is_null(auth('api')->user()?->featured_products))
+                $this->userRepository->decrementValue('featured_products', 1
+                , auth('api')->id());
+        } else{
+            if (!is_null(auth('api')->user()?->products))
+                $this->userRepository->decrementValue('products', 1
+                , auth('api')->id());
+        }
+
     }
 
     public function prepareLabels($product)
@@ -66,36 +71,37 @@ class ProductHelperService
     }
 
 
-    public function filterProductsUsingSphinx($request){
-        $query="";
-        if ($request->key){
-            $key=addslashes($request->key);
-            $query.="@(title,description) $key";
+    public function filterProductsUsingSphinx($request)
+    {
+        $query = "";
+        if ($request->key) {
+            $key = addslashes($request->key);
+            $query .= "@(title,description) $key";
         }
         $filters = [];
         if ($request->category_id) {
-            $filters['category_id'] = (int) $request->category_id;
+            $filters['category_id'] = (int)$request->category_id;
         }
         if ($request->sub_category_id) {
-            $filters['sub_category_id'] = (int) $request->sub_category_id;
+            $filters['sub_category_id'] = (int)$request->sub_category_id;
         }
         if ($request->city_id) {
-            $filters['city_id'] = (int) $request->city_id;
+            $filters['city_id'] = (int)$request->city_id;
         }
         if ($request->mark_id) {
-            $filters['mark_id'] = (int) $request->mark_id;
+            $filters['mark_id'] = (int)$request->mark_id;
         }
         if ($request->model_id) {
-            $filters['model_id'] = (int) $request->model_id;
+            $filters['model_id'] = (int)$request->model_id;
         }
-        $range_query=null;
-        if ($request->year){
-            $year = (int) $request->year;
-            $range_query= " AND year_from <= $year AND year_to >= $year;";
+        $range_query = null;
+        if ($request->year) {
+            $year = (int)$request->year;
+            $range_query = " AND year_from <= $year AND year_to >= $year;";
         }
 
 
-        $data= $this->sphinxService->search('products_index',$query , $filters,$range_query);
+        $data = $this->sphinxService->search('products_index', $query, $filters, $range_query);
         return $data;
     }
 }

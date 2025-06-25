@@ -63,7 +63,30 @@ class SubscriptionService
             auth('api')->user()->update($user_data);
             return $this->responseSuccess(message: __('messages.Subscription Added Successfully'));
         }catch (\Exception $exception){
-            return $exception->getMessage();
+//            return $exception->getMessage();
+            return $this->responseFail(message: __('messages.Something Went Wrong'));
+        }
+    }
+    public function confirmDefaultPackage($user){
+        try {
+            $package=$this->packageRepository->first('default_package',1);
+            if(!$package)
+                return $this->responseFail(message: __('messages.Something Went Wrong'));
+            $data=[
+                'user_id' => $user->id ,
+                'package_id' => $package->id ,
+                'price' => 0 ,
+                'months' => $package->months ,
+            ];
+            $user_data=$this->getNewSubscriptionData($user,$package);
+            $data=array_merge($data,$user_data);
+            $this->subscriptionRepository->create($data);
+            $user_data['subscription_ends_at'] = Carbon::parse($user->subscription_ends_at)->addMonths($package->months);
+            $user_data['subscription_active'] = self::ACTIVE;
+            $user->update($user_data);
+            return $this->responseSuccess(message: __('messages.Subscription Added Successfully'));
+        }catch (\Exception $exception){
+//            return $exception->getMessage();
             return $this->responseFail(message: __('messages.Something Went Wrong'));
         }
     }

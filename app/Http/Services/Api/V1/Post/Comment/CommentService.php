@@ -2,10 +2,12 @@
 
 namespace App\Http\Services\Api\V1\Post\Comment;
 
+use App\Http\Services\Api\V1\Post\PostHelperService;
 use App\Http\Traits\Responser;
 use App\Repository\CommentRepositoryInterface;
 use Exception;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 
 class CommentService
 {
@@ -13,7 +15,8 @@ class CommentService
     const COMMENT="comment";
     const REPLY="reply";
     public function __construct(
-        private readonly CommentRepositoryInterface $commentRepository
+        private readonly CommentRepositoryInterface $commentRepository ,
+        private PostHelperService $helperService ,
     )
     {
 
@@ -22,14 +25,19 @@ class CommentService
     {
         DB::beginTransaction();
         try {
-
-            $data = $request->except('type');
-            $data['user_id'] = auth('api')->id();
-            if($request->type == self::COMMENT ){
-                $data['post_id'] = $request->parent_id;
-                $data['parent_id'] = null;
+            $response = Gate::inspect('add-comment', [$request->pinned]);
+            if ($response->allowed()) {
+                $data = $request->except('type');
+                $data['user_id'] = auth('api')->id();
+                if($request->type == self::COMMENT ){
+                    $data['post_id'] = $request->parent_id;
+                    $data['parent_id'] = null;
+                }
+                $this->commentRepository->create($data);
+                $this->helperService->decreaseCommentsCount($request->pinned);
+            } else {
+                return $this->responseFail(message: $response->message());
             }
-            $this->commentRepository->create($data);
             DB::commit();
             return $this->responseSuccess(message: __('messages.created successfully'));
         } catch (Exception $e) {

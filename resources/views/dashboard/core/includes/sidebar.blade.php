@@ -65,6 +65,25 @@
                     </li>
                 @endpermission
                 <li
+                    class="nav-item {{in_array(request()->route()->getName(),[''])?'menu-open':''}}">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-columns"></i>
+                        <p>
+                            @lang('dashboard.structure')
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('home-content.index') }}"
+                               class="nav-link {{ in_array(request()->route()->getName(),['home-content.index'])? 'active': '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>@lang('dashboard.home_page')</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li
                     class="nav-item  {{ in_array(request()->route()->getName(),['settings.edit'])? 'menu-open': '' }} {{ Route::currentRouteName()=='settings.edit'?'activeNav':'' }}">
                     <a href="{{ route('settings.edit', auth()->user()->id) }}" class="nav-link">
                         <i class="nav-icon fas fa-cogs"></i>

@@ -284,5 +284,15 @@ return [
     'important'=> 'مهم',
     'sub_category'=> 'القسم الداخلي',
     'sub_categories'=> 'الاقسام الداخلية',
+    'structure' => 'الهيكل',
+    'home_content' => 'محتوى الصفحة الرئيسية',
+    'first' => 'الأول',
+    'footer_logo' => 'شعار التذييل',
+    'phones' => 'الهواتف',
+    'emails' => 'الايميلات',
+    'email' => 'الايميل',
+    'home_image' => 'صورة الرئيسية',
+
+
 
 ];

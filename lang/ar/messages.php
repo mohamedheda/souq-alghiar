@@ -180,10 +180,12 @@ return [
     'Password reset successfully.' => 'تم إعادة تعيين كلمة المرور بنجاح.' ,
     'Invalid or expired reset token.' => 'رمز إعادة تعيين غير صالح أو منتهي الصلاحية.' ,
 
-    'featured_product_points_required' => 'أنت بحاجة إلى مزيد من النقاط لتمييز المنتج ، برجاء شراء نقاط .',
-    'product_addition_points_required' => 'أنت بحاجة إلى مزيد من النقاط لإضافة منتج ، برجاء شراء نقاط .',
-    'free_product_limit_reached' => 'لقد وصلت إلى الحد الأقصى للمنتجات يرجي ترقية الحساب لحساب تاجر لتتمكن من اضافة المزيد من المنتجات .',
-    'user_blocked' => 'تم حظر حسابك. يرجى الاتصال بالدعم.',
+     'user_blocked' => 'تم حظر حسابك. يرجى الاتصال بالدعم.',
+
+    'you_cannot_add_featured_products_please_upgrade_your_package' => 'لا يمكنك إضافة منتجات مميزة، يرجى ترقية الباقة الخاصة بك',
+    'you_cannot_add_products_please_upgrade_your_package' => 'لا يمكنك إضافة منتجات، يرجى ترقية الباقة الخاصة بك',
+    'you_cannot_add_pinned_comment_please_upgrade_your_package' => 'لا يمكنك إضافة تعليق مثبت، يرجى ترقية الباقة الخاصة بك',
+    'you_cannot_add_comment_please_upgrade_your_package' => 'لا يمكنك إضافة تعليقات، يرجى ترقية الباقة الخاصة بك',
 
     'New' => 'جديد' ,
     'Used' => 'مستعمل' ,

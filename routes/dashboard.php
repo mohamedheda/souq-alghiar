@@ -9,6 +9,7 @@ use App\Http\Controllers\Dashboard\Mark\MarkController;
 use App\Http\Controllers\Dashboard\Model\ModelController;
 use App\Http\Controllers\Dashboard\Roles\RoleController;
 use App\Http\Controllers\Dashboard\Settings\SettingController;
+use App\Http\Controllers\Dashboard\Structure\HomeStructureController;
 use App\Http\Controllers\Dashboard\User\UserController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Route;
@@ -36,11 +37,13 @@ Route::group([
         Route::get('categories/{id}/sub-categories', [CategoryController::class,'getSubCategories'])->name('categories.sub_categories');
         Route::get('categories/{id}/sub-categories/create', [SubCategoryController::class,'create'])->name('categories.sub_categories.create');
         Route::resource('sub-categories', SubCategoryController::class)->except('index','create');
+        Route::group(['prefix' => 'structures'], function () {
+            Route::resource('home-content', HomeStructureController::class)->only(['index', 'store']);
+        });
+        Route::resource('settings' , SettingController::class)->only('edit','update');
+        Route::post('update-password' , [SettingController::class,'updatePassword'])->name('update-password');
+        Route::resource('roles',RoleController::class);
+        Route::get('role/{id}/managers',[RoleController::class,'mangers'])->name('roles.mangers');
+        Route::resource('managers',MangerController::class)->except('show','index');
     });
-    Route::resource('settings' , SettingController::class)->only('edit','update');
-    Route::post('update-password' , [SettingController::class,'updatePassword'])->name('update-password');
-    Route::resource('roles',RoleController::class);
-    Route::get('role/{id}/managers',[RoleController::class,'mangers'])->name('roles.mangers');
-    Route::resource('managers',MangerController::class)->except('show','index');
-
 });

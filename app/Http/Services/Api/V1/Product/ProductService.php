@@ -60,6 +60,7 @@ class ProductService
                     $this->helperService->attachImages($request->images, $product);
                 if ($request->makes && is_array($request->makes) && $request->all_makes == self::SPECIFIC_MAKES)
                     $this->helperService->attachMakes($request->makes, $product);
+                $this->helperService->decreaseProductsCount($request->featured);
             } else {
                 return $this->responseFail(message: $response->message());
             }

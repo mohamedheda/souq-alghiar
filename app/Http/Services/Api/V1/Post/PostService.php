@@ -52,6 +52,7 @@ class PostService
     {
         DB::beginTransaction();
         try {
+
             $data = $request->except(['images']);
             $data['user_id'] = auth('api')->id();
             $post = $this->postRepository->create($data);
