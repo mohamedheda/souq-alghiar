@@ -126,4 +126,8 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
         $query->withCount('markes');
         return $query->with($relations)->latest('updated_at')->limit(12)->get();
     }
+    public function incrementValue(string $key, int $amount = 1, $id = null)
+    {
+        return $this->model::where('id', $id)->increment($key, $amount);
+    }
 }

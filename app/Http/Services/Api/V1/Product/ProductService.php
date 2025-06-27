@@ -16,6 +16,7 @@ use App\Repository\ProductMakesRepositoryInterface;
 use App\Repository\ProductRepositoryInterface;
 use Exception;
 use http\Env\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 use Foolz\SphinxQL\SphinxQL;
@@ -127,7 +128,10 @@ class ProductService
         try {
             $product = $this->productRepository->getById($id, relations: ['images', 'category:id,name_ar,name_en', 'markes', 'markes.make:id,name_ar,name_en,logo', 'markes.model:id,name_ar,name_en']);
             $product->labels = $this->helperService->prepareLabels($product);
-            $product->similar_products=$this->productRepository->getSimilarProducts($product,relations: ['mainImage', 'markes.make', 'user']);
+            $product->similar_products=Cache::remember("simillar_products_$id",60*12 ,function () use ($product){
+                return $this->productRepository->getSimilarProducts($product,relations: ['mainImage', 'markes.make', 'user']);
+            });
+            $this->productRepository->incrementValue('views',1,$id);
             return $this->responseSuccess(data: ProductDetailsResource::make($product));
         } catch (Exception $e) {
 //            return $e;

@@ -9,4 +9,5 @@ interface ProductRepositoryInterface extends RepositoryInterface
     public function getHomeFeaturedProducts($relations=[]);
     public function getHomeLatestProducts($relations=[]);
     public function getHomeMostViewedProducts($relations=[]);
+    public function incrementValue(string $key, int $amount = 1, $id = null);
 }
