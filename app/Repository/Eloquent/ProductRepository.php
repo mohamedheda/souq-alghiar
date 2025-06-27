@@ -110,4 +110,20 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
 
         return $similar;
     }
+
+    public function getHomeFeaturedProducts($relations=[]){
+        $query= $this->model::query();
+        $query->withCount('markes');
+        return $query->with($relations)->orderByDesc('featured')->latest('updated_at')->limit(12)->get();
+    }
+    public function getHomeLatestProducts($relations=[]){
+        $query= $this->model::query();
+        $query->withCount('markes');
+        return $query->with($relations)->orderByDesc('views')->latest('updated_at')->limit(12)->get();
+    }
+    public function getHomeMostViewedProducts($relations=[]){
+        $query= $this->model::query();
+        $query->withCount('markes');
+        return $query->with($relations)->latest('updated_at')->limit(12)->get();
+    }
 }

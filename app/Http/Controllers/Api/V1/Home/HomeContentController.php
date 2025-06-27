@@ -17,4 +17,7 @@ class HomeContentController extends Controller
     public function categoriesAndMarks(){
         return $this->homeContentService->categoriesAndMarks();
     }
+    public function postsAndProducts(){
+        return $this->homeContentService->postsAndProducts();
+    }
 }

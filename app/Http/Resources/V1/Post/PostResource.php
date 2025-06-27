@@ -25,7 +25,7 @@ class PostResource extends JsonResource
             'description' => Str::limit($this->description,200) ,
             'category' => $this->category?->t('name') ,
             'city' => $this->city?->t('name') ,
-            'comments_count' => $this->comments_count ." " .__('messages.comments') ,
+            'comments_count' => is_null($this->comments_count) ? 0 ." " .__('messages.comments') : $this->comments_count ." " .__('messages.comments') ,
         ];
     }
 }

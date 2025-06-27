@@ -27,6 +27,7 @@ class ProductResource extends JsonResource
             'more_than_main_makes' => $this->moreThanMainMarkes ,
             'user_image' => $this->user?->imageUrl,
             'user_name' => $this->user?->name,
+            'views' => $this->views,
             'ago_time' => $this->updateAtDiff,
         ];
     }

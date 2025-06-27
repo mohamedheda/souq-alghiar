@@ -64,6 +64,7 @@ Route::group(['middleware' => 'auth:api' ], function () {
 // General Routes
 Route::get('header-footer', HomeController::class);
 Route::get('categories-marks', [HomeContentController::class,'categoriesAndMarks']);
+Route::get('posts-products', [HomeContentController::class,'postsAndProducts']);
 
 Route::get('cities',[CityController::class,'index']);
 Route::get('category',[CategoryController::class,'index']);

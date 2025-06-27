@@ -41,4 +41,10 @@ class PostRepository extends Repository implements PostRepositoryInterface
         return $query->with($relations)->latest('updated_at')->cursorPaginate($per_page,cursorName: 'page')->appends(request()->query());
     }
 
+    public function getHomePosts($relations=[]){
+        $query=$this->model::query();
+        return $query->with($relations)->latest('updated_at')->limit(6)->get();
+    }
+
+
 }
