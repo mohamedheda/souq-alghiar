@@ -20,9 +20,9 @@ class UserService
 
         $user=$this->userRepository->getByUserName($user_name);
         if(! $user){
-            return $this->responseFail('messages.This user doesn’t exist.');
+            return $this->responseFail(message: 'messages.This user doesn’t exist.');
         }
-        // Todo return wrong if user is unactive due to subscription
+        // TODO return wrong if user is unactive due to subscription
         return $this->responseSuccess(data: UserProfileResource::make($user));
     }
 }
