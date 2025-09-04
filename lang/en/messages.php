@@ -187,7 +187,7 @@ return [
     'all_makes' => 'All Makes' ,
     'LE' => 'LE' ,
     'comments' => 'comments' ,
-    'This user doesn’t exist.' => 'This user doesn’t exist.' ,
+    'This user does not exist.' => 'This user does not exist.' ,
     'year' => 'year' ,
     'month' => 'month' ,
     'unlimited' => 'unlimited' ,

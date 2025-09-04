@@ -191,11 +191,12 @@ return [
     'Used' => 'مستعمل' ,
     'all_makes' => 'كل الماركات' ,
     'LE' => 'جنيه' ,
-    'This user doesn’t exist.' => 'هذا المستخدم غير موجود.' ,
+    'This user does not exist.' => 'هذا المستخدم غير موجود.' ,
     'comments' => 'تعليقات' ,
     'year' => 'سنة' ,
     'month' => 'شهر' ,
     'unlimited' => 'غير محدود' ,
     'inactive' => 'غير نشط' ,
     'active' => 'نشط' ,
+
 ];
