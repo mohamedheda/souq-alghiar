@@ -17,6 +17,7 @@ class ProductResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'image' => ProductImageResource::make($this->whenLoaded('mainImage')),
             'featured' => $this->featured,
             'title' => $this->title,
