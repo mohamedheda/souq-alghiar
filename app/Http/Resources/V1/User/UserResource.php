@@ -23,6 +23,7 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             'user_name' => $this->whenNotNull($this->user_name),
+            'address' => $this->whenNotNull($this->address),
             'image' => $this->whenNotNull($this->imageUrl),
             'cover' => $this->whenNotNull($this->coverUrl),
             'otp_token' => $this->whenNotNull($this->otp?->token),

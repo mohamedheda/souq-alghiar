@@ -76,7 +76,9 @@ class User extends Authenticatable implements JWTSubject
         return Attribute::get(function () {
             if ($this->image)
                 return url($this->image);
-            return null;
+            return Cache::rememberForever("user_image_default",function (){
+                return asset('img/default_image.jpg');
+            });
         });
     }
 
@@ -86,7 +88,7 @@ class User extends Authenticatable implements JWTSubject
 
             if ($this->cover)
                 return url($this->cover);
-            return Cache::remember("cover_image_{$this->id}", now()->addDay(),function (){
+            return Cache::rememberForever("cover_image_default",function (){
                     return asset('img/cover.png');
             });
         });
