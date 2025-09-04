@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Sanctum\HasApiTokens;
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -82,10 +83,12 @@ class User extends Authenticatable implements JWTSubject
     public function coverUrl(): Attribute
     {
         return Attribute::get(function () {
+
             if ($this->cover)
                 return url($this->cover);
-            // TODO return cached static cover if not exist
-            return null;
+            return Cache::remember("cover_image_{$this->id}", now()->addDay(),function (){
+                    return asset('img/cover.png');
+            });
         });
     }
 
