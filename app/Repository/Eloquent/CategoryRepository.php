@@ -31,6 +31,7 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
         return $this->model::query()
             ->orderByDesc('show_home')
             ->limit(8)
+            ->oldest()
             ->get();
     }
 
