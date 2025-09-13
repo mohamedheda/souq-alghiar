@@ -15,7 +15,9 @@ class ProductMakeDetailsResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'make_id' => $this->id ,
             'make' => $this->make?->imageUrl,
+            'model_id' => $this->model?->id ,
             'model' => $this->model?->t('name'),
             'year_from' => $this->year_from,
             'year_to' => $this->year_to,
