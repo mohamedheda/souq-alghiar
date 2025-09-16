@@ -20,6 +20,7 @@ enum UserType: string
                 'phone' => ['required', 'string', 'max:14', new Phone(),'unique:users,phone'],
                 'password' => ['required', Password::min(8)->letters()->numbers()->symbols()],
                 'name' => ['required', 'string', 'max:255'],
+                'image' => ['required', 'image'],
                 'city_id' => ['required', Rule::exists('cities', 'id')],
             ],
             self::Merchant => [
