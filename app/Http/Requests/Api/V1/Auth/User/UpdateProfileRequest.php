@@ -30,7 +30,7 @@ class UpdateProfileRequest extends FormRequest
             'phone' => ['nullable', 'string', 'max:14',Rule::unique('users','phone')->ignore(auth('api')->id()), new Phone()],
             'address' => ['nullable', 'string'],
             'email' => ['required', 'email:rfc,dns', Rule::unique('users', 'email')->ignore(auth('api')->id())],
-            'image' => ['required', 'image'],
+            'image' => ['nullable', 'image'],
             'cover' => ['nullable', 'image'],
             'city_id' => ['required', Rule::exists('cities', 'id')],
         ];
