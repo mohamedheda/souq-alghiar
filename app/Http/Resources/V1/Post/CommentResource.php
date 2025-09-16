@@ -20,6 +20,7 @@ class CommentResource extends JsonResource
             'user_name' => $this->user?->name ,
             'created_at' => Carbon::parse($this->updated_at)->diffForHumans() ,
             'user_image' => $this->user?->imageUrl ,
+            'user_id' => $this->user_id ,
             'comment' => $this->comment ,
             'pinned' => $this->pinned,
             'replies' => CommentResource::collection($this->whenLoaded('replies')) ,

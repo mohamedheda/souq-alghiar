@@ -62,7 +62,7 @@ abstract class AuthService extends PlatformService
             return $this->responseSuccess(message: __('messages.created successfully'), data: new UserResource($user, true));
         } catch (Exception $e) {
             DB::rollBack();
-            return $e;
+//            return $e;
             return $this->responseFail(message: __('messages.Something went wrong'));
         }
     }
