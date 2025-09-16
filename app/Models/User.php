@@ -123,7 +123,7 @@ class User extends Authenticatable implements JWTSubject
     public function canAddProduct(): Attribute
     {
         return Attribute::make(get: function () {
-            return ($this->products > 0
+            return ($this->getAttributeValue('products') > 0
                     || is_null($this->products))
                 && !$this->is_blocked && $this->subscription_active;
         });
