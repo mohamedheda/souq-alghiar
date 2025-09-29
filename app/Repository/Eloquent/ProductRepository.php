@@ -43,7 +43,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
                 if($request->model_id)
                     $q->where('model_id',$request->model_id);
                 if($request->year)
-                    $q->where('year_from','<=',$request->year)->where('year_to','<=',$request->year);
+                    $q->where('year_from','<=',$request->year)->where('year_to','>=',$request->year);
             });
         }
         $query->withCount('markes');
