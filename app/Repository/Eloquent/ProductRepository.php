@@ -29,7 +29,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
         }
         if($request->category_id)
             $query->where('category_id',(int) $request->category_id);
-        if($request->category_id)
+        if($request->sub_category_id)
             $query->where('sub_category_id',(int) $request->sub_category_id);
         if ($request->city_id)
             $query->whereHas('user',function ($q) use ($request){
