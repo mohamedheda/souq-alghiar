@@ -28,7 +28,7 @@ class PostRequest extends FormRequest
             'category_id' => 'required|exists:categories,id',
             'city_id' => 'nullable|exists:cities,id',
             'year' => 'nullable|digits:4|integer|min:0',
-            'images' => ['required', 'array'],
+            'images' => ['nullable', 'array'],
             'images.*' => ['image','max:5120'],
         ];
     }
