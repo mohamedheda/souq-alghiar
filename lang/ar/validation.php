@@ -303,6 +303,7 @@ return [
         'attachment' => 'المرفق',
         'demand_units' => 'وحدات الطلب',
         'purchase_order_demand_unit_id' => 'نوع وحدات الطلب',
+        'comment' => 'التعليق',
     ],
 
 ];
