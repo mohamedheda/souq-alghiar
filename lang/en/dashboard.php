@@ -292,4 +292,6 @@ return [
     'emails' => 'emails',
     'email' => 'email',
     'home_image' => 'home image',
+    'title_for_trader' => 'for merchant',
+    'breadcrumb_image' => 'breadcrumb image',
 ];

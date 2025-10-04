@@ -58,6 +58,29 @@
                                     </div>
                                 </div>
                                 <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label
+                                                for="exampleInputName1">@lang('dashboard.title') @lang('dashboard.home_content') @lang('dashboard.for_trader') @lang('dashboard.ar')</label>
+                                            <input name="ar[home_content][title_for_trader]" type="text" class="form-control"
+                                                   id="exampleInputName1"
+                                                   value="{{ $content['ar']['home_content']['title_for_trader'] ?? ''  }}"
+                                                   placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label
+                                                for="exampleInputEmail1">@lang('dashboard.title') @lang('dashboard.home_content') @lang('dashboard.for_trader') @lang('dashboard.en')</label>
+                                            <input name="en[home_content][title_for_trader]" type="text" class="form-control"
+                                                   id="exampleInputEmail1"
+                                                   value="{{$content['en']['home_content']['title_for_trader'] ?? '' }}"
+                                                   placeholder=""
+                                                   required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-9" style="align-content: center;display: grid;">
                                         <div class="form-group" style="width: 100%;">
                                             <label for="exampleInputFile">@lang('dashboard.home_image')</label>
@@ -143,6 +166,28 @@
                                     </div>
                                     <div class="col-2">
                                         <img src="{{ $content['ar']['footer_logo'] ?? null }}" style="width: 60%">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9" style="align-content: center;display: grid;">
+                                        <div class="form-group" style="width: 100%;">
+                                            <label for="exampleInputFile">@lang('dashboard.breadcrumb_image')</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input name="en[breadcrumb_image]" type="hidden" value="file_1290">
+                                                    <input name="ar[breadcrumb_image]" type="hidden" value="file_1290">
+                                                    <input name="file[1290]" type="file" class="custom-file-input"
+                                                           id="exampleInputFile">
+                                                    <label class="custom-file-label" for="exampleInputFile">Choose
+                                                        file</label>
+                                                    <input name="old_file[1290]" type="hidden"
+                                                           value="{{ $content['ar']['breadcrumb_image'] ?? null }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <img src="{{ $content['ar']['breadcrumb_image'] ?? null }}" style="width: 60%">
                                     </div>
                                 </div>
                                 <br>

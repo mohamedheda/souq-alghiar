@@ -39,7 +39,7 @@ class ProductService
 
     public function index($request)
     {
-        $products = $this->productRepository->cursorProducts(5 , relations: ['mainImage', 'markes.make', 'user']);
+        $products = $this->productRepository->cursorProducts(18 , relations: ['mainImage', 'markes.make', 'user']);
         return $this->responseSuccess(data: ProductPaginationResource::make($products));
     }
     public function getUserProducts($user_id)

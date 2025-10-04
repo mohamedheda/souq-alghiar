@@ -23,15 +23,19 @@ class HeaderFooterRequest extends FormRequest
     {
         return [
             'en.home_content.first_title' => ['required','string'],
+            'en.home_content.title_for_trader' => ['required','string'],
             'en.logo' => ['required','string'],
             'en.fav_icon' => ['required','string'],
             'en.footer_logo' => ['required','string'],
+            'en.breadcrumb_image' => ['required','string'],
             'en.social.*.icon' => ['required','string'],
 
             'ar.home_content.first_title' => ['required','string'],
+            'ar.home_content.title_for_trader' => ['required','string'],
             'ar.logo' => ['required','string'],
             'ar.fav_icon' => ['required','string'],
             'ar.footer_logo' => ['required','string'],
+            'ar.breadcrumb_image' => ['required','string'],
             'ar.social.*.icon' => ['required','string'],
 
 
