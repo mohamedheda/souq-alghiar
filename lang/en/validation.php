@@ -214,5 +214,7 @@ return [
         'new_password' => 'Old Password',
         'old_password' => 'New Password',
     ],
+    'username.regex'    => 'The username may only contain letters, numbers, dashes, underscores, and dots, and cannot start or end with one.',
+
 
 ];

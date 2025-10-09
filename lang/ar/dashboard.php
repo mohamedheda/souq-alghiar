@@ -294,5 +294,4 @@ return [
     'home_image' => 'صورة الرئيسية',
     'title_for_trader' => 'للتاجر',
     'breadcrumb_image' => 'صورة الغلاف الثابته',
-
 ];

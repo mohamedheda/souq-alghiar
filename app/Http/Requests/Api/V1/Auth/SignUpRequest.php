@@ -30,4 +30,10 @@ class SignUpRequest extends FormRequest
             ...UserType::from($userType)->validationRules(),
         ];
     }
+    public function messages(): array{
+        return [
+            'username.regex'    => __('validation.username.regex'),
+        ];
+    }
+
 }

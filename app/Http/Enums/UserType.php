@@ -27,7 +27,7 @@ enum UserType: string
                 'email' => ['nullable', 'email:rfc,dns', Rule::unique('users', 'email')],
                 'password' => ['required', Password::min(8)->letters()->numbers()->symbols()],
                 'name' => ['required', 'string', 'max:255'],
-                'user_name' => ['required', 'string', 'max:255', 'unique:users,user_name'],
+                'user_name' => ['required', 'string', 'max:255', 'unique:users,user_name','min:3','max:30','regex:/^(?![._-])[A-Za-z0-9._-]+(?<![._-])$/',],
                 'phone' => ['required', 'string', 'max:14', new Phone(),'unique:users,phone'],
                 'address' => ['nullable', 'string'],
                 'image' => ['required', 'image'],
