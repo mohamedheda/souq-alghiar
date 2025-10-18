@@ -24,7 +24,7 @@ class Product extends Model
     public function updateAtDiff(): Attribute
     {
         return Attribute::get(function () {
-            return Carbon::parse($this->updated_at)->diffForHumans();
+            return Carbon::parse($this->created_at)->diffForHumans();
         });
     }
 
