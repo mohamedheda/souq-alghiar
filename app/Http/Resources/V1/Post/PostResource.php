@@ -18,7 +18,7 @@ class PostResource extends JsonResource
     {
         return [
             'id' => $this->id ,
-            'user_name' => $this->user?->name ,
+            'name' => $this->user?->name ,
             'user_image' => $this->user?->imageUrl ,
             'created_at' => Carbon::parse($this->updated_at)->diffForHumans() ,
             'mark' => $this->mark?->imageUrl ,
