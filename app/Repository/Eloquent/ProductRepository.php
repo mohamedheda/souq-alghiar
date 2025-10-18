@@ -47,7 +47,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
             });
         }
         $query->withCount('markes');
-        return $query->with($relations)->orderByDesc('featured')->latest('updated_at')->cursorPaginate($per_page,cursorName: 'page')->appends(request()->query());
+        return $query->with($relations)->orderByDesc('featured')->latest('created_at')->cursorPaginate($per_page,cursorName: 'page')->appends(request()->query());
     }
 
     public function getSimilarProducts($product,$relations=[]){
@@ -61,7 +61,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
         if ($userProductsCount > 1) {
             $similar = $this->model::query()->where('user_id', $product->user_id)
                 ->where('id', '!=', $product->id)
-                ->latest('updated_at')
+                ->latest('created_at')
                 ->limit(4)
                 ->with($relations)
                 ->get();
@@ -73,7 +73,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
             $subCategoryMatches = $this->model::query()->where('sub_category_id', $product->sub_category_id)
                 ->where('id', '!=', $product->id)
                 ->whereNotIn('id', $similar->pluck('id'))
-                ->latest('updated_at')
+                ->latest('created_at')
                 ->limit($needed)
                 ->with($relations)
                 ->get();
@@ -87,7 +87,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
             $categoryMatches = $this->model::query()->where('category_id', $product->category_id)
                 ->where('id', '!=', $product->id)
                 ->whereNotIn('id', $similar->pluck('id'))
-                ->latest('updated_at')
+                ->latest('created_at')
                 ->limit($needed)
                 ->with($relations)
                 ->get();
@@ -100,7 +100,7 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
 
             $fallback = $this->model::query()->where('id', '!=', $product->id)
                 ->whereNotIn('id', $similar->pluck('id'))
-                ->latest('updated_at')
+                ->latest('created_at')
                 ->limit($needed)
                 ->with($relations)
                 ->get();
@@ -114,17 +114,17 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
     public function getHomeFeaturedProducts($relations=[]){
         $query= $this->model::query();
         $query->withCount('markes');
-        return $query->with($relations)->orderByDesc('featured')->latest('updated_at')->limit(12)->get();
+        return $query->with($relations)->orderByDesc('featured')->latest('created_at')->limit(12)->get();
     }
     public function getHomeLatestProducts($relations=[]){
         $query= $this->model::query();
         $query->withCount('markes');
-        return $query->with($relations)->orderByDesc('views')->latest('updated_at')->limit(12)->get();
+        return $query->with($relations)->orderByDesc('views')->latest('created_at')->limit(12)->get();
     }
     public function getHomeMostViewedProducts($relations=[]){
         $query= $this->model::query();
         $query->withCount('markes');
-        return $query->with($relations)->latest('updated_at')->limit(12)->get();
+        return $query->with($relations)->latest('created_at')->limit(12)->get();
     }
     public function incrementValue(string $key, int $amount = 1, $id = null)
     {
