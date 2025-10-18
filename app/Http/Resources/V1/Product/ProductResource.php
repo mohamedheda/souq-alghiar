@@ -29,7 +29,7 @@ class ProductResource extends JsonResource
             'more_than_main_makes' => $this->moreThanMainMarkes ,
             'user_image' => $this->user?->imageUrl,
             'user_name' => $this->user?->user_name,
-            'name' => Str::limit($this->user?->name,60),
+            'name' => Str::limit($this->user?->name,30),
             'user_id' => $this->user?->id,
             'views' => $this->views,
             'ago_time' => $this->updateAtDiff,
