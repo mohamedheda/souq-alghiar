@@ -6,6 +6,7 @@ use App\Http\Resources\V1\Product\ProductHelper\ProductImageResource;
 use App\Http\Resources\V1\Product\ProductHelper\ProductMakeResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Str;
 
 class ProductResource extends JsonResource
 {
@@ -28,7 +29,7 @@ class ProductResource extends JsonResource
             'more_than_main_makes' => $this->moreThanMainMarkes ,
             'user_image' => $this->user?->imageUrl,
             'user_name' => $this->user?->user_name,
-            'name' => $this->user?->name,
+            'name' => Str::limit($this->user?->name,60),
             'user_id' => $this->user?->id,
             'views' => $this->views,
             'ago_time' => $this->updateAtDiff,
