@@ -27,6 +27,7 @@ class ProductDetailsResource extends JsonResource
             'description' => $this->description,
             'images' => ProductImageResource::collection($this->images),
             'featured' => $this->featured,
+            'all_makes' => $this->all_makes,
             'makes' => $this->when(!$this->all_makes, ProductMakeDetailsResource::collection($this->whenLoaded('markes'))),
             'similar_products' => ProductResource::collection($this->similar_products)
         ];
