@@ -124,7 +124,7 @@ class ProductHelperService
                 $src = $img->src ?? null;
                 if (!$src) continue;
                 // Build full image URL
-                $imgUrl = "https://picdn.trodo.com/media/m2_catalog_cache/480x480" . urldecode($src) . "?1";
+                $imgUrl = "https://picdn.trodo.com/media/m2_catalog_cache/960x960" . urldecode($src) . "?1";
 
                 try {
                     $response = Http::get($imgUrl);
