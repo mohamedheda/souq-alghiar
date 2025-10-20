@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <form action="{{ route('managers.store', ['id'=>$role->id]) }}" method="post" autocomplete="off"
+                        <form action="{{ route('managers.store', ['role_id'=>$role->id]) }}" method="post" autocomplete="off"
                               enctype="multipart/form-data">
                             <div class="card-header">
                                 <h3 class="card-title">{{ __('dashboard.Create') . ' ' . $role->t('display_name') }}</h3>

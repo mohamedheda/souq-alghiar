@@ -41,12 +41,12 @@ class ManagerService
     {
         DB::beginTransaction();
         try {
-            $data = $request->except('id', 'image', 'password_confirmation');
+            $data = $request->except('role_id', 'image', 'password_confirmation');
             $data['is_active'] = $request->is_active == 'on' ? 1 : 0;
             if ($request->image !== null)
                 $data['image'] = $this->filemanagers->handle('image', 'managers/images');
             $manger = store_model($this->repository, $data, true);
-            $manger->addRole($request->id);
+            $manger->addRole($request->role_id);
             DB::commit();
             return redirect()->route('roles.index')->with(['success' => __('messages.created_successfully')]);
         } catch (\Exception $e) {

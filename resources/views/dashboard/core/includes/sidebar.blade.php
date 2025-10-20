@@ -1,9 +1,8 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ route('/') }}" class="brand-link">
-        {{--        <img src="{{asset("logo.png")}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> --}}
-        <span class="brand-text font-weight-light">@lang('dashboard.souq-alghiar')</span>
+    <a href="{{ route('/') }}" class="brand-link d-flex justify-content-center" >
+                <img src="{{asset("logo.png")}}" alt="AdminLTE Logo" class="brand-image"  >
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -30,6 +29,17 @@
                         </p>
                     </a>
                 </li>
+                @permission('merchants-read')
+                <li class="nav-item  {{ in_array(request()->route()->getName(),['merchants.index'])? 'menu-open': '' }}">
+                    <a href="{{ route('merchants.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-circle"></i>
+                        <p>
+                            @lang('dashboard.merchants')
+                        </p>
+                    </a>
+                </li>
+                @endpermission
+                @permission('users-read')
                 <li class="nav-item  {{ in_array(request()->route()->getName(),['users.index', 'users.create', 'users.edit', 'users.show'])? 'menu-open': '' }}">
                     <a href="{{ route('users.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-circle"></i>
@@ -38,6 +48,10 @@
                         </p>
                     </a>
                 </li>
+                @endpermission
+
+                @permission('marks-read')
+
                 <li class="nav-item  {{ in_array(request()->route()->getName(),['marks.index', 'marks.update', 'marks.edit', 'marks.show'])? 'menu-open': '' }}">
                     <a href="{{ route('marks.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-circle"></i>
@@ -46,6 +60,9 @@
                         </p>
                     </a>
                 </li>
+                @endpermission
+
+                @permission('categories-read')
                 <li class="nav-item  {{ in_array(request()->route()->getName(),['categories.index', 'categories.update', 'categories.edit', 'categories.show'])? 'menu-open': '' }}">
                     <a href="{{ route('categories.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-circle"></i>
@@ -54,6 +71,7 @@
                         </p>
                     </a>
                 </li>
+                @endpermission
                 @permission('roles-read')
                     <li class="nav-item  {{ in_array(request()->route()->getName(),['roles.index','roles.create','roles.edit','roles.mangers','managers.create','managers.edit'])? 'menu-open': '' }}">
                         <a href="{{ route('roles.index') }}" class="nav-link">
@@ -64,6 +82,8 @@
                         </a>
                     </li>
                 @endpermission
+                @permission('structure-read')
+
                 <li
                     class="nav-item {{in_array(request()->route()->getName(),[''])?'menu-open':''}}">
                     <a href="#" class="nav-link">
@@ -83,6 +103,8 @@
                         </li>
                     </ul>
                 </li>
+                @endpermission
+
                 <li
                     class="nav-item  {{ in_array(request()->route()->getName(),['settings.edit'])? 'menu-open': '' }} {{ Route::currentRouteName()=='settings.edit'?'activeNav':'' }}">
                     <a href="{{ route('settings.edit', auth()->user()->id) }}" class="nav-link">

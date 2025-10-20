@@ -15,8 +15,13 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
     public function cursorProducts($per_page,$relations=[],$user_id=null){
         $query= $this->model::query();
         $request=request();
+
         if($user_id)
             $query->where('user_id',(int) $request->user_id);
+
+        $query->whereHas('user',function ($q){
+                $q->where('subscription_active',1);
+        });
         if ($request->key) {
             $cleaned = preg_replace('/[^\p{L}\p{N}\s]/u', '', $request->key); // keep only letters, numbers, and space
 

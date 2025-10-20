@@ -6,6 +6,7 @@ use App\Http\Controllers\Dashboard\Category\SubCategoryController;
 use App\Http\Controllers\Dashboard\Home\HomeController;
 use App\Http\Controllers\Dashboard\Mangers\MangerController;
 use App\Http\Controllers\Dashboard\Mark\MarkController;
+use App\Http\Controllers\Dashboard\Merchant\MerchantController;
 use App\Http\Controllers\Dashboard\Model\ModelController;
 use App\Http\Controllers\Dashboard\Roles\RoleController;
 use App\Http\Controllers\Dashboard\Settings\SettingController;
@@ -25,10 +26,15 @@ Route::group([
 
         Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     });
-
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [HomeController::class, 'index'])->name('/');
         Route::resource('users', UserController::class);
+        Route::get('merchants', [MerchantController::class,'index'])->name('merchants.index');
+        Route::get('merchants/{id}/products', [MerchantController::class,'merchantsProducts'])->name('merchants.products');
+        Route::get('merchants-products/{id}/create', [MerchantController::class,'create'])->name('merchants-products.create');
+        Route::get('merchants-products/{id}/create-with-code', [MerchantController::class,'createWithCode'])->name('merchants-products.createWithCode');
+        Route::post('merchants-products/store-with-code', [MerchantController::class,'storeWithCode'])->name('merchants-products.storeWithCode');
+        Route::resource('merchants-products', MerchantController::class)->only('store','edit','update','delete');
         Route::resource('marks', MarkController::class);
         Route::get('marks/{id}/models', [MarkController::class,'getModels'])->name('marks.models');
         Route::get('marks/{id}/models/create', [ModelController::class,'create'])->name('marks.models.create');

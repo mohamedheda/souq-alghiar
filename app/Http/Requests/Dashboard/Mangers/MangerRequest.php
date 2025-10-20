@@ -26,6 +26,7 @@ class MangerRequest extends FormRequest
     {
         return [
             'id' => ['nullable',Rule::exists('managers', 'id')] ,
+            'role_id' => ['nullable',Rule::exists('roles', 'id')] ,
             'name' => 'required|string',
             'email' => [
                 'required',

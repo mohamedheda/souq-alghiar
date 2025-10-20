@@ -10,11 +10,13 @@ return new class extends Migration {
      */
     public function up(): void
     {
+
+
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
             $table->text('description')->nullable();
-            $table->tinyInteger('used')->default('0')->comment("0-> used , 1-> new");
+            $table->tinyInteger('used')->default('0')->comment("0->new 1->used");
             $table->foreignId('user_id')->nullable()->constrained('users')
                 ->nullOnDelete()->cascadeOnUpdate();
             $table->foreignId('category_id')->nullable()->constrained('categories')

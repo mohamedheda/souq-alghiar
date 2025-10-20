@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Api\V1\Product;
+namespace App\Http\Requests\Dashboard\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProductRequest extends FormRequest
+class UpdateProductRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,25 +22,28 @@ class ProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string|max:255',
+            'title' => 'nullable|string|max:255',
             'description' => 'nullable|string',
-            'used' => 'required|in:0,1',
+            'used' => 'nullable|in:0,1',
             'category_id' => 'nullable|exists:categories,id',
             'sub_category_id' => 'nullable|exists:categories,id',
-            'price' => 'required|integer|min:1|max_digits:7',
-            'all_makes' => 'required|in:0,1',
-            'featured' => 'required|in:0,1',
+            'price' => 'nullable|integer|min:1|max_digits:7',
+            'all_makes' => 'nullable|in:0,1',
+            'featured' => 'nullable|in:0,1',
 
-            'makes' => 'required_if:all_makes,0|array',
+            'makes' => 'nullable|array',
             'makes.*.product_id' => 'nullable|exists:products,id',
             'makes.*.mark_id' => 'nullable|exists:marks,id',
             'makes.*.model_id' => 'nullable|exists:models,id',
             'makes.*.year_from' => 'nullable|digits:4|integer|min:0',
             'makes.*.year_to' => 'nullable|digits:4|integer|min:0',
+            'deleted_makes' => ['nullable', 'array'],
+            'deleted_makes.*' => ['exists:product_marks,id'],
 
-            'images' => ['required', 'array'],
+            'images' => ['nullable', 'array'],
             'images.*' => ['image','max:5120'],
-
+            'deleted_images' => ['nullable', 'array'],
+            'deleted_images.*' => ['exists:product_images,id'],
         ];
     }
 

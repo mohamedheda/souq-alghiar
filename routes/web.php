@@ -12,11 +12,5 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/api/featured-posts', function () {
-    $array = [];
-    for ($i=0;$i<=10000;$i++){
-        $array[$i]=['id' => 1, 'title' => 'Post One'];
-    }
-    return $array;
-});
+
 

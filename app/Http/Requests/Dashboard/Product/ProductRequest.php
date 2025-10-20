@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Api\V1\Product;
+namespace App\Http\Requests\Dashboard\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -29,7 +29,6 @@ class ProductRequest extends FormRequest
             'sub_category_id' => 'nullable|exists:categories,id',
             'price' => 'required|integer|min:1|max_digits:7',
             'all_makes' => 'required|in:0,1',
-            'featured' => 'required|in:0,1',
 
             'makes' => 'required_if:all_makes,0|array',
             'makes.*.product_id' => 'nullable|exists:products,id',
@@ -41,6 +40,7 @@ class ProductRequest extends FormRequest
             'images' => ['required', 'array'],
             'images.*' => ['image','max:5120'],
 
+            'user_id' => ['nullable','exists:users,id'],
         ];
     }
 

@@ -9,8 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthService
 {
+    const ACTIVE=1;
     public function login(LoginRequest $request){
         $credentials = $request->validated();
+        $credentials['is_active']=self::ACTIVE;
         $rememberMe = $request->remember_me == 'on';
         if (auth()->attempt($credentials, $rememberMe)) {
             return redirect()->route('/');

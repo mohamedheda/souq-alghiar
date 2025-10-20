@@ -2,6 +2,7 @@
 
 namespace App\Repository\Eloquent;
 
+use App\Http\Enums\UserType;
 use App\Models\User;
 use App\Repository\UserRepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
@@ -34,5 +35,9 @@ class UserRepository extends Repository implements UserRepositoryInterface
     {
         return $this->model::where('user_name', $user_name)->first();
     }
+    public function paginateMerchants($per_page){
+        return $this->model::where('type',UserType::Merchant->value)->latest()->paginate($per_page);
+    }
+
 
 }

@@ -19,4 +19,7 @@ class Category extends Model
             return null;
         });
     }
+    public function subCategories(){
+        return $this->hasMany(Category::class,'parent_id');
+    }
 }

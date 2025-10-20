@@ -17,9 +17,10 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
                 ->whereNull('parent_id')
                 ->paginate($paginate);
     }
-    public function getCategories(){
+    public function getCategories($relations=[]){
         return $this->model::query()
             ->whereNull('parent_id')
+            ->with($relations)
             ->get();
     }
     public function getSubCategories($parent_id){

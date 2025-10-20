@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'souq-alghiar' => 'souq-alghiar',
+    'souq-alghiar' => 'souq alghyar',
     'Dashboard' => 'Dashboard',
     'Login' => 'Login',
     'Logout' => 'Logout',
@@ -294,4 +294,33 @@ return [
     'home_image' => 'home image',
     'title_for_trader' => 'for merchant',
     'breadcrumb_image' => 'breadcrumb image',
+    'merchants' => 'merchants',
+    'products' => 'products',
+    'create_title' => 'Add New Product',
+    'general_info' => 'General Information',
+    'name' => 'Product Name',
+    'description' => 'Description',
+    'condition' => 'Condition',
+    'new' => 'New',
+    'used' => 'Used',
+    'price' => 'Price (EGP)',
+    'category' => 'Category',
+    'subcategory' => 'Sub Category',
+
+    'brands_info' => 'Brand Details',
+    'select_all' => 'Select All Brands',
+    'select_specific' => 'Select Specific Brands',
+    'brand' => 'Brand',
+    'model' => 'Model',
+    'year_from' => 'Year From',
+    'year_to' => 'Year To',
+    'add_brand' => 'Add Brand',
+    'remove' => 'Remove',
+
+    'images' => 'Product Images',
+    'upload_images' => 'Upload Images',
+    'featured' => 'Featured Product',
+    'publish' => 'Publish',
+    'not_subscribed' => 'not subscribed',
+    'CreateWithCode' => 'Create With Code',
 ];
