@@ -71,7 +71,7 @@ class ProductHelperService
     public function prepareLabels($product)
     {
         $labels = [];
-        $labels[] = $product->used ? __('messages.New') : __('messages.Used');
+        $labels[] = $product->used ? __('messages.Used') : __('messages.New') ;
         if ($product->category_id)
             $labels[] = $product->category->t('name');
         if ($product->all_makes)
