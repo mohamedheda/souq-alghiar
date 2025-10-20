@@ -23,8 +23,8 @@ class ProductWithCodeRequest extends FormRequest
     {
         return [
             'price' => 'required|integer|min:1|max_digits:7',
-            'code' => 'string',
-            'vehicle_data' => 'string',
+            'code' => ['required','string'],
+            'vehicle_data' => ['nullable','string'],
             'user_id' => ['nullable','exists:users,id'],
         ];
     }
