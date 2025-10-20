@@ -173,7 +173,7 @@ class ProductHelperService
             }
 
             $insertData = [];
-            if ($apiData->list){
+            if (!empty($apiData->list)){
                 // Step 2: Loop over API vehicles
                 foreach ($apiData->list as $auto) {
                     $autoName = $this->normalizeName($auto->automaker_label->name);
