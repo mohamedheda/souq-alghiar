@@ -173,64 +173,66 @@ class ProductHelperService
             }
 
             $insertData = [];
+            if ($apiData->list){
+                // Step 2: Loop over API vehicles
+                foreach ($apiData->list as $auto) {
+                    $autoName = $this->normalizeName($auto->automaker_label->name);
 
-            // Step 2: Loop over API vehicles
-            foreach ($apiData->list as $auto) {
-                $autoName = $this->normalizeName($auto->automaker_label->name);
-
-                // Match mark or classify using Gemini
-                if (isset($markMap[$autoName])) {
-                    $markEntry = $markMap[$autoName];
-                    $mark = $markEntry['mark'];
-                    $modelsMap = $markEntry['modelsMap'];
-                } else {
-                    // Gemini classifies mark
-                    $geminiPrompt = "Classify this automaker name '{$auto->automaker_label->name}' and return a JSON: {\"name_en\":\"\",\"name_ar\":\"\"}";
-                    $geminiResult = Gemini::generativeModel('gemini-2.0-flash')->generateContent($geminiPrompt);
-                    $markData = json_decode($geminiResult->text(), true);
-
-                    $mark = $this->markRepository->create([
-                        'name_en' => $markData['name_en'] ?? $auto->automaker_label->name,
-                        'name_ar' => $markData['name_ar'] ?? $auto->automaker_label->name
-                    ]);
-
-                    $modelsMap = [];
-                    $markMap[$autoName] = ['mark' => $mark, 'modelsMap' => $modelsMap];
-                }
-
-                // Step 3: Loop over models
-                foreach ($auto->model_list as $modelItem) {
-                    $modelName = $this->normalizeName($modelItem->label->name);
-
-                    if (isset($modelsMap[$modelName])) {
-                        $model = $modelsMap[$modelName];
+                    // Match mark or classify using Gemini
+                    if (isset($markMap[$autoName])) {
+                        $markEntry = $markMap[$autoName];
+                        $mark = $markEntry['mark'];
+                        $modelsMap = $markEntry['modelsMap'];
                     } else {
-                        // Gemini classifies model
-                        $geminiPrompt = "Classify this model name '{$modelItem->label->name}' for automaker '{$mark->name_en}' and return JSON: {\"name_en\":\"\",\"name_ar\":\"\"}";
+                        // Gemini classifies mark
+                        $geminiPrompt = "Classify this automaker name '{$auto->automaker_label->name}' and return a JSON: {\"name_en\":\"\",\"name_ar\":\"\"}";
                         $geminiResult = Gemini::generativeModel('gemini-2.0-flash')->generateContent($geminiPrompt);
-                        $modelData = json_decode($geminiResult->text(), true);
+                        $markData = json_decode($geminiResult->text(), true);
 
-                        $model = $this->modelRepository->create([
-                            'mark_id' => $mark->id,
-                            'name_en' => $modelData['name_en'] ?? $modelItem->label->name,
-                            'name_ar' => $modelData['name_ar'] ?? $modelItem->label->name
+                        $mark = $this->markRepository->create([
+                            'name_en' => $markData['name_en'] ?? $auto->automaker_label->name,
+                            'name_ar' => $markData['name_ar'] ?? $auto->automaker_label->name
                         ]);
 
-                        $modelsMap[$modelName] = $model;
-                        $markMap[$autoName]['modelsMap'] = $modelsMap;
+                        $modelsMap = [];
+                        $markMap[$autoName] = ['mark' => $mark, 'modelsMap' => $modelsMap];
                     }
 
-                    // Step 4: Collect for product_marks
-                    $insertData[] = [
-                        'product_id' => $product_id,
-                        'mark_id' => $mark->id,
-                        'model_id' => $model->id,
-                        'year_from' => (int) $modelItem->label->year_from,
-                        'year_to' => (int) $modelItem->label->year_to ?: 0,
-                    ];
+                    // Step 3: Loop over models
+                    foreach ($auto->model_list as $modelItem) {
+                        $modelName = $this->normalizeName($modelItem->label->name);
+
+                        if (isset($modelsMap[$modelName])) {
+                            $model = $modelsMap[$modelName];
+                        } else {
+                            // Gemini classifies model
+                            $geminiPrompt = "Classify this model name '{$modelItem->label->name}' for automaker '{$mark->name_en}' and return JSON: {\"name_en\":\"\",\"name_ar\":\"\"}";
+                            $geminiResult = Gemini::generativeModel('gemini-2.0-flash')->generateContent($geminiPrompt);
+                            $modelData = json_decode($geminiResult->text(), true);
+
+                            $model = $this->modelRepository->create([
+                                'mark_id' => $mark->id,
+                                'name_en' => $modelData['name_en'] ?? $modelItem->label->name,
+                                'name_ar' => $modelData['name_ar'] ?? $modelItem->label->name
+                            ]);
+
+                            $modelsMap[$modelName] = $model;
+                            $markMap[$autoName]['modelsMap'] = $modelsMap;
+                        }
+
+                        // Step 4: Collect for product_marks
+                        $insertData[] = [
+                            'product_id' => $product_id,
+                            'mark_id' => $mark->id,
+                            'model_id' => $model->id,
+                            'year_from' => (int) $modelItem->label->year_from,
+                            'year_to' => (int) $modelItem->label->year_to ?: 0,
+                        ];
+                    }
                 }
+                $this->productMakesRepository->insert($insertData);
             }
-            $this->productMakesRepository->insert($insertData);
+
         }
 
         private function mapDBNames(){
