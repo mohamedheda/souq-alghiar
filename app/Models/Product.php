@@ -31,7 +31,10 @@ class Product extends Model
     public function moreThanMainMarkes(): Attribute
     {
         return Attribute::get(function () {
-            $count = $this->markes_count ;
+            $count = $this->markes()
+                ->select('mark_id')
+                ->distinct()
+                ->count(); ;
             if (($count - 3) > 0) {
                 $formatter = numfmt_create(app()->getLocale(), \NumberFormatter::DECIMAL);
                 return "+". numfmt_format($formatter, $count - 3);
