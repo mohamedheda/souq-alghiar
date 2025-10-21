@@ -5,6 +5,7 @@ namespace App\Repository\Eloquent;
 use App\Models\Product;
 use App\Repository\ProductRepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class ProductRepository extends Repository implements ProductRepositoryInterface
 {
@@ -51,7 +52,9 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
                     $q->where('year_from','<=',$request->year)->where('year_to','>=',$request->year);
             });
         }
-        $query->withCount('markes');
+        $query->withCount(['markes as unique_markes_count' => function ($q) {
+            $q->select(DB::raw('COUNT(DISTINCT mark_id)'));
+        }]);
         return $query->with($relations)->orderByDesc('featured')->latest('created_at')->cursorPaginate($per_page,cursorName: 'page')->appends(request()->query());
     }
 
