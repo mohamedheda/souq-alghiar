@@ -133,7 +133,7 @@ class MerchantService
             ];
             $product=$this->productRepository->create($product);
             $this->helperService->attachImagesT($product,$main_data?->attributes->gallery);
-            $this->helperService->attachMakesT($product->id,$vehicle_data);
+            $this->helperService->attachMakesT($product->id,$main_data->relationships?->vehicle_list);
             DB::commit();
             return redirect()
                 ->route('merchants.products',$request->user_id)
