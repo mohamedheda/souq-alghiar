@@ -34,7 +34,7 @@ class Product extends Model
             $count = $this->markes()
                 ->select('mark_id')
                 ->distinct()
-                ->count(); ;
+                ->count();
             if (($count - 3) > 0) {
                 $formatter = numfmt_create(app()->getLocale(), \NumberFormatter::DECIMAL);
                 return "+". numfmt_format($formatter, $count - 3);
