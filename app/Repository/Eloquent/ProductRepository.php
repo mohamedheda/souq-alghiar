@@ -124,12 +124,12 @@ class ProductRepository extends Repository implements ProductRepositoryInterface
     public function getHomeLatestProducts($relations=[]){
         $query= $this->model::query();
         $query->withCount('markes');
-        return $query->with($relations)->orderByDesc('views')->latest('created_at')->limit(12)->get();
+        return $query->with($relations)->latest('created_at')->limit(12)->get();
     }
     public function getHomeMostViewedProducts($relations=[]){
         $query= $this->model::query();
         $query->withCount('markes');
-        return $query->with($relations)->latest('created_at')->limit(12)->get();
+        return $query->with($relations)->orderByDesc('views')->latest('created_at')->limit(12)->get();
     }
     public function incrementValue(string $key, int $amount = 1, $id = null)
     {
