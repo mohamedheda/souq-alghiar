@@ -25,7 +25,7 @@ class ProductResource extends JsonResource
             'price' => $this->priceValue,
             'currency' => $this->productCurrency,
             'all_makes' => $this->all_makes ,
-            'makes' => $this->when(!$this->all_makes, ProductMakeResource::collection($this->markes->take(3))),
+            'makes' => $this->when(!$this->all_makes, ProductMakeResource::collection($this->markes?->unique('mark_id')->values()->take(3))),
             'more_than_main_makes' => $this->moreThanMainMarkes ,
             'user_image' => $this->user?->imageUrl,
             'user_name' => $this->user?->user_name,

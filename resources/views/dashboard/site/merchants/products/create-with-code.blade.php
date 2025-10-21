@@ -47,10 +47,7 @@
                                             <label>@lang('dashboard.description')</label>
                                             <textarea name="code" class="form-control">{{ old('code') }}</textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label>@lang('dashboard.vehicle_data')</label>
-                                            <textarea name="vehicle_data" class="form-control">{{ old('vehicle_data') }}</textarea>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
