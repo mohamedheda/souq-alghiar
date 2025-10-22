@@ -68,13 +68,6 @@ class Product extends Model
 
     public function markes()
     {
-        return $this->hasManyThrough(
-            Mark::class,
-            ProductMark::class,
-            'product_id',
-            'id',
-            'id',
-            'mark_id'
-        )->orderByDesc('marks.important');
+        return $this->hasMany(ProductMark::class);
     }
 }
