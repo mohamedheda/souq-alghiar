@@ -44,7 +44,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $mark->t('name') }}</td>
-                                        <td><img src="{{asset($mark->logo)}}" width="auto" height="100px"></td>
+                                        <td><img src="{{asset($mark->logo)}}" width="100px" height="auto"></td>
                                       <td>
                                             <div class="operations-btns" style="">
                                                 <a href="{{ route('marks.edit', $mark->id) }}"
