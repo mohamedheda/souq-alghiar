@@ -68,6 +68,9 @@ class Product extends Model
 
     public function markes()
     {
-        return $this->hasMany(ProductMark::class);
+        return $this->hasMany(ProductMark::class)
+            ->join('marks', 'product_marks.mark_id', '=', 'marks.id')
+            ->orderBy('marks.important ', 'desc')
+            ->select('product_marks.*');
     }
 }
