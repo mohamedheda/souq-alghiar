@@ -9,6 +9,7 @@
         "foolz/sphinxql-query-builder": "^3.0",
         "google-gemini-php/laravel": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
+        "intervention/image": "^3.11",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/socialite": "^5.18",
